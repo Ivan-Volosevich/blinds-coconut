@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #6c727c;
+  display: flex;
+}
+
+.memo-game {
+  height: 640px;
+  width: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+
+  .memo-card {
+    background: linear-gradient(to right, #fff, #912);
+    height: calc(100% / 3 - 10px);
+    width: calc(100% / 4 - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+  }
+
+  .memo-card:active {
+    transform: scale(0.95);
+    transition: transform .2s;
+  }
+
+
+}
+.memo-card.flip {
+  transform: rotateY(180deg);
+}

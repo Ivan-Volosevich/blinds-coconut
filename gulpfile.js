@@ -3,60 +3,64 @@ const sass = require('gulp-sass');
 const cssnano = require('gulp-cssnano');
 const rename = require('gulp-rename');
 const pug = require('gulp-pug');
-const minify = require('gulp-minify');
- 
+const browserSync = require('browser-sync');
+const webpack = require('webpack');
+const webpackStream = require('webpack-stream');
+const webpackConfig = require('./webpack.config.js');
 
-const browserSync = require('browser-sync').create();
+function fonts() {
+    return gulp.src('src/fonts/**/*')
+        .pipe(gulp.dest('.public/fonts/'));
+}
 
 function styles() {
     return gulp.src('src/scss/main.scss')
         .pipe(sass())
-        // .pipe(cssnano())
         .pipe(rename('styles.css'))
-        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./public/css'))
         .pipe(browserSync.stream());
 }
 
 function templates() {
     return gulp.src('./src/pug/pages/*.pug')
-    .pipe(pug({
-        doctype: 'html',
-        pretty: true
-    }))
-    .pipe(gulp.dest('./dist'))
-    .pipe(browserSync.stream());
-}
-
-function js() {
-    return gulp.src('./src/js/*')
-        .pipe(minify())
-        .pipe(gulp.dest('./dist/js'))
+        .pipe(pug({
+            doctype: 'html',
+            pretty: true
+        }))
+        .pipe(gulp.dest('./public'))
         .pipe(browserSync.stream());
 }
 
-function fonts() {
-    return gulp.src('./src/fonts/*')
-        .pipe(gulp.dest('./dist/fonts'));
+function js() {
+    return gulp.src('src/js/index.js')
+        .pipe(webpackStream(webpackConfig), webpack)
+        .pipe(gulp.dest('./public/js'));
 }
 
 function images() {
-    return gulp.src('./src/img/*')
-        .pipe(gulp.dest('./dist/img'));
+    return gulp.src('src/img/*')
+        .pipe(gulp.dest('./public/img'));
 }
-  
 
 function watch() {
     browserSync.init({
         server: {
-           baseDir: "./dist",
-           index: "index.html",
+            baseDir: './public',
+            index: 'index.html'
         }
     });
-    gulp.watch('src/scss/**/*.scss', styles);
+    fonts();
+    styles();
+    js();
+    gulp.watch('src/js/**/*/js', js);
+    gulp.watch('src/scss/*/*.scss', styles);
     gulp.watch('src/pug/**/*.pug', templates);
-    gulp.watch('src/js/**/*.js', js);
-
+    gulp.watch('public/index.html').on('change', browserSync.reload);
 }
+
+
 exports.fonts = fonts;
 exports.images = images;
+exports.templates = templates;
+exports.js = js;
 exports.watch = watch;

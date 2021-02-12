@@ -3,20 +3,8 @@ head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title Document
-    link(rel='stylesheet' href='./styles.css')
-    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js')
-    script(src='./js/scripts.js')
+    link(rel='stylesheet' href='./css/styles.css')
+    script(src='./js/main.js')
 body
-    .wrapper
-        .row
-            .col
-                h1 Login page
-                form#login-form
-                    .form-group
-                        label(for='firstname') Name
-                        input#firstname.form-control(type='text' name='username' placeholder='firstname')
-                    .form-group
-                        label(for='lastname') Password
-                        input#lastname.form-control(type='password' name='password' placeholder='password')
-                    .form-group
-                        button#login-btn.btn.btn-primary Login
+    .memo-game
+        include ../components/memo-game
