@@ -37,7 +37,7 @@ body {
       background: linear-gradient(to right, #fff, #912);
       transform: rotateY(180deg); }
     .memo-game .memo-card .memo-card--back {
-      background: linear-gradient(to right, #285918, #000); }
+      background: linear-gradient(to left, #000, #33851c); }
   .memo-game .memo-card:active {
     transform: scale(0.95);
     transition: transform .2s; }

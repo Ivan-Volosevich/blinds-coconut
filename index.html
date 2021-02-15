@@ -1,18 +1,113 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-  <title>Tiles Game</title>
+  body {
+    height: 100vh;
+    background-color: #6c727c;
+    display: flex; }
 
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./scripts.js"></script>
+  .memo-game {
+    height: 640px;
+    width: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px; }
+    .memo-game .memo-card {
+      height: calc(100% / 3 - 10px);
+      width: calc(100% / 4 - 10px);
+      margin: 5px;
+      position: relative;
+      backface-visibility: hidden;
+      transform: scale(1);
+      transform-style: preserve-3d;
+      transition: transform .5s; }
+      .memo-game .memo-card .flip {
+        transform: rotateY(180deg); }
+      .memo-game .memo-card .memo-card--front, .memo-game .memo-card .memo-card--back {
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0; }
+      .memo-game .memo-card .memo-card--front {
+        background: linear-gradient(to right, #fff, #912);
+        transform: rotateY(180deg); }
+      .memo-game .memo-card .memo-card--back {
+        background: linear-gradient(to right, #285918, #000); }
+    .memo-game .memo-card:active {
+      transform: scale(0.95);
+      transition: transform .2s; }
+  </style>
+  
 </head>
 <body>
-    <section class="memory-game">
-        <div class="memory-card"></div>
-    </section>
+  <div class="memo-game">
+    <div class="memo-card">
+      <div class="memo-card--front">1</div>
+      <div class="memo-card--back">a</div>
+    </div>
+    <div class="memo-card">
+      <div class="memo-card--front">2</div>
+      <div class="memo-card--back">b</div>
+    </div>
+    <div class="memo-card">
+      <div class="memo-card--front">3</div>
+      <div class="memo-card--back">c</div>
+    </div>
+    <div class="memo-card">
+      <div class="memo-card--front">4</div>
+      <div class="memo-card--back">d</div>
+    </div>
+    <div class="memo-card">
+      <div class="memo-card--front">5</div>
+      <div class="memo-card--back">e</div>
+    </div>
+    <div class="memo-card">
+      <div class="memo-card--front">6</div>
+      <div class="memo-card--back">f</div>
+    </div>
+    <div class="memo-card">
+      <div class="memo-card--front">7</div>
+      <div class="memo-card--back">g</div>
+    </div>
+    <div class="memo-card">
+      <div class="memo-card--front">8</div>
+      <div class="memo-card--back">h</div>
+    </div>
+    <div class="memo-card">
+      <div class="memo-card--front">9</div>
+      <div class="memo-card--back">i</div>
+    </div>
+    <div class="memo-card"> 
+      <div class="memo-card--front">10</div>
+      <div class="memo-card--back">j</div>
+    </div>
+    <div class="memo-card"> 
+      <div class="memo-card--front">11</div>
+      <div class="memo-card--back">k</div>
+    </div>
+    <div class="memo-card"> 
+      <div class="memo-card--front">12</div>
+      <div class="memo-card--back">l</div>
+    </div>
+  </div>
+  <script>
+    const cards = document.querySelectorAll('.memo-card');
+
+    function flipCard() {
+        this.classList.toggle('flip');
+    }
+
+    cards.forEach(card => card.addEventListener('click', flipCard));
+  </script>
 </body>
-</html>
