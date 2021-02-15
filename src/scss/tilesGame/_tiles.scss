@@ -16,6 +16,10 @@
     transform-style: preserve-3d;
     transition: transform .5s;
 
+    .flip {
+      transform: rotateY(180deg);
+    }
+
     .memo-card--front, .memo-card--back {
       height: 100%;
       width: 100%;
@@ -28,11 +32,12 @@
 
     .memo-card--front {
       background: linear-gradient(to right, #fff, #912);
+      transform: rotateY(180deg);
     }
 
     .memo-card--back {
       background: linear-gradient(to right, rgb(40, 89, 24), #000);
-      transform: rotateY(180deg);
+
     }
 
 
@@ -47,6 +52,6 @@
 }
 
 
-.memo-card.flip {
-  transform: rotateY(180deg);
-}
+// .memo-card.flip {
+//   transform: rotateY(180deg);
+// }

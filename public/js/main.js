@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var cards = document.querySelectorAll('.memo-card');\n\nfunction flipCard() {\n  this.classList.toggle('flip');\n} // cards.forEach(cards => {\n//     cards.addEventListener('click', flipCard);\n// });\n\n\ncards.forEach(function (cards) {\n  return cards.addEventListener('click', flipCard);\n});\n\n//# sourceURL=webpack:///./src/js/components/card-flip.js?");
+eval("var cards = document.querySelectorAll('.memo-card');\n\nfunction flipCard() {\n  this.classList.toggle('flip');\n}\n\ncards.forEach(function (card) {\n  return card.addEventListener('click', flipCard);\n});\n\n//# sourceURL=webpack:///./src/js/components/card-flip.js?");
 
 /***/ }),
 
