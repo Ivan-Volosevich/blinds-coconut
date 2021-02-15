@@ -20,28 +20,32 @@
       height: 100%;
       width: 100%;
       padding: 20px;
+      backface-visibility: hidden;
       position: absolute;
       top: 0;
-      backface-visibility: hidden;
+
     }
 
     .memo-card--front {
       background: linear-gradient(to right, #fff, #912);
-      // transform: rotateY(180deg);
     }
 
     .memo-card--back {
       background: linear-gradient(to right, rgb(40, 89, 24), #000);
       transform: rotateY(180deg);
     }
+
+
   }
 
   .memo-card:active {
     transform: scale(0.95);
     transition: transform .2s;
+    // transform: rotateY(180deg);
   }
 
 }
+
 
 .memo-card.flip {
   transform: rotateY(180deg);

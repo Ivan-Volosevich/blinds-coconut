@@ -28,9 +28,9 @@ body {
       height: 100%;
       width: 100%;
       padding: 20px;
+      backface-visibility: hidden;
       position: absolute;
-      top: 0;
-      backface-visibility: hidden; }
+      top: 0; }
     .memo-game .memo-card .memo-card--front {
       background: linear-gradient(to right, #fff, #912); }
     .memo-game .memo-card .memo-card--back {
