@@ -1,15 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  background-color: #6c727c;
-  display: flex;
-}
-
 .memo-game {
   height: 640px;
   width: 640px;
@@ -19,14 +7,33 @@ body {
   perspective: 1000px;
 
   .memo-card {
-    background: linear-gradient(to right, #fff, #912);
     height: calc(100% / 3 - 10px);
     width: calc(100% / 4 - 10px);
     margin: 5px;
     position: relative;
+    backface-visibility: hidden;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
+
+    .memo-card--front, .memo-card--back {
+      height: 100%;
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      backface-visibility: hidden;
+    }
+
+    .memo-card--front {
+      background: linear-gradient(to right, #fff, #912);
+      // transform: rotateY(180deg);
+    }
+
+    .memo-card--back {
+      background: linear-gradient(to right, rgb(40, 89, 24), #000);
+      transform: rotateY(180deg);
+    }
   }
 
   .memo-card:active {
@@ -34,8 +41,8 @@ body {
     transition: transform .2s;
   }
 
-
 }
+
 .memo-card.flip {
   transform: rotateY(180deg);
 }

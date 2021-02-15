@@ -16,14 +16,26 @@ body {
   flex-wrap: wrap;
   perspective: 1000px; }
   .memo-game .memo-card {
-    background: linear-gradient(to right, #fff, #912);
     height: calc(100% / 3 - 10px);
     width: calc(100% / 4 - 10px);
     margin: 5px;
     position: relative;
+    backface-visibility: hidden;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s; }
+    .memo-game .memo-card .memo-card--front, .memo-game .memo-card .memo-card--back {
+      height: 100%;
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      backface-visibility: hidden; }
+    .memo-game .memo-card .memo-card--front {
+      background: linear-gradient(to right, #fff, #912); }
+    .memo-game .memo-card .memo-card--back {
+      background: linear-gradient(to right, #285918, #000);
+      transform: rotateY(180deg); }
   .memo-game .memo-card:active {
     transform: scale(0.95);
     transition: transform .2s; }
