@@ -5,3 +5,5 @@ function flipCard() {
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+console.log('JFJ@423r43kMK');

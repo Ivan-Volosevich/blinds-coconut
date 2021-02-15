@@ -34,7 +34,8 @@ function templates() {
 function js() {
     return gulp.src('src/js/index.js')
         .pipe(webpackStream(webpackConfig), webpack)
-        .pipe(gulp.dest('./public/js'));
+        .pipe(gulp.dest('./public/js'))
+        .pipe(browserSync.stream());
 }
 
 function images() {
@@ -52,7 +53,7 @@ function watch() {
     fonts();
     styles();
     js();
-    gulp.watch('src/js/**/*/js', js);
+    gulp.watch('src/js/**/*.js', js);
     gulp.watch('src/scss/*/*.scss', styles);
     gulp.watch('src/pug/**/*.pug', templates);
     gulp.watch('public/index.html').on('change', browserSync.reload);
