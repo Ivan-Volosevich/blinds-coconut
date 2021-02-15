@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 const cards = document.querySelectorAll('.memo-card');
 
 function flipCard() {
@@ -6,4 +8,6 @@ function flipCard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-console.log('JFJ@423r43kMK');
+console.log('JFJ@Hello');
+
+});
