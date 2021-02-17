@@ -24,8 +24,6 @@ body {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s; }
-    .memo-game .memo-card .flip {
-      transform: rotateY(180deg); }
     .memo-game .memo-card .memo-card--front, .memo-game .memo-card .memo-card--back {
       height: 100%;
       width: 100%;
@@ -41,3 +39,6 @@ body {
   .memo-game .memo-card:active {
     transform: scale(0.95);
     transition: transform .2s; }
+
+.memo-card.flip {
+  transform: rotateY(180deg); }

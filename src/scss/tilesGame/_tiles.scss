@@ -16,10 +16,6 @@
     transform-style: preserve-3d;
     transition: transform .5s;
 
-    .flip {
-      transform: rotateY(180deg);
-    }
-
     .memo-card--front, .memo-card--back {
       height: 100%;
       width: 100%;
@@ -27,7 +23,6 @@
       backface-visibility: hidden;
       position: absolute;
       top: 0;
-
     }
 
     .memo-card--front {
@@ -37,21 +32,15 @@
 
     .memo-card--back {
       background: linear-gradient(to left, #000, rgb(51, 133, 28));
-
     }
-
-
   }
 
   .memo-card:active {
     transform: scale(0.95);
     transition: transform .2s;
-    // transform: rotateY(180deg);
   }
-
 }
 
-
-// .memo-card.flip {
-//   transform: rotateY(180deg);
-// }
+.memo-card.flip {
+  transform: rotateY(180deg);
+}
