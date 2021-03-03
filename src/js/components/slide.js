@@ -27,7 +27,7 @@ function showSlides(n) {
     }
 
     for (let slide of slides) {
-        slide.style.display = "none";
+        slide.style.display = "none";       //не очень хорошо. лучше создать класс hide в css
     }
 
     slides[slideIndex - 1].style.display = "block";
