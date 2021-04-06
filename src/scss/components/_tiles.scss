@@ -1,5 +1,5 @@
 .memo-game {
-  height: 640px;
+  height: 100vh;
   width: 640px;
   margin: auto;
   display: flex;
@@ -19,19 +19,21 @@
     .memo-card--front, .memo-card--back {
       height: 100%;
       width: 100%;
-      padding: 20px;
+      padding: 40%;
       backface-visibility: hidden;
       position: absolute;
       top: 0;
     }
 
     .memo-card--front {
-      background: linear-gradient(to right, #fff, #912);
+      background: linear-gradient(to right, rgb(175, 175, 175), rgb(10, 124, 0));
       transform: rotateY(180deg);
+      text-align: center;
+      font-size: 64px;
     }
 
     .memo-card--back {
-      background: linear-gradient(to left, #000, rgb(51, 133, 28));
+      background: linear-gradient(to left, rgb(39, 39, 39), rgb(243, 138, 0));
     }
   }
 

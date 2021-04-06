@@ -5,47 +5,23 @@
 
 body {
   height: 100vh;
-  background-color: #6c727c; }
+  background-color: #000; }
 
-.slider {
-  max-width: 90%;
-  position: relative;
-  margin: auto;
-  height: 300px; }
-  .slider .item img {
-    object-fit: cover;
-    max-width: 100%;
-    height: 300px;
-    margin-left: 50%; }
-  .slider .previous, .slider .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #fff;
+header {
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff; }
+  header .reload {
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 16px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0; }
-  .slider .next {
-    right: 0;
-    border-radius: 3px 0 0 3px; }
-  .slider .previous:hover, .slider .next:hover {
-    background-color: rgba(0, 0, 0, 0.2); }
-  .slider .item {
-    animation-name: fade;
-    animation-duration: 1.5s; }
-
-@keyframes fade {
-  from {
-    opacity: 0.4; }
-  to {
-    opacity: 1; } }
+    background-color: #3a7400;
+    color: #fff; }
 
 .memo-game {
-  height: 640px;
+  height: 100vh;
   width: 640px;
   margin: auto;
   display: flex;
@@ -63,15 +39,17 @@ body {
     .memo-game .memo-card .memo-card--front, .memo-game .memo-card .memo-card--back {
       height: 100%;
       width: 100%;
-      padding: 20px;
+      padding: 40%;
       backface-visibility: hidden;
       position: absolute;
       top: 0; }
     .memo-game .memo-card .memo-card--front {
-      background: linear-gradient(to right, #fff, #912);
-      transform: rotateY(180deg); }
+      background: linear-gradient(to right, #afafaf, #0a7c00);
+      transform: rotateY(180deg);
+      text-align: center;
+      font-size: 64px; }
     .memo-game .memo-card .memo-card--back {
-      background: linear-gradient(to left, #000, #33851c); }
+      background: linear-gradient(to left, #272727, #f38a00); }
   .memo-game .memo-card:active {
     transform: scale(0.95);
     transition: transform .2s; }
