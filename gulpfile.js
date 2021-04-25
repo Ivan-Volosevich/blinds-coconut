@@ -10,7 +10,8 @@ const webpackConfig = require('./webpack.config.js');
 
 function fonts() {
     return gulp.src('src/fonts/**/*')
-        .pipe(gulp.dest('.public/fonts/'));
+        .pipe(gulp.dest('.public/fonts/'))
+        .pipe(browserSync.stream());
 }
 
 function styles() {
@@ -40,7 +41,8 @@ function js() {
 
 function images() {
     return gulp.src('src/img/*')
-        .pipe(gulp.dest('./public/img'));
+        .pipe(gulp.dest('./public/img'))
+        .pipe(browserSync.stream());
 }
 
 function watch() {
@@ -53,6 +55,7 @@ function watch() {
     fonts();
     styles();
     js();
+    images();
     gulp.watch('src/js/**/*.js', js);
     gulp.watch('src/scss/*/*.scss', styles);
     gulp.watch('src/pug/**/*.pug', templates);

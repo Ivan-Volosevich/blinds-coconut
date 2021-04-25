@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/components/card-flip.js":
-/*!****************************************!*\
-  !*** ./src/js/components/card-flip.js ***!
-  \****************************************/
+/***/ "./src/js/components/hero.js":
+/*!***********************************!*\
+  !*** ./src/js/components/hero.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.addEventListener('DOMContentLoaded', function () {\n  var cards = document.querySelectorAll('.memo-card');\n  var hasFlippedCard = false;\n  var lockBoard = false;\n  var firstCard, secondCard;\n\n  function flipCard() {\n    if (lockBoard) return;\n    if (this === firstCard) return;\n    this.classList.add('flip');\n\n    if (!hasFlippedCard) {\n      hasFlippedCard = true;\n      firstCard = this;\n      return;\n    }\n\n    secondCard = this;\n    lockBoard = true;\n    checkForMatch();\n  }\n\n  function checkForMatch() {\n    var isMatch = firstCard.dataset.word === secondCard.dataset.word;\n    isMatch ? disableCards() : unflipCards();\n  }\n\n  function disableCards() {\n    firstCard.removeEventListener('click', flipCard);\n    secondCard.removeEventListener('click', flipCard);\n    resetBoard();\n  }\n\n  function unflipCards() {\n    setTimeout(function () {\n      firstCard.classList.remove('flip');\n      secondCard.classList.remove('flip');\n      resetBoard();\n    }, 1500);\n  }\n\n  function resetBoard() {\n    hasFlippedCard = false;\n    lockBoard = false;\n    firstCard = null;\n    secondCard = null;\n  }\n\n  (function shuffle() {\n    cards.forEach(function (card) {\n      var randomPos = Math.floor(Math.random() * 12);\n      card.style.order = randomPos;\n    });\n  })();\n\n  cards.forEach(function (card) {\n    return card.addEventListener('click', flipCard);\n  });\n  console.log('JFJ@Hello');\n});\n\n//# sourceURL=webpack:///./src/js/components/card-flip.js?");
+eval("// document.addEventListener('DOMContentLoaded', () => {\n// //slider\n//     let bgArr = [\n//         '../../img/first-bg.png',\n//         '../../img/second-bg.png',\n//         '../../img/trird-bg.png'\n//     ];\n//     let i = 0;\n//     setInterval(function() {\n//         getElementById(#hero-slider).css(\"background-image\", \"url(\" + bgArr[i] + \")\");\n//         (i < bgArr.length - 1) ? i++ : i = 0\n//     }, 2000);\n// });\n\n//# sourceURL=webpack:///./src/js/components/hero.js?");
 
 /***/ }),
 
@@ -105,7 +105,7 @@ eval("document.addEventListener('DOMContentLoaded', function () {\n  var cards =
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_card_flip__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/card-flip */ \"./src/js/components/card-flip.js\");\n/* harmony import */ var _components_card_flip__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_card_flip__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_hero__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/hero */ \"./src/js/components/hero.js\");\n/* harmony import */ var _components_hero__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_hero__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

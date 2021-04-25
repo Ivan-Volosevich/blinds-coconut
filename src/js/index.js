@@ -1,1 +1,1 @@
-import './components/card-flip';
+import './components/hero';

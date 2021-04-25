@@ -1,17 +1,50 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
-
-body {
-  height: 100vh;
-  background-color: #000; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 header {
-  padding: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff; }
+  display: flex;
+  justify-content: space-between;
+  background: #645346;
+  color: #fff;
+  height: 74px;
+  width: 100%;
+  align-items: center;
+  padding: 0 420px; }
+  header a {
+    text-decoration: none;
+    color: #fff; }
+    header a h1 {
+      text-transform: uppercase;
+      font-size: 40px; }
+  header nav ul {
+    display: flex;
+    list-style: none; }
+    header nav ul li {
+      font-size: 12px;
+      padding: 5px; }
+      header nav ul li:first + ::before {
+        display: none; }
+      header nav ul li::before {
+        content: '';
+        position: absolute;
+        margin-left: -5px;
+        margin-top: 2px;
+        width: 1px;
+        height: 10px;
+        background-color: #fff; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #fff; }
+        header nav ul li a:focus {
+          color: #FE8C00; }
+  header .phones {
+    display: flex;
+    font-size: 25px; }
+    header .phones a {
+      padding-right: 7px; }
   header .reload {
     border: none;
     padding: 10px;
@@ -20,39 +53,150 @@ header {
     background-color: #3a7400;
     color: #fff; }
 
-.memo-game {
-  height: 100vh;
-  width: 640px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  perspective: 1000px; }
-  .memo-game .memo-card {
-    height: calc(100% / 3 - 10px);
-    width: calc(100% / 4 - 10px);
-    margin: 5px;
-    position: relative;
-    backface-visibility: hidden;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s; }
-    .memo-game .memo-card .memo-card--front, .memo-game .memo-card .memo-card--back {
-      height: 100%;
-      width: 100%;
-      padding: 40%;
-      backface-visibility: hidden;
-      position: absolute;
-      top: 0; }
-    .memo-game .memo-card .memo-card--front {
-      background: linear-gradient(to right, #afafaf, #0a7c00);
-      transform: rotateY(180deg);
-      text-align: center;
-      font-size: 64px; }
-    .memo-game .memo-card .memo-card--back {
-      background: linear-gradient(to left, #272727, #f38a00); }
-  .memo-game .memo-card:active {
-    transform: scale(0.95);
-    transition: transform .2s; }
+@media (max-width: 1600px) {
+  header {
+    padding: 0 210px; } }
 
-.memo-card.flip {
-  transform: rotateY(180deg); }
+@media (max-width: 1366px) {
+  header {
+    padding: 0 150px; } }
+
+.products {
+  background-image: url(../../img/first-bg.png);
+  background-color: gray;
+  color: #fff;
+  height: 866px;
+  padding-top: 65px;
+  padding-left: 420px;
+  padding-right: 420px; }
+  .products .products-text {
+    width: 842px;
+    height: 112px;
+    margin-top: 65px;
+    background: #41362E; }
+    .products .products-text h1 {
+      font-size: 52px;
+      padding: 5px; }
+    .products .products-text p {
+      font-size: 40px;
+      padding: 5px; }
+  .products .products-info {
+    width: 842px;
+    display: flex;
+    justify-content: space-between; }
+    .products .products-info div {
+      display: flex;
+      align-items: center;
+      height: 59px;
+      background-color: #41362E;
+      font-size: 18px; }
+      .products .products-info div .img {
+        width: 59px;
+        height: 59px;
+        background-color: #7C6A5D;
+        align-items: center; }
+      .products .products-info div p {
+        padding-left: 21px; }
+  .products .products-btn {
+    text-align: center; }
+    .products .products-btn .btn-cost {
+      width: 400px;
+      height: 70px;
+      color: #fff;
+      font-weight: bold;
+      background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50px;
+      border: 3px solid #F47000; }
+
+#products-slider {
+  transition: all 1s; }
+
+@media (max-width: 1600px) {
+  .products {
+    padding-left: 210px;
+    padding-right: 210px; } }
+
+@media (max-width: 1366px) {
+  .products {
+    padding-left: 150px;
+    padding-right: 150px; } }
+
+.price-counter {
+  padding: 0 420px;
+  background-image: url(../../img/bg-content.png);
+  height: 721px; }
+  .price-counter h2 {
+    font-size: 45px;
+    padding-top: 60px; }
+    .price-counter h2::before {
+      content: "";
+      position: absolute;
+      background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
+      height: 64px;
+      width: 7px;
+      margin-left: -11px;
+      margin-top: -4px; }
+  .price-counter .nav-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .price-counter .nav-btn .btn-class {
+      width: 254px;
+      height: 52px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50px;
+      border: 3px solid #728E05;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000; }
+      .price-counter .nav-btn .btn-class:focus, .price-counter .nav-btn .btn-class:hover {
+        background: linear-gradient(180deg, #ABC839 0%, #6D8800 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        border: 2px solid linear-gradient(#A8C536, #728E05);
+        color: #fff; }
+        .price-counter .nav-btn .btn-class:focus img, .price-counter .nav-btn .btn-class:hover img {
+          transform: rotate(90deg);
+          color: #fff; }
+      .price-counter .nav-btn .btn-class img {
+        position: relative;
+        left: 60px; }
+  .price-counter .nav-class {
+    display: flex;
+    justify-content: space-evenly; }
+    .price-counter .nav-class .nav-class--type {
+      width: 254px;
+      margin: 15px 0;
+      background-color: #645346; }
+      .price-counter .nav-class .nav-class--type .text {
+        padding: 5px;
+        width: 254px;
+        text-align: center;
+        background-color: #DCD4CD; }
+        .price-counter .nav-class .nav-class--type .text h3 {
+          font-size: 20px; }
+        .price-counter .nav-class .nav-class--type .text p {
+          text-transform: lowercase;
+          font-size: 16px; }
+      .price-counter .nav-class .nav-class--type .img {
+        height: 268px; }
+        .price-counter .nav-class .nav-class--type .img img {
+          width: 254px;
+          max-height: 300px; }
+      .price-counter .nav-class .nav-class--type .btn-count {
+        width: 254px;
+        height: 32px;
+        color: #fff;
+        font-weight: bold;
+        background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
+        border: none; }
+
+@media (max-width: 1600px) {
+  .price-counter {
+    padding: 0 210px; } }
+
+@media (max-width: 1366px) {
+  .price-counter {
+    padding: 0 150px; } }
