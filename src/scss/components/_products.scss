@@ -1,89 +1,115 @@
 .products {
-  background-image: url(../../img/first-bg.png);
-  background-color: gray;
-  color: #fff;
-  height: 866px;
-  padding-top: 65px;
-  padding-left: 420px;
-  padding-right: 420px;;
+    padding: 0 420px;
+    background-image: url(../../img/bg-products.png);
+    height: 721px;
 
-  .products-text{
-    width: 842px;
-    height: 112px;
-    margin-top: 65px;
-    background: #41362E;
-
-    h1 {
-      font-size: 52px;
-      padding: 5px;
+    h2 {
+        font-size: 45px;
+        padding-top: 60px;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
+            height: 64px;
+            width: 7px;
+            margin-left: -11px;
+            margin-top: -4px;
+        }
     }
 
-    p {
-      font-size: 40px;
-      padding: 5px;
-    }
-  }
-
-  .products-info {
-    width: 842px;
-    display: flex;
-    justify-content: space-between;
-    
-
-    div {
-      display: flex;
-      align-items: center;
-      height: 59px;
-      background-color: #41362E;
-      font-size: 18px;
-
-      .img {
-        width: 59px;
-        height: 59px;
-        background-color: #7C6A5D;
+    .nav-btn {
+        display: flex;
+        justify-content: space-evenly;
         align-items: center;
-      }
 
-      p {
-        padding-left: 21px;
-        // width: 179px;
-      }
+        .btn-class {
+            width: 254px;
+            height: 52px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 50px;
+            border: 3px solid #728E05;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+
+            &:focus, &:hover {
+                background: linear-gradient(180deg, #ABC839 0%, #6D8800 100%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 50px;
+                border: 2px solid linear-gradient(#A8C536, #728E05);
+                color: #fff;
+
+                img {
+                    transform: rotate(90deg);
+                    color: #fff;
+                }
+            }
+
+            img {
+                position: relative;
+                left: 60px;
+            }
+        }
     }
-  }
 
-  .products-btn {
-    text-align: center;
+    .nav-class {
+        display: flex;
+        justify-content: space-evenly;
 
-    .btn-cost {
-      width: 400px;
-      height: 70px;
-      color: #fff;
-      font-weight: bold;
-      background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 50px;
-      border: 3px solid #F47000;
+        .nav-class--type {
+            width: 254px;
+            margin: 15px 0;
+            background-color: #645346;
+            
+            .text {
+                padding: 5px;
+                width: 254px;
+                text-align: center;
+                background-color: #DCD4CD;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    text-transform: lowercase;
+                    font-size: 16px;
+                }
+            }
+
+            .img {
+                height: 268px;
+                
+                img {
+                    width: 254px;
+                    max-height: 300px;
+                }
+            }
+
+            .btn-count {
+                width: 254px;
+                height: 32px;
+                color: #fff;
+                font-weight: bold;
+                background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
+                border: none;
+            }
+        }
     }
-  }
-}
-
-#products-slider {
-  transition: all 1s;
 }
 
 
 
 @media (max-width: 1600px) {
-  .products {
-    padding-left: 210px;
-    padding-right: 210px;;
-  }
+    .products {
+        padding: 0 210px;
+    }
 }
 
-
 @media (max-width: 1366px) {
-  .products {
-    padding-left: 150px;
-    padding-right: 150px;;
-  }
+    .products {
+        padding: 0 150px;
+    }
 }
