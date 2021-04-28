@@ -1,4 +1,59 @@
 .text 
     h2 Рассчитайте	точную	стоимость	рольштор
 
-.caltulator
+.calculator
+    .content-top
+        .content-top--left
+            .img-wrapper
+                img.calc-img(src="../../img/calc-img.png", alt="")
+        .content-top--right
+            .info-top 
+                .info-top-first
+                    .text 
+                        p 1. Выберите	тип:
+                    .top-btn 
+                        button.calc-btn.calc-btn--left
+                            span Открытые	
+                        button.calc-btn.calc-btn--mid
+                            span Кассетные
+                        button.calc-btn.calc-btn--mid
+                            span Для панорамных
+                                br
+                                |окон
+                        button.calc-btn.calc-btn--right
+                            span С автоматикой
+                .info-top-second
+                    .text 
+                        p 2. Выберите	ткань:
+                    .top-radio 
+                        input(type="radio", name="Светопроницаемая", id="radio-first")
+                        label(for="radio-first") Светопроницаемая
+                        input(type="radio", name="День-ночь", id="radio-second")
+                        label(for="radio-second") День-ночь
+                        input(type="radio", name="Блэкаут", id="radio-third")
+                        label(for="radio-third") Блэкаут
+                .info-top-third
+                    .text 
+                        p 3. Введите размеры окна:
+                    .top-input 
+                        input(type="text", placeholder="Ширина")
+                        input(type="text", placeholder="Высота")
+    .content-bottom 
+        .info-bottom-fourth
+            .text 
+                p 4. Выберите	удобный	способ	получения	стоимости:
+            .bottom-btn 
+                button.calc-btn.calc-btn--left
+                    span По	телефону	
+                button.calc-btn.calc-btn--mid
+                    span Telegram
+                button.calc-btn.calc-btn--right
+                    span Viber
+
+        .info-bottom-phone 
+            p Введите	Ваш	номер	телефона:
+            input(type="tel", placeholder="+375 ** *** ** **")
+
+        .content-btn 
+            button Рассчитать	стоимость	рольштор
+            p Вы	получите	стоимость	по	выбранному	способу	связи	в	течение	15	минут

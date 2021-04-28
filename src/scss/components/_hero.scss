@@ -1,27 +1,35 @@
 .hero {
-  background-image: url(../../img/first-bg.png);
-  background-color: rgba(65, 46, 30, 0.33);
+  background-image: linear-gradient(to right, rgba(65, 46, 30, 0.33), rgba(65, 46, 30, 0.33)), url(../../img/first-bg.png);
   color: #fff;
   height: 819px;
-  padding-top: 65px;
+  padding-top: 70px;
   padding-left: 420px;
   padding-right: 420px;
 
   .hero-text{
     width: 842px;
-    height: 112px;
-    margin-top: 65px;
+    margin: 7px 0 29px 0;
     background: #41362E;
     font-weight: 800;
+    padding-left: 18px;
 
     h1 {
-      font-size: 52px;
-      padding: 5px;
+      font-size: 60px;
+      letter-spacing: 1.6px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(180deg, #FE8C00, #F36D00);
+        height: 1.88em;
+        width: 7px;
+        margin-left: -18px;
+      }
     }
 
-    p {
-      font-size: 40px;
-      padding: 5px;
+    h2 {
+      font-size: 36px;
+      letter-spacing: 3.3px;
     }
   }
 
@@ -37,17 +45,38 @@
       height: 59px;
       background-color: #41362E;
       font-size: 18px;
+      // min-width: 245px;
+      // max-width: 302px;
 
       .img {
         width: 59px;
         height: 59px;
         background-color: #7C6A5D;
         align-items: center;
+
+        .icon-bg {
+          background-image: url(../../img/icon-bg.png);
+          padding: 10px 8px 10px 14px;
+          width: 100%;
+          height: 100%;
+        }
       }
 
-      p {
-        padding-left: 21px;
-        // width: 179px;
+      .text {
+        font-size: 16px;
+        font-weight: 800;
+        padding-left: 22px;
+        /* padding-right: 37px; */
+        max-width: 245px;
+        letter-spacing: 1px;
+        min-width: 217px;
+
+        // font-size: 16px;
+        // font-weight: 800;
+        // padding-left: 22px;
+        // padding-right: 11px;
+        // max-width: 245px;
+        // letter-spacing: 1px;
       }
     }
   }
@@ -56,10 +85,13 @@
     text-align: center;
 
     .btn-cost {
-      width: 400px;
-      height: 70px;
+      width: 431px;
+      height: 78px;
+      margin: 230px;
+      margin-bottom: 94px;
       color: #fff;
-      font-weight: bold;
+      font-weight: 800;
+      font-size: 25px;
       background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 50px;

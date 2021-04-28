@@ -1,9 +1,35 @@
-@import url(../../fonts/sf-pro-display/stylesheet.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay-RegularItalic.woff2") format("woff2"), url("../fonts/SFProDisplay-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/SFProDisplay-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; }
+
+body {
   font-family: "SF Pro Display";
   font-style: normal; }
 
@@ -21,14 +47,17 @@ header {
     color: #fff; }
     header a h1 {
       text-transform: uppercase;
-      font-size: 40px; }
+      font-size: 40px;
+      letter-spacing: 0.1px; }
   header nav ul {
     display: flex;
     list-style: none; }
     header nav ul li {
       font-size: 12px;
-      padding: 5px; }
-      header nav ul li:first + ::before {
+      padding: 5px;
+      letter-spacing: 0.5px;
+      line-height: 14px; }
+      header nav ul li:first-child::before {
         display: none; }
       header nav ul li::before {
         content: '';
@@ -40,14 +69,18 @@ header {
         background-color: #fff; }
       header nav ul li a {
         text-decoration: none;
-        color: #fff; }
-        header nav ul li a:focus {
+        color: #fff;
+        font-family: 'Roboto', sans-serif; }
+        header nav ul li a:focus, header nav ul li a:hover {
           color: #FE8C00; }
   header .phones {
     display: flex;
-    font-size: 25px; }
+    font-size: 25px;
+    align-items: flex-end; }
     header .phones a {
-      padding-right: 7px; }
+      padding: 4px 7px 0 0; }
+    header .phones .phones-number {
+      font-weight: 700; }
   header .reload {
     border: none;
     padding: 10px;
@@ -65,25 +98,31 @@ header {
     padding: 0 150px; } }
 
 .hero {
-  background-image: url(../../img/first-bg.png);
-  background-color: rgba(65, 46, 30, 0.33);
+  background-image: linear-gradient(to right, rgba(65, 46, 30, 0.33), rgba(65, 46, 30, 0.33)), url(../../img/first-bg.png);
   color: #fff;
   height: 819px;
-  padding-top: 65px;
+  padding-top: 70px;
   padding-left: 420px;
   padding-right: 420px; }
   .hero .hero-text {
     width: 842px;
-    height: 112px;
-    margin-top: 65px;
+    margin: 7px 0 29px 0;
     background: #41362E;
-    font-weight: 800; }
+    font-weight: 800;
+    padding-left: 18px; }
     .hero .hero-text h1 {
-      font-size: 52px;
-      padding: 5px; }
-    .hero .hero-text p {
-      font-size: 40px;
-      padding: 5px; }
+      font-size: 60px;
+      letter-spacing: 1.6px; }
+      .hero .hero-text h1::before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(180deg, #FE8C00, #F36D00);
+        height: 1.88em;
+        width: 7px;
+        margin-left: -18px; }
+    .hero .hero-text h2 {
+      font-size: 36px;
+      letter-spacing: 3.3px; }
   .hero .hero-info {
     width: 842px;
     display: flex;
@@ -99,15 +138,29 @@ header {
         height: 59px;
         background-color: #7C6A5D;
         align-items: center; }
-      .hero .hero-info div p {
-        padding-left: 21px; }
+        .hero .hero-info div .img .icon-bg {
+          background-image: url(../../img/icon-bg.png);
+          padding: 10px 8px 10px 14px;
+          width: 100%;
+          height: 100%; }
+      .hero .hero-info div .text {
+        font-size: 16px;
+        font-weight: 800;
+        padding-left: 22px;
+        /* padding-right: 37px; */
+        max-width: 245px;
+        letter-spacing: 1px;
+        min-width: 217px; }
   .hero .hero-btn {
     text-align: center; }
     .hero .hero-btn .btn-cost {
-      width: 400px;
-      height: 70px;
+      width: 431px;
+      height: 78px;
+      margin: 230px;
+      margin-bottom: 94px;
       color: #fff;
-      font-weight: bold;
+      font-weight: 800;
+      font-size: 25px;
       background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 50px;
@@ -132,18 +185,19 @@ header {
   height: 721px; }
   .products h2 {
     font-size: 45px;
-    padding-top: 60px; }
+    padding: 60px 18px 45px;
+    letter-spacing: 1.2px; }
     .products h2::before {
       content: "";
       position: absolute;
       background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
       height: 64px;
       width: 7px;
-      margin-left: -11px;
-      margin-top: -4px; }
+      margin-left: -18px;
+      margin-top: -5px; }
   .products .nav-btn {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center; }
     .products .nav-btn .btn-class {
       width: 254px;
@@ -152,50 +206,67 @@ header {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 50px;
       border: 3px solid #728E05;
-      font-size: 16px;
-      font-weight: bold;
-      color: #000; }
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px; }
+      .products .nav-btn .btn-class h3 {
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: -1px;
+        padding: 0 0 5px 9px; }
       .products .nav-btn .btn-class:focus, .products .nav-btn .btn-class:hover {
         background: linear-gradient(180deg, #ABC839 0%, #6D8800 100%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 50px;
         border: 2px solid linear-gradient(#A8C536, #728E05);
         color: #fff; }
-        .products .nav-btn .btn-class:focus img, .products .nav-btn .btn-class:hover img {
+        .products .nav-btn .btn-class:focus svg, .products .nav-btn .btn-class:hover svg {
           transform: rotate(90deg);
-          color: #fff; }
-      .products .nav-btn .btn-class img {
-        position: relative;
-        left: 60px; }
+          fill: #fff; }
+      .products .nav-btn .btn-class svg {
+        fill: #000; }
   .products .nav-class {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-between;
+    margin-top: 27px; }
     .products .nav-class .nav-class--type {
       width: 254px;
       margin: 15px 0;
-      background-color: #645346; }
+      background-color: #645346;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
       .products .nav-class .nav-class--type .text {
-        padding: 5px;
+        position: relative;
+        z-index: 1;
+        padding: 12px;
         width: 254px;
         text-align: center;
-        background-color: #DCD4CD; }
+        background: #DCD4CD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
         .products .nav-class .nav-class--type .text h3 {
-          font-size: 20px; }
+          font-size: 20px;
+          font-weight: 800;
+          letter-spacing: 1px; }
         .products .nav-class .nav-class--type .text p {
           text-transform: lowercase;
-          font-size: 16px; }
+          font-size: 18px;
+          letter-spacing: -0.1px; }
       .products .nav-class .nav-class--type .img {
-        height: 268px; }
+        max-height: 268px; }
         .products .nav-class .nav-class--type .img img {
           width: 254px;
-          max-height: 300px; }
+          max-height: 295px; }
       .products .nav-class .nav-class--type .btn-count {
         width: 254px;
-        height: 32px;
+        height: 30px;
         color: #fff;
-        font-weight: bold;
+        font-weight: 800;
+        font-size: 17px;
         background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
-        border: none; }
+        border: none;
+        letter-spacing: -1.6px;
+        padding-bottom: 9px; }
 
 @media (max-width: 1600px) {
   .products {
@@ -212,15 +283,77 @@ header {
   padding: 0 420px; }
   .price-counter .text h2 {
     font-size: 45px;
-    padding-top: 60px; }
+    padding: 62px 0 62px 18px;
+    letter-spacing: 1.1px; }
     .price-counter .text h2::before {
       content: "";
       position: absolute;
-      background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
+      background: linear-gradient(180deg, #FE8C00, #F36D00);
       height: 64px;
       width: 7px;
-      margin-left: -11px;
-      margin-top: -4px; }
+      margin-left: -18px;
+      margin-top: -6px; }
+  .price-counter .calculator {
+    max-width: 1079px;
+    width: 100%;
+    max-height: 784px;
+    height: 100%;
+    background-color: #fff; }
+    .price-counter .calculator .calc-btn {
+      width: 163px;
+      height: 47px;
+      background: #EAEAEA;
+      border: 2px solid #645346;
+      box-sizing: border-box;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin: -3px; }
+      .price-counter .calculator .calc-btn span {
+        font-family: 'Segoe UI';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 13px; }
+      .price-counter .calculator .calc-btn:focus, .price-counter .calculator .calc-btn:hover {
+        background: linear-gradient(180deg, #645346 0%, #000000 100%);
+        border: 2px solid #F36D00;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #F36D00; }
+    .price-counter .calculator .calc-btn--left {
+      border-radius: 50px 5px 5px 50px; }
+    .price-counter .calculator .calc-btn--mid {
+      border-radius: 5px; }
+    .price-counter .calculator .calc-btn--right {
+      border-radius: 5px 50px 50px 5px; }
+    .price-counter .calculator .content-top {
+      display: flex;
+      padding: 26px 12px; }
+      .price-counter .calculator .content-top .content-top--left .img-wrapper .calc-img {
+        max-width: 346px;
+        width: 100%; }
+      .price-counter .calculator .content-top .content-top--right {
+        text-align: center;
+        padding: 18px 0 0 47px; }
+        .price-counter .calculator .content-top .content-top--right .info-top-first .text {
+          font-size: 20px;
+          font-weight: normal;
+          margin-bottom: 12px; }
+        .price-counter .calculator .content-top .content-top--right .info-top-first .top-btn {
+          display: flex; }
+    .price-counter .calculator .content-bottom {
+      padding: 40px;
+      text-align: center; }
+      .price-counter .calculator .content-bottom .content-btn button {
+        width: 552px;
+        height: 78px;
+        color: #fff;
+        font-weight: 800;
+        font-size: 28px;
+        background: linear-gradient(180deg, #FE8C00, #F36D00);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        border: 3px solid #F47000; }
+      .price-counter .calculator .content-bottom .content-btn p {
+        opacity: 0.4; }
 
 .about .offer {
   height: 843px;
@@ -228,7 +361,8 @@ header {
   padding: 0 420px; }
   .about .offer .text h2 {
     font-size: 45px;
-    padding-top: 60px; }
+    padding-top: 60px;
+    font-weight: 800; }
     .about .offer .text h2::before {
       content: "";
       position: absolute;
@@ -237,6 +371,15 @@ header {
       width: 7px;
       margin-left: -11px;
       margin-top: -4px; }
+  .about .offer .content {
+    display: flex; }
+    .about .offer .content .info .info-content {
+      display: flex; }
+      .about .offer .content .info .info-content .icon-bg {
+        background-image: url(../../img/offer-icon-bg.png);
+        padding: 8px 4px 8px 12px;
+        max-width: 59px;
+        max-height: 59px; }
 
 .about .short {
   height: 289px;
@@ -271,8 +414,7 @@ header {
 
 .specials {
   height: 675px;
-  background-image: url(../../img/bg-specials.png);
-  background-color: #5C4F44;
+  background-image: linear-gradient(to right, rgba(92, 79, 68, 0.8), rgba(92, 79, 68, 0.8)), url(../../img/bg-specials.png);
   padding: 0 420px; }
   .specials .text h2 {
     font-size: 45px;

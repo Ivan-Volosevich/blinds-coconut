@@ -15,6 +15,7 @@ header {
         h1 {
             text-transform: uppercase;
             font-size: 40px;
+            letter-spacing: 0.1px;
         }
     }
 
@@ -26,8 +27,10 @@ header {
             li {
                 font-size: 12px;
                 padding: 5px;
+                letter-spacing: 0.5px;
+                line-height: 14px;
 
-                &:first+::before {
+                &:first-child::before {
                     display: none;
                 }
 
@@ -44,8 +47,9 @@ header {
                 a {
                     text-decoration: none;
                     color: #fff;
+                    font-family: 'Roboto', sans-serif;
 
-                    &:focus {
+                    &:focus, &:hover {
                         color: #FE8C00;
                     }
                 }
@@ -56,9 +60,14 @@ header {
     .phones {
         display: flex;
         font-size: 25px;
+        align-items: flex-end;
 
         a {
-            padding-right: 7px;
+            padding: 4px 7px 0 0;
+        }
+
+        .phones-number {
+            font-weight: 700;
         }
     }
 

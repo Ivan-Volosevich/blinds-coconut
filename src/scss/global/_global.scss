@@ -1,14 +1,15 @@
-@import '../../fonts/sf-pro-display/stylesheet.css';
+// @import '../../fonts/sf-pro-display/stylesheet.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+  }
+  
+  body {
     font-family: "SF Pro Display";
     font-style: normal;
   }
-  
-  // body {
-
-  // }

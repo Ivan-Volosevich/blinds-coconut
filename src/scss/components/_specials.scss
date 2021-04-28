@@ -1,7 +1,9 @@
 .specials {
     height: 675px;
-    background-image: url(../../img/bg-specials.png);
-    background-color: #5C4F44;
+    // background: url(../../img/bg-specials.png), rgba(92, 79, 68, 0.8);
+    // background-color: rgba(92, 79, 68, 0.8);
+
+    background-image: linear-gradient(to right, rgba(92, 79, 68, 0.8), rgba(92, 79, 68, 0.8)), url(../../img/bg-specials.png);
     padding: 0 420px;
 
     .text {

@@ -8,16 +8,125 @@
 
         h2 {
             font-size: 45px;
-            padding-top: 60px;
+            padding: 62px 0 62px 18px;
+            letter-spacing: 1.1px;
             
             &::before {
                 content: "";
                 position: absolute;
-                background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
+                background: linear-gradient(180deg, #FE8C00, #F36D00);
                 height: 64px;
                 width: 7px;
-                margin-left: -11px;
-                margin-top: -4px;
+                margin-left: -18px;
+                margin-top: -6px;
+            }
+        }
+    }
+
+    .calculator {
+        max-width: 1079px;
+        width: 100%;
+        max-height: 784px;
+        height: 100%;
+        background-color: #fff;
+
+        .calc-btn {
+            width: 163px;
+            height: 47px;
+            background: #EAEAEA;
+            border: 2px solid #645346;
+            box-sizing: border-box;
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin: -3px;
+
+            span {
+                font-family: 'Segoe UI';
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 13px;
+            }
+
+            &:focus, &:hover {
+                background: linear-gradient(180deg, #645346 0%, #000000 100%);
+                border: 2px solid #F36D00;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                color: #F36D00;
+            }
+        }
+
+        .calc-btn--left {
+            border-radius: 50px 5px 5px 50px;
+        }
+
+        .calc-btn--mid {
+            border-radius: 5px;
+        }
+
+        .calc-btn--right {
+            border-radius: 5px 50px 50px 5px;
+        }
+
+        .content-top {
+            display: flex;
+            padding: 26px 12px;
+
+            .content-top--left {
+
+                .img-wrapper {
+
+                    .calc-img {
+                        max-width: 346px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .content-top--right {
+                text-align: center;
+                padding: 18px 0 0 47px;
+                
+                .info-top-first {
+
+                    .text {
+                        font-size: 20px;
+                        font-weight: normal;
+                        margin-bottom: 12px;
+                    }
+
+                    .top-btn {
+                        display: flex;
+                    }
+                }
+
+
+            }
+
+        }
+
+        .content-bottom {
+            padding: 40px;
+            text-align: center;
+
+            .content-btn {
+
+                button {
+                    width: 552px;
+                    height: 78px;
+                    color: #fff;
+                    font-weight: 800;
+                    font-size: 28px;
+                    background: linear-gradient(180deg, #FE8C00, #F36D00);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 50px;
+                    border: 3px solid #F47000;
+                }
+                
+
+                p {
+                    
+                    opacity: 0.4;
+                }
             }
         }
     }

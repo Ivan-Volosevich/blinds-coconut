@@ -10,6 +10,7 @@
             h2 {
                 font-size: 45px;
                 padding-top: 60px;
+                font-weight: 800;
                 
                 &::before {
                     content: "";
@@ -19,6 +20,24 @@
                     width: 7px;
                     margin-left: -11px;
                     margin-top: -4px;
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+
+            .info {
+
+                .info-content {
+                    display: flex;
+
+                    .icon-bg {
+                        background-image: url(../../img/offer-icon-bg.png);
+                        padding: 8px 4px 8px 12px;
+                        max-width: 59px;
+                        max-height: 59px;
+                    }
                 }
             }
         }
