@@ -1,9 +1,10 @@
+@import url("http://fonts.cdnfonts.com/css/segoe-ui-4");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: 'SF Pro Display';
-  src: url("../fonts/SFProDisplay-RegularItalic.woff2") format("woff2"), url("../fonts/SFProDisplay-RegularItalic.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: italic; }
+  font-style: normal; }
 
 @font-face {
   font-family: 'SF Pro Display';
@@ -13,14 +14,14 @@
 
 @font-face {
   font-family: 'SF Pro Display';
-  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("../fonts/SFProDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/SFProDisplay-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
 
 @font-face {
   font-family: 'SF Pro Display';
-  src: url("../fonts/SFProDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/SFProDisplay-BoldItalic.woff") format("woff");
-  font-weight: bold;
+  src: url("../fonts/SFProDisplay-RegularItalic.woff2") format("woff2"), url("../fonts/SFProDisplay-RegularItalic.woff") format("woff");
+  font-weight: normal;
   font-style: italic; }
 
 * {
@@ -106,7 +107,7 @@ header {
   padding-right: 420px; }
   .hero .hero-text {
     width: 842px;
-    margin: 7px 0 29px 0;
+    margin: 7px 0 33px 0;
     background: #41362E;
     font-weight: 800;
     padding-left: 18px; }
@@ -127,36 +128,25 @@ header {
     width: 842px;
     display: flex;
     justify-content: space-between; }
-    .hero .hero-info div {
+    .hero .hero-info .hero-info--bar {
       display: flex;
       align-items: center;
-      height: 59px;
+      max-height: 59px;
       background-color: #41362E;
       font-size: 18px; }
-      .hero .hero-info div .img {
-        width: 59px;
-        height: 59px;
-        background-color: #7C6A5D;
-        align-items: center; }
-        .hero .hero-info div .img .icon-bg {
-          background-image: url(../../img/icon-bg.png);
-          padding: 10px 8px 10px 14px;
-          width: 100%;
-          height: 100%; }
-      .hero .hero-info div .text {
+      .hero .hero-info .hero-info--bar .text {
         font-size: 16px;
         font-weight: 800;
         padding-left: 22px;
         /* padding-right: 37px; */
         max-width: 245px;
-        letter-spacing: 1px;
         min-width: 217px; }
   .hero .hero-btn {
     text-align: center; }
     .hero .hero-btn .btn-cost {
       width: 431px;
       height: 78px;
-      margin: 230px;
+      margin: 226px;
       margin-bottom: 94px;
       color: #fff;
       font-weight: 800;
@@ -251,7 +241,7 @@ header {
         .products .nav-class .nav-class--type .text p {
           text-transform: lowercase;
           font-size: 18px;
-          letter-spacing: -0.1px; }
+          letter-spacing: -0.6px; }
       .products .nav-class .nav-class--type .img {
         max-height: 268px; }
         .products .nav-class .nav-class--type .img img {
@@ -308,7 +298,7 @@ header {
       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
       margin: -3px; }
       .price-counter .calculator .calc-btn span {
-        font-family: 'Segoe UI';
+        font-family: 'Segoe UI', sans-serif;
         font-weight: normal;
         font-size: 16px;
         line-height: 13px; }
@@ -326,7 +316,7 @@ header {
       border-radius: 5px 50px 50px 5px; }
     .price-counter .calculator .content-top {
       display: flex;
-      padding: 26px 12px; }
+      padding: 26px 12px 22px 12px; }
       .price-counter .calculator .content-top .content-top--left .img-wrapper .calc-img {
         max-width: 346px;
         width: 100%; }
@@ -339,9 +329,79 @@ header {
           margin-bottom: 12px; }
         .price-counter .calculator .content-top .content-top--right .info-top-first .top-btn {
           display: flex; }
+        .price-counter .calculator .content-top .content-top--right .info-top-second .text {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          margin: 35px 0 17px; }
+        .price-counter .calculator .content-top .content-top--right .info-top-second .top-second-btn {
+          display: flex;
+          justify-content: space-evenly; }
+          .price-counter .calculator .content-top .content-top--right .info-top-second .top-second-btn .second-btn-bar {
+            display: flex;
+            flex-direction: column;
+            width: 94px;
+            align-items: center;
+            justify-content: space-between; }
+            .price-counter .calculator .content-top .content-top--right .info-top-second .top-second-btn .second-btn-bar button {
+              border: none;
+              background: none; }
+            .price-counter .calculator .content-top .content-top--right .info-top-second .top-second-btn .second-btn-bar span {
+              font-family: 'Segoe UI', sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px; }
+            .price-counter .calculator .content-top .content-top--right .info-top-second .top-second-btn .second-btn-bar:hover::after, .price-counter .calculator .content-top .content-top--right .info-top-second .top-second-btn .second-btn-bar:focus::after {
+              content: "";
+              position: absolute;
+              background: #FE8C00;
+              height: 3px;
+              width: 80px;
+              margin: 78px; }
+        .price-counter .calculator .content-top .content-top--right .info-top-third .text {
+          margin: 24px 0 11px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px; }
+        .price-counter .calculator .content-top .content-top--right .info-top-third .top-input input {
+          width: 230px;
+          height: 51px;
+          background: #EAEAEA;
+          border: 2px solid #645346;
+          box-sizing: border-box;
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 50px;
+          margin: 0 6px;
+          text-align: center;
+          font-family: 'Segoe UI', sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px; }
     .price-counter .calculator .content-bottom {
-      padding: 40px;
       text-align: center; }
+      .price-counter .calculator .content-bottom .info-bottom-fourth .text {
+        font-weight: normal;
+        font-size: 20px;
+        margin-bottom: 13px; }
+      .price-counter .calculator .content-bottom .info-bottom-fourth .bottom-btn button {
+        width: 150px; }
+      .price-counter .calculator .content-bottom .info-bottom-phone p {
+        font-weight: normal;
+        font-size: 20px;
+        margin: 27px 0 10px; }
+      .price-counter .calculator .content-bottom .info-bottom-phone .phone {
+        width: 307px;
+        height: 51px;
+        background: #EAEAEA;
+        border: 2px solid #645346;
+        box-sizing: border-box;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        text-align: center; }
       .price-counter .calculator .content-bottom .content-btn button {
         width: 552px;
         height: 78px;
@@ -351,7 +411,9 @@ header {
         background: linear-gradient(180deg, #FE8C00, #F36D00);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 50px;
-        border: 3px solid #F47000; }
+        border: 3px solid #F47000;
+        margin: 26px 0 18px;
+        letter-spacing: -1.9px; }
       .price-counter .calculator .content-bottom .content-btn p {
         opacity: 0.4; }
 
@@ -359,58 +421,136 @@ header {
   height: 843px;
   background-image: url(../../img/bg-offer.png);
   padding: 0 420px; }
-  .about .offer .text h2 {
-    font-size: 45px;
-    padding-top: 60px;
-    font-weight: 800; }
-    .about .offer .text h2::before {
-      content: "";
-      position: absolute;
-      background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
-      height: 64px;
-      width: 7px;
-      margin-left: -11px;
-      margin-top: -4px; }
+  .about .offer .text {
+    padding: 74px 0 62px 18px; }
+    .about .offer .text h2 {
+      font-size: 45px;
+      font-weight: 800;
+      letter-spacing: 1.2px; }
+      .about .offer .text h2::before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
+        height: 64px;
+        width: 7px;
+        margin-left: -18px;
+        margin-top: -5px; }
   .about .offer .content {
     display: flex; }
-    .about .offer .content .info .info-content {
-      display: flex; }
-      .about .offer .content .info .info-content .icon-bg {
-        background-image: url(../../img/offer-icon-bg.png);
-        padding: 8px 4px 8px 12px;
-        max-width: 59px;
-        max-height: 59px; }
+    .about .offer .content .offer-img {
+      position: relative;
+      max-height: 553px; }
+      .about .offer .content .offer-img img {
+        width: 623px;
+        max-height: 553px;
+        height: 100%; }
+      .about .offer .content .offer-img::before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
+        height: 100%;
+        width: 7px; }
+    .about .offer .content .info {
+      margin: 0 0 0 43px; }
+      .about .offer .content .info .info-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 39px; }
+        .about .offer .content .info .info-content p {
+          padding-left: 14px;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          max-width: 340px; }
 
 .about .short {
   height: 289px;
   background-color: #41362E;
-  padding: 0 420px; }
+  padding: 0 420px;
+  color: #fff; }
   .about .short .text h2 {
     font-size: 45px;
-    padding-top: 60px; }
+    font-weight: 800;
+    padding: 67px 0 51px 19px;
+    letter-spacing: 1px; }
     .about .short .text h2::before {
       content: "";
       position: absolute;
       background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
       height: 64px;
       width: 7px;
-      margin-left: -11px;
+      margin-left: -19px;
       margin-top: -4px; }
+  .about .short .short-info {
+    display: flex;
+    justify-content: space-between; }
+    .about .short .short-info .short-info-bar {
+      display: flex;
+      align-items: center;
+      max-width: 375px; }
+      .about .short .short-info .short-info-bar .img-mid {
+        padding-left: 62px; }
+      .about .short .short-info .short-info-bar span {
+        padding-left: 19px;
+        max-width: 282px;
+        font-size: 18px; }
 
 .catalogs {
   height: 693px;
   padding: 0 420px; }
-  .catalogs .text h2 {
-    font-size: 45px;
-    padding-top: 60px; }
-    .catalogs .text h2::before {
-      content: "";
-      position: absolute;
-      background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
-      height: 64px;
-      width: 7px;
-      margin-left: -11px;
-      margin-top: -4px; }
+  .catalogs .text {
+    padding: 70px 0 54px 19px; }
+    .catalogs .text h2 {
+      font-size: 45px;
+      font-weight: 800;
+      letter-spacing: 1px; }
+      .catalogs .text h2::before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
+        height: 64px;
+        width: 7px;
+        margin-left: -19px;
+        margin-top: -4px; }
+  .catalogs .nav-class {
+    display: flex;
+    justify-content: space-between; }
+    .catalogs .nav-class .nav-class--type {
+      text-align: center;
+      max-width: 331px;
+      background: #645346;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .catalogs .nav-class .nav-class--type .type-text {
+        padding: 11px; }
+        .catalogs .nav-class .nav-class--type .type-text h3 {
+          font-weight: 800;
+          font-size: 20px;
+          color: #fff;
+          letter-spacing: 0.5px; }
+        .catalogs .nav-class .nav-class--type .type-text p {
+          font-size: 16px;
+          font-weight: 800;
+          color: #f36d00;
+          letter-spacing: 0.4px; }
+      .catalogs .nav-class .nav-class--type .btn-count {
+        width: 254px;
+        height: 52px;
+        background: linear-gradient(180deg, #ABC839 0%, #6D8800 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        font-weight: 800;
+        font-size: 16px;
+        color: #fff;
+        margin: 6px 0 27px 38px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        .catalogs .nav-class .nav-class--type .btn-count .text-btn {
+          margin: 0 0 6px 17px; }
+        .catalogs .nav-class .nav-class--type .btn-count span {
+          letter-spacing: -1px; }
+        .catalogs .nav-class .nav-class--type .btn-count svg {
+          fill: #fff; }
 
 .specials {
   height: 675px;

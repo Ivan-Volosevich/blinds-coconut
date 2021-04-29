@@ -49,20 +49,20 @@
       <h2> которые украшают интерьер</h2>
     </div>
     <div class="hero-info">
-      <div>
-        <div class="img"><img class="icon-bg" src="../../img/prod-icon1.png" alt=""></div>
+      <div class="hero-info--bar">
+        <div class="img"><img src="../../img/prod-icon1.png" alt=""></div>
         <div class="text">
           <h3>Более 500<br>вариантов тканей</h3>
         </div>
       </div>
-      <div>
-        <div class="img"><img class="icon-bg" src="../../img/prod-icon2.png" alt=""></div>
+      <div class="hero-info--bar">
+        <div class="img"><img src="../../img/prod-icon2.png" alt=""></div>
         <div class="text">   
           <h3>Изготовим<br>за 3-7 дней</h3>
         </div>
       </div>
-      <div>
-        <div class="img"><img class="icon-bg" src="../../img/prod-icon3.png" alt=""></div>
+      <div class="hero-info--bar">
+        <div class="img"><img src="../../img/prod-icon3.png" alt=""></div>
         <div class="text">
           <h3>Бесплатно замеряем<br>и установим</h3>
         </div>
@@ -170,13 +170,16 @@
               <div class="text"> 
                 <p>2. Выберите	ткань:</p>
               </div>
-              <div class="top-radio"> 
-                <input type="radio" name="Светопроницаемая" id="radio-first">
-                <label for="radio-first">Светопроницаемая</label>
-                <input type="radio" name="День-ночь" id="radio-second">
-                <label for="radio-second">День-ночь</label>
-                <input type="radio" name="Блэкаут" id="radio-third">
-                <label for="radio-third">Блэкаут</label>
+              <div class="top-second-btn">
+                <div class="second-btn-bar">
+                  <button> <img src="../../img/calc2-icon1.png" alt=""></button><span>Светопроницаемая</span>
+                </div>
+                <div class="second-btn-bar">
+                  <button> <img src="../../img/calc2-icon2.png" alt=""></button><span>День-ночь</span>
+                </div>
+                <div class="second-btn-bar">
+                  <button> <img src="../../img/calc2-icon3.png" alt=""></button><span>Блэкаут</span>
+                </div>
               </div>
             </div>
             <div class="info-top-third">
@@ -184,8 +187,8 @@
                 <p>3. Введите размеры окна:</p>
               </div>
               <div class="top-input"> 
-                <input type="text" placeholder="Ширина">
-                <input type="text" placeholder="Высота">
+                <input type="number" placeholder="Ширина">
+                <input type="number" placeholder="Высота">
               </div>
             </div>
           </div>
@@ -204,7 +207,7 @@
         </div>
         <div class="info-bottom-phone"> 
           <p>Введите	Ваш	номер	телефона:</p>
-          <input type="tel" placeholder="+375 ** *** ** **">
+          <input class="phone" type="tel" placeholder="+375 ** *** ** **" id="tel" value="">
         </div>
         <div class="content-btn"> 
           <button>Рассчитать	стоимость	рольштор</button>
@@ -218,25 +221,26 @@
       <div class="text">
         <h2>Мы предлагаем:</h2>
       </div>
-      <div class="content"><img src="../../img/offer-img.png" alt="">
+      <div class="content">
+        <div class="offer-img"><img src="../../img/offer-img.png" alt=""></div>
         <div class="info">
           <div class="info-content"><img src="../../img/offer-icon1.png" alt="">
-            <p>Замер	и	установка бесплатно</p>
+            <p>Замер	и	установка <b>бесплатно</b></p>
           </div>
           <div class="info-content"><img src="../../img/offer-icon2.png" alt="">
-            <p>Гарантия: 1	год</p>
+            <p><b>Гарантия: </b>1	год</p>
           </div>
           <div class="info-content"><img src="../../img/offer-icon3.png" alt="">
-            <p>Рассрочка	0%	до	2	лет</p>
+            <p><b>Рассрочка	0% </b>до	2	лет</p>
           </div>
           <div class="info-content"><img src="../../img/offer-icon4.png" alt="">
-            <p>Срок	изготовления: 3-7	дней</p>
+            <p>Срок	изготовления: <b>3-7	дней</b></p>
           </div>
-          <div class="info-content icon-bg"><img class="icon-bg" src="../../img/offer-icon5.png" alt="">
-            <p>Аккуратный	монтаж	– не	испортим	и	не	испачкаем	ваше	окно при	установке</p>
+          <div class="info-content"><img src="../../img/offer-icon5.png" alt="">
+            <p><b>Аккуратный	монтаж	– </b><br>не	испортим	и	не	испачкаем	ваше	окно при	установке</p>
           </div>
-          <div class="info-content"><img class="icon-bg" src="../../img/offer-icon6.png" alt="">
-            <p>После	установки	убираем	за	собой весь	мусор</p>
+          <div class="info-content"><img src="../../img/offer-icon6.png" alt="">
+            <p>После	установки <b>убираем	за	собой весь	мусор</b></p>
           </div>
         </div>
       </div>
@@ -245,7 +249,17 @@
       <div class="text">
         <h2>Коротко о наших рольшторах:</h2>
       </div>
-      <div class="info"></div>
+      <div class="short-info">
+        <div class="short-info-bar">
+          <div class="img"><img src="../../img/short-icon1.png" alt=""></div><span><b>Отталкивают	пыль	и	грязь</b></span>
+        </div>
+        <div class="short-info-bar">
+          <div class="img img-mid"><img src="../../img/short-icon2.png" alt=""></div><span><b>Не	меняют	цвет	и	не	выгорают </b>на	солнце	</span>
+        </div>
+        <div class="short-info-bar">
+          <div class="img"><img src="../../img/short-icon3.png" alt=""></div><span>Механизмы <b>не	расшатываются	и	не	выходят	из	строя	</b></span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="catalogs" id="catalogs">
@@ -254,12 +268,37 @@
     </div>
     <div class="nav-class">
       <div class="nav-class--type">
-        <div class="img"><img src="" alt="image"></div>
-        <div class="text">
+        <div class="type-img"><img src="../../img/catalog-img1.png" alt="рольшторы минск"></div>
+        <div class="type-text">
           <h3>Каталог светопроницаемых тканей</h3>
           <p>300+ вариантов фактур</p>
         </div>
-        <button class="btn-count">Смотреть каталог</button>
+        <button class="btn-count"><span class="text-btn">Смотреть каталог</span><span>
+            <svg width="31" height="23" viewbox="0 0 31 23" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30.5778 10.4808L21.3527 1.25569C20.7899 0.692846 19.8771 0.692846 19.3142 1.25569C18.7513 1.81865 18.7513 2.73125 19.3142 3.29421L26.0786 10.0586H1.44142C0.645411 10.0586 0 10.704 0 11.5C0 12.2959 0.645411 12.9415 1.44142 12.9415H26.0786L19.3145 19.7059C18.7515 20.2688 18.7515 21.1814 19.3145 21.7444C19.5958 22.0256 19.9648 22.1666 20.3337 22.1666C20.7026 22.1666 21.0715 22.0256 21.353 21.7444L30.5778 12.5193C31.1408 11.9563 31.1408 11.0437 30.5778 10.4808Z"></path>
+            </svg></span></button>
+      </div>
+      <div class="nav-class--type">
+        <div class="type-img"><img src="../../img/catalog-img2.png" alt="рольшторы день ночь"></div>
+        <div class="type-text">
+          <h3>Каталог тканей<br>день-ночь</h3>
+          <p>100+ вариантов фактур</p>
+        </div>
+        <button class="btn-count"><span class="text-btn">Смотреть каталог</span><span>
+            <svg width="31" height="23" viewbox="0 0 31 23" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30.5778 10.4808L21.3527 1.25569C20.7899 0.692846 19.8771 0.692846 19.3142 1.25569C18.7513 1.81865 18.7513 2.73125 19.3142 3.29421L26.0786 10.0586H1.44142C0.645411 10.0586 0 10.704 0 11.5C0 12.2959 0.645411 12.9415 1.44142 12.9415H26.0786L19.3145 19.7059C18.7515 20.2688 18.7515 21.1814 19.3145 21.7444C19.5958 22.0256 19.9648 22.1666 20.3337 22.1666C20.7026 22.1666 21.0715 22.0256 21.353 21.7444L30.5778 12.5193C31.1408 11.9563 31.1408 11.0437 30.5778 10.4808Z"></path>
+            </svg></span></button>
+      </div>
+      <div class="nav-class--type">
+        <div class="type-img"><img src="../../img/catalog-img3.png" alt="рольшторы минск цена"></div>
+        <div class="type-text">
+          <h3>Каталог тканей<br>блэкаут</h3>
+          <p>200+ вариантов фактур</p>
+        </div>
+        <button class="btn-count"><span class="text-btn">Смотреть каталог</span><span>
+            <svg width="31" height="23" viewbox="0 0 31 23" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30.5778 10.4808L21.3527 1.25569C20.7899 0.692846 19.8771 0.692846 19.3142 1.25569C18.7513 1.81865 18.7513 2.73125 19.3142 3.29421L26.0786 10.0586H1.44142C0.645411 10.0586 0 10.704 0 11.5C0 12.2959 0.645411 12.9415 1.44142 12.9415H26.0786L19.3145 19.7059C18.7515 20.2688 18.7515 21.1814 19.3145 21.7444C19.5958 22.0256 19.9648 22.1666 20.3337 22.1666C20.7026 22.1666 21.0715 22.0256 21.353 21.7444L30.5778 12.5193C31.1408 11.9563 31.1408 11.0437 30.5778 10.4808Z"></path>
+            </svg></span></button>
       </div>
     </div>
   </div>

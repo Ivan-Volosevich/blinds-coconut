@@ -25,19 +25,25 @@
                 .info-top-second
                     .text 
                         p 2. Выберите	ткань:
-                    .top-radio 
-                        input(type="radio", name="Светопроницаемая", id="radio-first")
-                        label(for="radio-first") Светопроницаемая
-                        input(type="radio", name="День-ночь", id="radio-second")
-                        label(for="radio-second") День-ночь
-                        input(type="radio", name="Блэкаут", id="radio-third")
-                        label(for="radio-third") Блэкаут
+                    .top-second-btn
+                        .second-btn-bar
+                            button 
+                                img(src="../../img/calc2-icon1.png", alt="")
+                            span Светопроницаемая
+                        .second-btn-bar
+                            button 
+                                img(src="../../img/calc2-icon2.png", alt="")
+                            span День-ночь
+                        .second-btn-bar
+                            button 
+                                img(src="../../img/calc2-icon3.png", alt="")
+                            span Блэкаут
                 .info-top-third
                     .text 
                         p 3. Введите размеры окна:
                     .top-input 
-                        input(type="text", placeholder="Ширина")
-                        input(type="text", placeholder="Высота")
+                        input(type="number", placeholder="Ширина")
+                        input(type="number", placeholder="Высота")
     .content-bottom 
         .info-bottom-fourth
             .text 
@@ -52,7 +58,7 @@
 
         .info-bottom-phone 
             p Введите	Ваш	номер	телефона:
-            input(type="tel", placeholder="+375 ** *** ** **")
+            input(type="tel", placeholder="+375 ** *** ** **", id="tel", value="").phone
 
         .content-btn 
             button Рассчитать	стоимость	рольштор

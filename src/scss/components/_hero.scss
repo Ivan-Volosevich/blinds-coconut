@@ -8,7 +8,7 @@
 
   .hero-text{
     width: 842px;
-    margin: 7px 0 29px 0;
+    margin: 7px 0 33px 0;
     background: #41362E;
     font-weight: 800;
     padding-left: 18px;
@@ -39,27 +39,17 @@
     justify-content: space-between;
     
 
-    div {
+    .hero-info--bar {
       display: flex;
       align-items: center;
-      height: 59px;
+      max-height: 59px;
       background-color: #41362E;
       font-size: 18px;
       // min-width: 245px;
       // max-width: 302px;
 
       .img {
-        width: 59px;
-        height: 59px;
-        background-color: #7C6A5D;
-        align-items: center;
 
-        .icon-bg {
-          background-image: url(../../img/icon-bg.png);
-          padding: 10px 8px 10px 14px;
-          width: 100%;
-          height: 100%;
-        }
       }
 
       .text {
@@ -68,7 +58,6 @@
         padding-left: 22px;
         /* padding-right: 37px; */
         max-width: 245px;
-        letter-spacing: 1px;
         min-width: 217px;
 
         // font-size: 16px;
@@ -87,7 +76,7 @@
     .btn-cost {
       width: 431px;
       height: 78px;
-      margin: 230px;
+      margin: 226px;
       margin-bottom: 94px;
       color: #fff;
       font-weight: 800;

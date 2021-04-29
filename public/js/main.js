@@ -97,6 +97,17 @@ eval("// document.addEventListener('DOMContentLoaded', () => {\n// //slider\n// 
 
 /***/ }),
 
+/***/ "./src/js/components/price-counter.js":
+/*!********************************************!*\
+  !*** ./src/js/components/price-counter.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("window.addEventListener(\"DOMContentLoaded\", function () {\n  function setCursorPosition(pos, elem) {\n    elem.focus();\n    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);else if (elem.createTextRange) {\n      var range = elem.createTextRange();\n      range.collapse(true);\n      range.moveEnd(\"character\", pos);\n      range.moveStart(\"character\", pos);\n      range.select();\n    }\n  }\n\n  function mask(event) {\n    var matrix = \"+375 (__) ___ __ __\",\n        i = 0,\n        def = matrix.replace(/\\D/g, \"\"),\n        val = this.value.replace(/\\D/g, \"\");\n    if (def.length >= val.length) val = def;\n    this.value = matrix.replace(/./g, function (a) {\n      return /[_\\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? \"\" : a;\n    });\n  }\n\n  ;\n  var input = document.querySelector(\"#tel\");\n  input.addEventListener(\"input\", mask, false);\n});\n\n//# sourceURL=webpack:///./src/js/components/price-counter.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -105,7 +116,7 @@ eval("// document.addEventListener('DOMContentLoaded', () => {\n// //slider\n// 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_hero__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/hero */ \"./src/js/components/hero.js\");\n/* harmony import */ var _components_hero__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_hero__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_hero__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/hero */ \"./src/js/components/hero.js\");\n/* harmony import */ var _components_hero__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_hero__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_price_counter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/price-counter */ \"./src/js/components/price-counter.js\");\n/* harmony import */ var _components_price_counter__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_price_counter__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

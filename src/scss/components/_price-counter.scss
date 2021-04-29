@@ -40,7 +40,7 @@
             margin: -3px;
 
             span {
-                font-family: 'Segoe UI';
+                font-family: 'Segoe UI', sans-serif;
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 13px;
@@ -69,7 +69,7 @@
 
         .content-top {
             display: flex;
-            padding: 26px 12px;
+            padding: 26px 12px 22px 12px;
 
             .content-top--left {
 
@@ -99,14 +99,125 @@
                     }
                 }
 
+                .info-top-second {
 
+                    .text {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        margin: 35px 0 17px;
+                    }
+
+                    .top-second-btn {
+                        display: flex;
+                        justify-content: space-evenly;
+                        
+                        .second-btn-bar {
+                            display: flex;
+                            flex-direction: column;
+                            width: 94px;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            button {
+                                border: none;
+                                background: none;
+                            }
+
+                            span {
+                                font-family: 'Segoe UI', sans-serif;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                            }
+
+                            &:hover, &:focus {
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    background: #FE8C00;
+                                    height: 3px;
+                                    width: 80px;
+                                    margin: 78px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .info-top-third {
+
+                    .text {
+                    margin: 24px 0 11px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    }
+
+                    .top-input {
+
+                        input {
+                            width: 230px;
+                            height: 51px;
+                            background: #EAEAEA;
+                            border: 2px solid #645346;
+                            box-sizing: border-box;
+                            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            border-radius: 50px;
+                            margin: 0 6px;
+                            text-align: center;
+                            font-family: 'Segoe UI', sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
 
         }
 
         .content-bottom {
-            padding: 40px;
             text-align: center;
+
+            .info-bottom-fourth {
+
+                .text {
+                    font-weight: normal;
+                    font-size: 20px;
+                    margin-bottom: 13px;
+                }
+
+                .bottom-btn {
+
+                    button {
+                        width: 150px;
+                    }
+                }
+            }
+
+            .info-bottom-phone {
+                p {
+                    font-weight: normal;
+                    font-size: 20px;
+                    margin: 27px 0 10px;
+                }
+
+                .phone {
+                    width: 307px;
+                    height: 51px;
+                    background: #EAEAEA;
+                    border: 2px solid #645346;
+                    box-sizing: border-box;
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 50px;
+                    font-family: Segoe UI;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
 
             .content-btn {
 
@@ -120,11 +231,11 @@
                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                     border-radius: 50px;
                     border: 3px solid #F47000;
+                    margin: 26px 0 18px;
+                    letter-spacing: -1.9px;
                 }
-                
 
                 p {
-                    
                     opacity: 0.4;
                 }
             }
