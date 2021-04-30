@@ -1,16 +1,15 @@
-// document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+    var slides = document.querySelectorAll('#hero-slides .hero-slide');
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide,7000);
 
-// //slider
-//     let bgArr = [
-//         '../../img/first-bg.png',
-//         '../../img/second-bg.png',
-//         '../../img/trird-bg.png'
-//     ];
-
-//     let i = 0;
-
-//     setInterval(function() {
-//         getElementById(#hero-slider).css("background-image", "url(" + bgArr[i] + ")");
-//         (i < bgArr.length - 1) ? i++ : i = 0
-//     }, 2000);
-// });
+    function nextSlide(){
+        goToSlide(currentSlide+1);
+    }
+    
+    function goToSlide(n){
+        slides[currentSlide].className = 'hero-slide';
+        currentSlide = (n+slides.length)%slides.length;
+        slides[currentSlide].className = 'hero-slide showing';
+    }
+});

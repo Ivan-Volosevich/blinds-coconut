@@ -242,3 +242,15 @@
         }
     }
 }
+
+@media (max-width: 1600px) {
+    .price-counter {
+        padding: 0 210px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .price-counter {
+        padding: 0 150px;
+    }
+}

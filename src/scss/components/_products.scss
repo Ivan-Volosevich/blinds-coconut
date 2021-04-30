@@ -2,6 +2,7 @@
     padding: 0 420px;
     background-image: url(../../img/bg-products.png);
     height: 721px;
+    margin-top: 818px;
 
     h2 {
         font-size: 45px;
@@ -52,8 +53,13 @@
                 color: #fff;
 
                 svg {
-                    transform: rotate(90deg);
                     fill: #fff; 
+                }
+            }
+
+            &:focus {
+                svg {
+                    transform: rotate(90deg);
                 }
             }
 

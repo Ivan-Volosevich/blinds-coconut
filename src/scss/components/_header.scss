@@ -86,6 +86,10 @@ header {
 @media (max-width: 1600px) {
     header {
         padding: 0 210px;
+
+        .phones {
+            font-size: 16px;
+        }
     }
 }
 
@@ -93,4 +97,8 @@ header {
     header {
         padding: 0 150px;
     }
+}
+
+button {
+    cursor: pointer;
 }

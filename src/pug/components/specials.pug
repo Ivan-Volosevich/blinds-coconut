@@ -1,4 +1,69 @@
-.text 
+.header-text
     h2 Лучшие	предложения	этого	месяца
 
-.slider 
+.slider-top 
+    .slider-img 
+        .slider-fill
+            span 
+                svg(width='332' height='3' viewbox='0 0 332 3' xmlns='http://www.w3.org/2000/svg')
+                    rect(width='332' height='3' fill='#CCCCCC')
+            span
+                svg(width='43' height='43' viewbox='0 0 43 43' xmlns='http://www.w3.org/2000/svg')
+                    circle(cx='21.5' cy='21.5' r='21.5' fill='#CCCCCC')
+        .slider-fill
+            span 
+                svg(width='332' height='3' viewbox='0 0 332 3' xmlns='http://www.w3.org/2000/svg')
+                    rect(width='332' height='3' fill='#CCCCCC')
+            span
+                svg(width='43' height='43' viewbox='0 0 43 43' xmlns='http://www.w3.org/2000/svg')
+                    circle(cx='21.5' cy='21.5' r='21.5' fill='#CCCCCC')
+        .slider-fill
+            span 
+                svg(width='332' height='3' viewbox='0 0 332 3' xmlns='http://www.w3.org/2000/svg')
+                    rect(width='332' height='3' fill='#CCCCCC')
+            span
+                svg(width='43' height='43' viewbox='0 0 43 43' xmlns='http://www.w3.org/2000/svg')
+                    circle(cx='21.5' cy='21.5' r='21.5' fill='#CCCCCC')
+    .container
+        .buttons
+            button#previous.controls
+                img(src="../../img/arrow-left.png", alt="")
+        ul#slides
+            li.slide.showing
+                img.img(src="../../img/spec-slider1.png", alt="")
+                .slider-info
+                    h3 Скидка 20%
+                    .text 
+                        p на любые кассетные рольшторы
+                    button
+                        span Забронировать	скидку
+            li.slide
+                img.img(src="../../img/spec-slider2.png", alt="")
+                .slider-info
+                    h3 Скидка 15% 
+                    h4 на весь заказ
+                    .text 
+                        p при покупке от 3-х единиц
+                    button
+                        span Посмотреть	каталог	тканей
+            li.slide
+                img.img(src="../../img/spec-slider3.png", alt="")
+                .slider-info
+                    h4 Купите	рольшторы
+                        br
+                        | в	рассрочку	
+                    .text.text-select
+                        .select-section
+                            img(src="../../img/select-icon.png", alt="")
+                            p Без	переплат
+                        .select-section
+                            img(src="../../img/select-icon.png", alt="")
+                            p На	срок	до	24	месяцев
+                        .select-section
+                            img(src="../../img/select-icon.png", alt="")
+                            p Без	справок,	нужен	только	паспорт
+                    button
+                        span Рассчитать	сумму	платежа
+        .buttons
+            button#next.controls
+                img(src="../../img/arrow-right.png", alt="")

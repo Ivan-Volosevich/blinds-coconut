@@ -2,12 +2,15 @@
     height: 671px;
     background-color: #41362E;
     padding: 0 420px;
+    color: #fff;
 
     .text {
+        padding: 68px 0 64px 19px;
 
         h2 {
             font-size: 45px;
-            padding-top: 60px;
+            font-weight: 800;
+            letter-spacing: 1px;
             
             &::before {
                 content: "";
@@ -15,9 +18,67 @@
                 background: linear-gradient(180deg, #FE8C00 0%, #F36D00 100%);
                 height: 64px;
                 width: 7px;
-                margin-left: -11px;
+                margin-left: -19px;
                 margin-top: -4px;
             }
         }
     }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .info {
+
+            .info-content {
+                display: flex;
+                margin: 46px 56px;
+
+                .cont-text {
+                    padding: 0 13px;
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+
+                    .text-phones {
+                        display: flex;
+                        align-items: center;
+
+                        .icons-phones {
+                            padding-left: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .contacts {
+        padding: 0 210px;
+
+        .content {
+            .info {
+                .info-content {
+                    .cont-text {
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    .contacts {
+        padding: 0 150px;
+    }
+
+
 }

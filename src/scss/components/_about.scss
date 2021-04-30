@@ -116,3 +116,25 @@
         }
     }
 }
+
+@media (max-width: 1600px) {
+    .about {
+        .offer {
+            padding: 0 210px;
+        }
+        .short {
+            padding: 0 210px;
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    .about {
+        .offer {
+            padding: 0 150px;
+        }
+        .short {
+            padding: 0 150px;
+        }
+    }
+}
