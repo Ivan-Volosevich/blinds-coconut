@@ -2,28 +2,19 @@
     h2 Лучшие	предложения	этого	месяца
 
 .slider-top 
-    .slider-img 
-        .slider-fill
-            span 
-                svg(width='332' height='3' viewbox='0 0 332 3' xmlns='http://www.w3.org/2000/svg')
-                    rect(width='332' height='3' fill='#CCCCCC')
-            span
+    .slider-btn-specials
+            button.btn-slider-spec#spec-btn-first
                 svg(width='43' height='43' viewbox='0 0 43 43' xmlns='http://www.w3.org/2000/svg')
-                    circle(cx='21.5' cy='21.5' r='21.5' fill='#CCCCCC')
-        .slider-fill
-            span 
-                svg(width='332' height='3' viewbox='0 0 332 3' xmlns='http://www.w3.org/2000/svg')
-                    rect(width='332' height='3' fill='#CCCCCC')
-            span
+                    circle#spec-circle-first(cx='21.5' cy='21.5' r='21.5' fill='#ABC839')
+                    text(x='15' y='30' style='font-size: 22px; font-weight: 800;') 1
+            button.btn-slider-spec#spec-btn-second
                 svg(width='43' height='43' viewbox='0 0 43 43' xmlns='http://www.w3.org/2000/svg')
-                    circle(cx='21.5' cy='21.5' r='21.5' fill='#CCCCCC')
-        .slider-fill
-            span 
-                svg(width='332' height='3' viewbox='0 0 332 3' xmlns='http://www.w3.org/2000/svg')
-                    rect(width='332' height='3' fill='#CCCCCC')
-            span
+                    circle#spec-circle-second(cx='21.5' cy='21.5' r='21.5' fill='#CCCCCC')
+                    text(x='15' y='30' style='font-size: 22px; font-weight: 800;') 2
+            button.btn-slider-spec#spec-btn-third
                 svg(width='43' height='43' viewbox='0 0 43 43' xmlns='http://www.w3.org/2000/svg')
-                    circle(cx='21.5' cy='21.5' r='21.5' fill='#CCCCCC')
+                    circle#spec-circle-third(cx='21.5' cy='21.5' r='21.5' fill='#CCCCCC')
+                    text(x='15' y='30' style='font-size: 22px; font-weight: 800;') 3
     .container
         .buttons
             button#previous.controls

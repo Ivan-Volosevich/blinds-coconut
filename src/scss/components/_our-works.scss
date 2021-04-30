@@ -73,19 +73,13 @@
         .slider-btn {
             position: relative;
             top: 800px;
-            left: 475px;
+            margin-left: 475px;
 
             button {
                 border: none;
                 background: none;
                 padding: 0px 5px;
                 fill: #fff;
-
-                    // &:focus {
-                    //     circle {
-                    //         fill:#ABC839;
-                    //     }
-                    // }
             }
         }
     }

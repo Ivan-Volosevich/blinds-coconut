@@ -6,10 +6,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     var slides = document.querySelectorAll('#slider-show .slider-images');
     var currentSlide = 0;
-    var slideInterval = setInterval(nextSlide,4000);
+    var slideInterval = setInterval(nextSlide,30000);
 
     function nextSlide(){
         goToSlide(currentSlide+1);
+        if (currentSlide == 0) {
+            document.getElementById('circle-first').style.fill = "#ABC839";
+            document.getElementById('circle-second').style.fill = "#CCCCCC";
+            document.getElementById('circle-third').style.fill = "#CCCCCC";
+        } else if (currentSlide == 1) {
+            document.getElementById('circle-first').style.fill = "#CCCCCC";
+            document.getElementById('circle-second').style.fill = "#ABC839";
+            document.getElementById('circle-third').style.fill = "#CCCCCC";
+        } else if (currentSlide == 2) {
+            document.getElementById('circle-first').style.fill = "#CCCCCC";
+            document.getElementById('circle-second').style.fill = "#CCCCCC";
+            document.getElementById('circle-third').style.fill = "#ABC839";
+        }
     }
 
     function previousSlide(){
@@ -28,25 +41,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     worksBtnFirst.onclick = function(){
         goToSlide(0);
+        document.getElementById('circle-first').style.fill = "#ABC839";
+        document.getElementById('circle-second').style.fill = "#CCCCCC";
+        document.getElementById('circle-third').style.fill = "#CCCCCC";
     };
     worksBtnSecond.onclick = function(){
         goToSlide(1);
+        document.getElementById('circle-first').style.fill = "#CCCCCC";
+        document.getElementById('circle-second').style.fill = "#ABC839";
+        document.getElementById('circle-third').style.fill = "#CCCCCC";
     };
     worksBtnThird.onclick = function(){
         goToSlide(2);
+        document.getElementById('circle-first').style.fill = "#CCCCCC";
+        document.getElementById('circle-second').style.fill = "#CCCCCC";
+        document.getElementById('circle-third').style.fill = "#ABC839";
     };
-
-    if (worksBtnFirst) {
-        document.getElementById('circle-first').style.cssText = "fill: #ABC839";
-        document.getElementById('circle-second').style.cssText = "fill: #CCCCCC";
-        document.getElementById('circle-third').style.cssText = "fill: #CCCCCC";
-    } else if (worksBtnSecond) {
-        document.getElementById('circle-first').style.cssText = "fill: #CCCCCC";
-        document.getElementById('circle-second').style.cssText = "fill: #ABC839";
-        document.getElementById('circle-third').style.cssText = "fill: #CCCCCC";
-    } else if (worksBtnThird) {
-        document.getElementById('circle-first').style.cssText = "fill: #CCCCCC";
-        document.getElementById('circle-second').style.cssText = "fill: #CCCCCC";
-        document.getElementById('circle-third').style.cssText = "fill: #ABC839";
-    }
 });
