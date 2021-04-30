@@ -18,21 +18,24 @@
         padding: 20px;
         border: 1px solid #888;
         width: 55%; /* Could be more or less, depending on screen size */
+        // position: relative;
+        // z-index: 5;
 
         /* The Close Button */
-        .close {
+        span {
             color: #CA0000;
             font-size: 28px;
             font-weight: bold;
 
             &:hover, &:focus {
-                color: black;
-                text-decoration: none;
+                // color: black;
+                // text-decoration: none;
                 cursor: pointer;
             }
 
             .price-counter-form {
                 height: 810px;
+                color: #000;
             
                 .calculator {
                     background-color: #fff;
@@ -60,6 +63,7 @@
                     .calc-btn {
                         width: 163px;
                         height: 47px;
+                        color: #000;
                         background: #EAEAEA;
                         border: 2px solid #645346;
                         box-sizing: border-box;
@@ -71,6 +75,7 @@
                             font-weight: normal;
                             font-size: 16px;
                             line-height: 13px;
+                            color: #000;
                         }
             
                         &:focus, &:hover {
@@ -98,16 +103,16 @@
                         display: flex;
                         padding: 0 12px 22px 12px;
             
-                        .content-top--left {
+                        // .content-top--left {
             
-                            .img-wrapper {
+                        //     .img-wrapper {
             
-                                .calc-img {
-                                    max-width: 346px;
-                                    width: 100%;
-                                }
-                            }
-                        }
+                        //         .calc-img {
+                        //             max-width: 346px;
+                        //             width: 100%;
+                        //         }
+                        //     }
+                        // }
             
                         .content-top--right {
                             text-align: center;
@@ -156,6 +161,7 @@
                                             font-style: normal;
                                             font-weight: normal;
                                             font-size: 16px;
+                                            color: #000;
                                         }
             
                                         &:hover, &:focus {

@@ -4,6 +4,19 @@
     padding: 0 420px;
     color: #fff;
 
+    @media (max-width: 1915px) {
+        padding: 0 20%;
+    }
+
+    @media (max-width: 1370px) {
+        padding: 0 5%;
+        height: 460px;
+    }
+
+    @media (max-width: 850px) {
+        height: 100%;
+    }
+
     .text {
         padding: 68px 0 64px 19px;
 
@@ -11,6 +24,18 @@
             font-size: 45px;
             font-weight: 800;
             letter-spacing: 1px;
+
+            @media (max-width: 1105px) {
+                font-size: 32px;
+            }
+
+            @media (max-width: 425px) {
+                font-size: 22px;
+            }
+    
+            @media (max-width: 375px) {
+                font-size: 18px;
+            }
             
             &::before {
                 content: "";
@@ -20,6 +45,18 @@
                 width: 7px;
                 margin-left: -19px;
                 margin-top: -4px;
+
+                @media (max-width: 1105px) {
+                    height: 44px;
+                }
+    
+                @media (max-width: 425px) {
+                    height: 36px;
+                }
+    
+                @media (max-width: 375px) {
+                    height: 30px;
+                }
             }
         }
     }
@@ -29,11 +66,56 @@
         justify-content: space-between;
         align-items: center;
 
+        @media (max-width: 850px) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+        .map {
+            width: 591px;
+            height: 391px;
+
+            @media (max-width: 1640px) {
+                width: 460px;
+                height: 291px;
+            }
+
+            @media (max-width: 973px) {
+                width: 350px;
+                height: 300px;
+                margin: auto;
+                margin-bottom: 15px;
+            }
+
+            @media (max-width: 850px) {
+                width: 700px;
+                height: 300px;
+            }
+
+            @media (max-width: 768px) {
+                width: 400px;
+                height: 300px;
+            }
+
+            @media (max-width: 425px) {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
         .info {
 
             .info-content {
                 display: flex;
                 margin: 46px 56px;
+
+                @media (max-width: 1915px) {
+                    margin: 46px 2%;
+                }
+
+                @media (max-width: 1640px) {
+                    margin: 46px 0;
+                }
 
                 .cont-text {
                     padding: 0 13px;
@@ -41,11 +123,33 @@
                     p {
                         font-size: 18px;
                         font-weight: 700;
+
+                        &:last-child {
+                            @media (max-width: 425px) {
+                                font-size: 14px;
+                            }
+
+                            @media (max-width: 320px) {
+                                font-size: 10px;
+                            }
+                        }
                     }
 
                     .text-phones {
                         display: flex;
                         align-items: center;
+                        
+                        .num-phones {
+                            p {
+                                @media (max-width: 425px) {
+                                    font-size: 14px;
+                                }
+
+                                @media (max-width: 320px) {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
 
                         .icons-phones {
                             padding-left: 23px;
@@ -55,30 +159,4 @@
             }
         }
     }
-}
-
-@media (max-width: 1600px) {
-    .contacts {
-        padding: 0 210px;
-
-        .content {
-            .info {
-                .info-content {
-                    .cont-text {
-                        p {
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1366px) {
-    .contacts {
-        padding: 0 150px;
-    }
-
-
 }
