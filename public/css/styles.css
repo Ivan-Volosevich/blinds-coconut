@@ -366,13 +366,13 @@ button {
   list-style-type: none; }
 
 .hero-slide:nth-of-type(1) {
-  background-image: linear-gradient(to right, rgba(65, 46, 30, 0.33), rgba(65, 46, 30, 0.33)), url(../../img/first-bg.png); }
+  background-image: linear-gradient(to right, rgba(65, 46, 30, 0.33), rgba(65, 46, 30, 0.33)), url(./../img/first-bg.png); }
 
 .hero-slide:nth-of-type(2) {
-  background-image: linear-gradient(to right, rgba(65, 46, 30, 0.33), rgba(65, 46, 30, 0.33)), url(../../img/second-bg.png); }
+  background-image: linear-gradient(to right, rgba(65, 46, 30, 0.33), rgba(65, 46, 30, 0.33)), url(./../img/second-bg.png); }
 
 .hero-slide:nth-of-type(3) {
-  background-image: linear-gradient(to right, rgba(65, 46, 30, 0.33), rgba(65, 46, 30, 0.33)), url(../../img/third-bg.png); }
+  background-image: linear-gradient(to right, rgba(65, 46, 30, 0.33), rgba(65, 46, 30, 0.33)), url(./../img/third-bg.png); }
 
 .showing {
   opacity: 1;
@@ -380,7 +380,7 @@ button {
 
 .products {
   padding: 0 420px;
-  background-image: url(../../img/bg-products.png);
+  background-image: url(./../img/bg-products.png);
   height: 721px;
   margin-top: 818px; }
   @media (max-width: 1600px) {
@@ -666,7 +666,7 @@ button {
 
 .price-counter {
   height: 1045px;
-  background-image: url(../../img/bg-price-counter.png);
+  background-image: url(./../img/bg-price-counter.png);
   background-color: #5E4F44;
   padding: 0 420px; }
   @media (max-width: 1600px) {
@@ -1005,7 +1005,7 @@ button {
 
 .about .offer {
   height: 843px;
-  background-image: url(../../img/bg-offer.png);
+  background-image: url(./../img/bg-offer.png);
   padding: 0 420px; }
   @media (max-width: 1600px) {
     .about .offer {
@@ -1349,7 +1349,7 @@ button {
 
 .specials {
   height: 675px;
-  background-image: linear-gradient(to right, rgba(92, 79, 68, 0.8), rgba(92, 79, 68, 0.8)), url(../../img/bg-specials.png);
+  background-image: linear-gradient(to right, rgba(92, 79, 68, 0.8), rgba(92, 79, 68, 0.8)), url(./../img/bg-specials.png);
   padding: 0 420px;
   /*
         essential styles:
