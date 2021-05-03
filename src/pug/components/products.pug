@@ -1,65 +1,167 @@
 h2#headers Какие рольшторы мы производим
 
 .nav-btn
-    button.btn-class 
+    button.btn-class#btn-prod-first
         h3 Открытые
         span
             svg(width='31' height='23' viewbox='0 0 31 23' xmlns='http://www.w3.org/2000/svg')
                 path(d='M30.5778 10.4808L21.3527 1.25569C20.7899 0.692846 19.8771 0.692846 19.3142 1.25569C18.7513 1.81865 18.7513 2.73125 19.3142 3.29421L26.0786 10.0586H1.44142C0.645411 10.0586 0 10.704 0 11.5C0 12.2959 0.645411 12.9415 1.44142 12.9415H26.0786L19.3145 19.7059C18.7515 20.2688 18.7515 21.1814 19.3145 21.7444C19.5958 22.0256 19.9648 22.1666 20.3337 22.1666C20.7026 22.1666 21.0715 22.0256 21.353 21.7444L30.5778 12.5193C31.1408 11.9563 31.1408 11.0437 30.5778 10.4808Z')
 
-    button.btn-class
+    button.btn-class#btn-prod-second
         h3 Кассетные
         span
             svg(width='31' height='23' viewbox='0 0 31 23' xmlns='http://www.w3.org/2000/svg')
                 path(d='M30.5778 10.4808L21.3527 1.25569C20.7899 0.692846 19.8771 0.692846 19.3142 1.25569C18.7513 1.81865 18.7513 2.73125 19.3142 3.29421L26.0786 10.0586H1.44142C0.645411 10.0586 0 10.704 0 11.5C0 12.2959 0.645411 12.9415 1.44142 12.9415H26.0786L19.3145 19.7059C18.7515 20.2688 18.7515 21.1814 19.3145 21.7444C19.5958 22.0256 19.9648 22.1666 20.3337 22.1666C20.7026 22.1666 21.0715 22.0256 21.353 21.7444L30.5778 12.5193C31.1408 11.9563 31.1408 11.0437 30.5778 10.4808Z')
 
-    button.btn-class
+    button.btn-class#btn-prod-third
         h3 Для панорамных окон
         span
             svg(width='31' height='23' viewbox='0 0 31 23' xmlns='http://www.w3.org/2000/svg')
                 path(d='M30.5778 10.4808L21.3527 1.25569C20.7899 0.692846 19.8771 0.692846 19.3142 1.25569C18.7513 1.81865 18.7513 2.73125 19.3142 3.29421L26.0786 10.0586H1.44142C0.645411 10.0586 0 10.704 0 11.5C0 12.2959 0.645411 12.9415 1.44142 12.9415H26.0786L19.3145 19.7059C18.7515 20.2688 18.7515 21.1814 19.3145 21.7444C19.5958 22.0256 19.9648 22.1666 20.3337 22.1666C20.7026 22.1666 21.0715 22.0256 21.353 21.7444L30.5778 12.5193C31.1408 11.9563 31.1408 11.0437 30.5778 10.4808Z')
 
-    button.btn-class
+    button.btn-class#btn-prod-fourth
         h3 С автоматикой
         span
             svg(width='31' height='23' viewbox='0 0 31 23' xmlns='http://www.w3.org/2000/svg')
                 path(d='M30.5778 10.4808L21.3527 1.25569C20.7899 0.692846 19.8771 0.692846 19.3142 1.25569C18.7513 1.81865 18.7513 2.73125 19.3142 3.29421L26.0786 10.0586H1.44142C0.645411 10.0586 0 10.704 0 11.5C0 12.2959 0.645411 12.9415 1.44142 12.9415H26.0786L19.3145 19.7059C18.7515 20.2688 18.7515 21.1814 19.3145 21.7444C19.5958 22.0256 19.9648 22.1666 20.3337 22.1666C20.7026 22.1666 21.0715 22.0256 21.353 21.7444L30.5778 12.5193C31.1408 11.9563 31.1408 11.0437 30.5778 10.4808Z')
 
-.nav-class 
-    .nav-class--type
-        .text
-            h3 Светопроницаемые
-            p для мягкого рассеянного света в комнате
-        .img
-            img(src="../../img/w1-1.png", alt="image of rolls")
-        button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+.slider
 
-    .nav-class--type
-        .text
-            h3 День-ночь
-            p с возможностью регулировать степень проникновения света
-        .img
-            img(src="../../img/w1-2.png", alt="image of rolls")
-        button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+    .nav-class.slider-item-prod
+        .nav-class--type
+            .text
+                h3 Светопроницаемые
+                p для мягкого рассеянного света в комнате
+            .img
+                img(src="./img/w1-1.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
 
-    .nav-class--type
-        .text
-            h3 Screen
-            p
-                | блокируют около
-                br
-                | 90% света в комнате
-        .img
-            img(src="../../img/w1-3.png", alt="image of rolls")
-        button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+        .nav-class--type
+            .text
+                h3 День-ночь
+                p с возможностью регулировать степень проникновения света
+            .img
+                img(src="./img/w1-2.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
 
-    .nav-class--type
-        .text
-            h3 Блэкаут
-            p
-                | для абсолютной
-                br
-                | темноты в помещении
-        .img
-            img(src="../../img/w1-4.png", alt="image of rolls")
-        button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+        .nav-class--type   
+            .text
+                h3 Screen
+                p
+                    | блокируют около
+                    br
+                    | 90% света в комнате
+            .img
+                img(src="./img/w1-3.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+        .nav-class--type
+            .text
+                h3 Блэкаут
+                p
+                    | для абсолютной
+                    br
+                    | темноты в помещении
+            .img
+                img(src="./img/w1-4.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+    .nav-class.slider-item-prod
+        .nav-class--type
+            .text
+                h3 Короб
+                p в цвете
+            .img
+                img(src="./img/w2-1.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+        .nav-class--type
+            .text
+                h3 День-ночь
+                p в коробе
+            .img
+                img(src="./img/w2-2.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+        .nav-class--type
+            .text
+                h3 Короб
+                p однотонные
+            .img
+                img(src="./img/w2-3.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+        .nav-class--type
+            .text
+                h3 Свободносвисающие
+                p в коробе
+            .img
+                img(src="./img/w2-4.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+    .nav-class.slider-item-prod
+        .nav-class--type
+            .text
+                h3 Светопроницаемые
+                p для мягкого рассеянного света в комнате
+            .img
+                img(src="./img/w3-1.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+        .nav-class--type
+            .text
+                h3 С фотопечатью
+            .img
+                img(src="./img/w3-2.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+        .nav-class--type
+            .text
+                h3 Screen
+                p
+                    | блокируют около
+                    br
+                    | 90% света в комнате
+            .img
+                img(src="./img/w3-3.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+        .nav-class--type
+            .text
+                h3 Блэкаут
+                p
+                    | для абсолютной
+                    br
+                    | темноты в помещении
+            .img
+                img(src="./img/w3-4.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+    .nav-class.slider-item-prod
+        .nav-class--type
+            .text
+                h3 Электродвигатель для системы MGS
+            .img
+                img(src="./img/w4-1.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+        .nav-class--type
+            .text
+                h3 Электродвигатель для системы UNI2
+            .img
+                img(src="./img/w4-2.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+        .nav-class--type
+            .text
+                h3 Электродвигатель для системы US45
+            .img
+                img(src="./img/w4-3.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;
+
+        .nav-class--type
+            .text
+                h3 Электродвигатель для системы US55
+            .img
+                img(src="./img/w4-4.png", alt="image of rolls")
+            button.btn-count.btn-cost Рассчитать стоимость &gt;&gt;

@@ -1,10 +1,10 @@
 .price-counter {
     height: 1045px;
-    background-image: url(../../img/bg-price-counter.png);
+    background-image: url(./../img/bg-price-counter.png);
     background-color: #5E4F44;
     padding: 0 420px;
 
-    @media (max-width: 1600px) {
+    @media (max-width: 1919px) {
         padding: 0 15%;
     }
 
