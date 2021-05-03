@@ -411,9 +411,9 @@ button {
       padding: 0 15%; } }
   @media (max-width: 1600px) {
     .products {
-      padding: 10%;
+      padding: 0 10%;
       height: 900px;
-      margin-top: 600px; } }
+      margin-top: 820px; } }
   @media (max-width: 1370px) {
     .products {
       padding: 0 5%;
@@ -1489,7 +1489,7 @@ button {
       .specials .slider-top .slider-btn-specials button::after {
         content: "";
         position: absolute;
-        background: #fab7b7;
+        background: #CCCCCC;
         height: 3px;
         width: 88px;
         margin: 44px; }
@@ -1641,12 +1641,6 @@ button {
               width: 120px;
               height: 42px;
               font-size: 10px; } }
-    .specials .container .slide:nth-of-type(1) {
-      background-color: #abc839; }
-    .specials .container .slide:nth-of-type(2) {
-      background-color: #abc839; }
-    .specials .container .slide:nth-of-type(3) {
-      background-color: #abc839; }
     .specials .container .controls {
       background: none;
       border: none;
@@ -1660,8 +1654,7 @@ button {
       @media (max-width: 425px) {
         .specials .container .controls img {
           display: none; } }
-    .specials .container .controls:hover,
-    .specials .container .controls:focus {
+    .specials .container .controls:hover {
       background: #abc839;
       color: #abc839; }
     .specials .container .buttons {
@@ -1863,7 +1856,7 @@ button {
           height: 300px; } }
     .contacts .content .info .info-content {
       display: flex;
-      margin: 46px 56px; }
+      margin: 46px 64px; }
       @media (max-width: 1915px) {
         .contacts .content .info .info-content {
           margin: 46px 2%; } }

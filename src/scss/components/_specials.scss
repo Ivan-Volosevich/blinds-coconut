@@ -92,7 +92,7 @@
                 &::after {
                     content: "";
                     position: absolute;
-                    background: #fab7b7;
+                    background: #CCCCCC;
                     height: 3px;
                     width: 88px;
                     margin: 44px;
@@ -318,18 +318,6 @@
             }
         }
         
-        .slide:nth-of-type(1){
-            background-color: rgba(171, 200, 57, 1);
-        }
-        
-        .slide:nth-of-type(2){
-            background-color: rgba(171, 200, 57, 1);
-        }
-        
-        .slide:nth-of-type(3){
-            background-color: rgba(171, 200, 57, 1);
-        }
-        
         .controls{
             background: none;
             border: none;
@@ -351,8 +339,7 @@
             }
         }
         
-        .controls:hover,
-        .controls:focus{
+        .controls:hover {
             background: rgba(171, 200, 57, 1);
             color: rgba(171, 200, 57, 1);
         }
