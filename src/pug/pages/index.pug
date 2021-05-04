@@ -9,31 +9,38 @@ head
     script(src='./js/main.js')
 body
     header
-        include ../components/header
+        .header-container
+            include ../components/header
 
     .hero#hero-slider
         include ../components/hero
 
     .products#products
-        include ../components/products
+        .products-container
+            include ../components/products
 
     .price-counter#price-counter
-        include ../components/price-counter
+        .price-counter-container
+            include ../components/price-counter
 
     .about#about
         include ../components/about
 
     .catalogs#catalogs
-        include ../components/catalogs
+        .catalogs-container
+            include ../components/catalogs
 
     .specials#specials
-        include ../components/specials
+        .specials-container
+            include ../components/specials
 
     .our-works#our-works
-        include ../components/our-works
+        .our-works-container
+            include ../components/our-works
 
-    .contacts#contacts 
-        include ../components/contacts
+    .contacts#contacts
+        .contacts-container
+            include ../components/contacts
     
     .footer
         include ../components/footer
