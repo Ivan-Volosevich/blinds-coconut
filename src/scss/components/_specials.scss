@@ -56,8 +56,7 @@
                 margin: 0 0 53px 0;
                 display: flex;
                 align-items: center;
-                justify-content: space-evenly;
-                padding: 0px 143px;
+                justify-content: space-between;
 
                 button {
                     border: none;
@@ -67,27 +66,34 @@
                     display: flex;
                     align-items: center;
 
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        background: #CCCCCC;
-                        height: 3px;
-                        width: 84px;
-                        margin: -82px;
+                    .svg-circle {
+                        position: relative;
+                        z-index: 2;
+                    }
 
-                        @media (max-width: 425px) {
+                    .line-left {
+                        position: relative;
+                        z-index: 1;
+
+                        @media (max-width: 1105px) {
                             display: none;
                         }
                     }
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        background: #CCCCCC;
-                        height: 3px;
-                        width: 88px;
-                        margin: 44px;
 
-                        @media (max-width: 425px) {
+                    .line-mid {
+                        position: absolute;
+                        left: 32%;
+
+                        @media (max-width: 1105px) {
+                            display: none;
+                        }
+                    }
+
+                    .line-right {
+                        position: relative;
+                        z-index: 1;
+
+                        @media (max-width: 1105px) {
                             display: none;
                         }
                     }

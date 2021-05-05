@@ -830,7 +830,12 @@ button {
         border: 2px solid #645346;
         box-sizing: border-box;
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin: -3px; }
+        margin: -3px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
         @media (max-width: 425px) {
           .price-counter .price-counter-container .calculator .calc-btn {
             width: 90px; } }
@@ -896,6 +901,14 @@ button {
                 font-size: 10px; } }
           .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .top-btn {
             display: flex; }
+            .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .top-btn input {
+              display: none; }
+              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .top-btn input:checked + label {
+                background: linear-gradient(180deg, #645346 0%, #000000 100%);
+                border: 2px solid #F36D00;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                color: #F36D00; }
           .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .text {
             font-style: normal;
             font-weight: normal;
@@ -912,12 +925,18 @@ button {
               flex-direction: column;
               width: 94px;
               align-items: center;
-              justify-content: space-between; }
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar button {
+              justify-content: space-between;
+              cursor: pointer; }
+              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input {
+                display: none; }
+                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label + span {
+                  font-weight: bold; }
+              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label {
                 border: none;
-                background: none; }
+                background: none;
+                cursor: pointer; }
                 @media (max-width: 425px) {
-                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar button img {
+                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label img {
                     height: 35px; } }
               .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
                 font-family: 'Segoe UI';
@@ -976,12 +995,23 @@ button {
           @media (max-width: 425px) {
             .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .text {
               font-size: 10px; } }
-        .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn button {
-          width: 150px; }
-          @media (max-width: 425px) {
-            .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn button {
-              width: 90px;
-              height: 20px; } }
+        .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn {
+          display: flex;
+          justify-content: center; }
+          .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn input {
+            display: none; }
+            .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn input:checked + label {
+              background: linear-gradient(180deg, #645346 0%, #000000 100%);
+              border: 2px solid #F36D00;
+              box-sizing: border-box;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              color: #F36D00; }
+          .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
+            width: 150px; }
+            @media (max-width: 425px) {
+              .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
+                width: 90px;
+                height: 20px; } }
         .price-counter .price-counter-container .calculator .content-bottom .info-bottom-phone p {
           font-weight: normal;
           font-size: 20px;
@@ -1369,8 +1399,7 @@ button {
       margin: 0 0 53px 0;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
-      padding: 0px 143px; }
+      justify-content: space-between; }
       .specials .specials-container .slider-top .slider-btn-specials button {
         border: none;
         background: none;
@@ -1378,25 +1407,26 @@ button {
         fill: #fff;
         display: flex;
         align-items: center; }
-        .specials .specials-container .slider-top .slider-btn-specials button::before {
-          content: "";
-          position: absolute;
-          background: #CCCCCC;
-          height: 3px;
-          width: 84px;
-          margin: -82px; }
-          @media (max-width: 425px) {
-            .specials .specials-container .slider-top .slider-btn-specials button::before {
+        .specials .specials-container .slider-top .slider-btn-specials button .svg-circle {
+          position: relative;
+          z-index: 2; }
+        .specials .specials-container .slider-top .slider-btn-specials button .line-left {
+          position: relative;
+          z-index: 1; }
+          @media (max-width: 1105px) {
+            .specials .specials-container .slider-top .slider-btn-specials button .line-left {
               display: none; } }
-        .specials .specials-container .slider-top .slider-btn-specials button::after {
-          content: "";
+        .specials .specials-container .slider-top .slider-btn-specials button .line-mid {
           position: absolute;
-          background: #CCCCCC;
-          height: 3px;
-          width: 88px;
-          margin: 44px; }
-          @media (max-width: 425px) {
-            .specials .specials-container .slider-top .slider-btn-specials button::after {
+          left: 32%; }
+          @media (max-width: 1105px) {
+            .specials .specials-container .slider-top .slider-btn-specials button .line-mid {
+              display: none; } }
+        .specials .specials-container .slider-top .slider-btn-specials button .line-right {
+          position: relative;
+          z-index: 1; }
+          @media (max-width: 1105px) {
+            .specials .specials-container .slider-top .slider-btn-specials button .line-right {
               display: none; } }
     .specials .specials-container .container {
       position: relative;
@@ -1758,186 +1788,3 @@ button {
       font-weight: 400;
       font-size: 20px;
       line-height: 79px; }
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 3;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-  /* Modal Content/Box */ }
-  .modal .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 55%;
-    /* Could be more or less, depending on screen size */
-    /* The Close Button */ }
-    .modal .modal-content span {
-      color: #CA0000;
-      font-size: 28px;
-      font-weight: bold; }
-      .modal .modal-content span:hover, .modal .modal-content span:focus {
-        cursor: pointer; }
-      .modal .modal-content span .price-counter-form {
-        height: 810px;
-        color: #000; }
-        .modal .modal-content span .price-counter-form .calculator {
-          background-color: #fff; }
-          .modal .modal-content span .price-counter-form .calculator .text h2 {
-            font-size: 36px;
-            padding: 17px 0 21px 40px;
-            letter-spacing: 1.1px;
-            color: #000; }
-            .modal .modal-content span .price-counter-form .calculator .text h2::before {
-              content: "";
-              position: absolute;
-              background: linear-gradient(180deg, #FE8C00, #F36D00);
-              height: 50px;
-              width: 7px;
-              margin-left: -18px;
-              margin-top: -6px; }
-          .modal .modal-content span .price-counter-form .calculator .calc-btn {
-            width: 163px;
-            height: 47px;
-            color: #000;
-            background: #EAEAEA;
-            border: 2px solid #645346;
-            box-sizing: border-box;
-            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-            margin: -3px; }
-            .modal .modal-content span .price-counter-form .calculator .calc-btn span {
-              font-family: 'Segoe UI', sans-serif;
-              font-weight: normal;
-              font-size: 16px;
-              line-height: 13px;
-              color: #000; }
-            .modal .modal-content span .price-counter-form .calculator .calc-btn:focus, .modal .modal-content span .price-counter-form .calculator .calc-btn:hover {
-              background: linear-gradient(180deg, #645346 0%, #000000 100%);
-              border: 2px solid #F36D00;
-              box-sizing: border-box;
-              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              color: #F36D00; }
-          .modal .modal-content span .price-counter-form .calculator .calc-btn--left {
-            border-radius: 50px 5px 5px 50px; }
-          .modal .modal-content span .price-counter-form .calculator .calc-btn--mid {
-            border-radius: 5px; }
-          .modal .modal-content span .price-counter-form .calculator .calc-btn--right {
-            border-radius: 5px 50px 50px 5px; }
-          .modal .modal-content span .price-counter-form .calculator .content-top {
-            display: flex;
-            padding: 0 12px 22px 12px; }
-            .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right {
-              text-align: center;
-              padding: 18px 0 0 47px; }
-              .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-first .text {
-                font-size: 20px;
-                font-weight: normal;
-                margin-bottom: 12px; }
-              .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-first .top-btn {
-                display: flex; }
-              .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-second .text {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                margin: 35px 0 17px; }
-              .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-second .top-second-btn {
-                display: flex;
-                justify-content: space-evenly; }
-                .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-second .top-second-btn .second-btn-bar {
-                  display: flex;
-                  flex-direction: column;
-                  width: 94px;
-                  align-items: center;
-                  justify-content: space-between; }
-                  .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-second .top-second-btn .second-btn-bar button {
-                    border: none;
-                    background: none; }
-                  .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-second .top-second-btn .second-btn-bar span {
-                    font-family: 'Segoe UI', sans-serif;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 16px;
-                    color: #000; }
-                  .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-second .top-second-btn .second-btn-bar:hover::after, .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-second .top-second-btn .second-btn-bar:focus::after {
-                    content: "";
-                    position: absolute;
-                    background: #FE8C00;
-                    height: 3px;
-                    width: 80px;
-                    margin: 78px; }
-              .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-third .text {
-                margin: 24px 0 11px;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px; }
-              .modal .modal-content span .price-counter-form .calculator .content-top .content-top--right .info-top-third .top-input input {
-                width: 230px;
-                height: 51px;
-                background: #EAEAEA;
-                border: 2px solid #645346;
-                box-sizing: border-box;
-                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 50px;
-                margin: 0 6px;
-                text-align: center;
-                font-family: 'Segoe UI', sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px; }
-          .modal .modal-content span .price-counter-form .calculator .content-bottom {
-            text-align: center; }
-            .modal .modal-content span .price-counter-form .calculator .content-bottom .info-bottom-fourth .text {
-              font-weight: normal;
-              font-size: 20px;
-              margin-bottom: 13px; }
-            .modal .modal-content span .price-counter-form .calculator .content-bottom .info-bottom-fourth .bottom-btn button {
-              width: 150px; }
-            .modal .modal-content span .price-counter-form .calculator .content-bottom .info-bottom-phone p {
-              font-weight: normal;
-              font-size: 20px;
-              margin: 27px 0 10px; }
-            .modal .modal-content span .price-counter-form .calculator .content-bottom .info-bottom-phone .phone {
-              width: 307px;
-              height: 51px;
-              background: #EAEAEA;
-              border: 2px solid #645346;
-              box-sizing: border-box;
-              box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-              border-radius: 50px;
-              font-family: Segoe UI;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 16px;
-              text-align: center; }
-            .modal .modal-content span .price-counter-form .calculator .content-bottom .content-btn button {
-              width: 552px;
-              height: 78px;
-              color: #fff;
-              font-weight: 800;
-              font-size: 28px;
-              background: linear-gradient(180deg, #FE8C00, #F36D00);
-              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-              border-radius: 50px;
-              border: 3px solid #F47000;
-              margin: 26px 0 18px;
-              letter-spacing: -1.9px; }
-            .modal .modal-content span .price-counter-form .calculator .content-bottom .content-btn p {
-              font-size: 16px;
-              opacity: 0.5; }

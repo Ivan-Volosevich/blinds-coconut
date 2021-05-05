@@ -13,48 +13,59 @@ noindex
                         .text 
                             p 1. Выберите	тип:
                         .top-btn 
-                            button.calc-btn.calc-btn--left(type='button')
-                                span Открытые	
-                            button.calc-btn.calc-btn--mid(type='button')
+                            input(type='radio' id="otkrytye" name="blindstype" value="otkrytye")
+                            label.calc-btn.calc-btn--left(for="otkrytye")
+                                span Открытые
+                            input(type='radio' id="kassetnye" name="blindstype" value="kassetnye")
+                            label.calc-btn.calc-btn--mid(for="kassetnye")
                                 span Кассетные
-                            button.calc-btn.calc-btn--mid(type='button')
+                            input(type='radio' checked id="panoramnye" name="blindstype" value="panoramnye")
+                            label.calc-btn.calc-btn--mid(for="panoramnye")
                                 span Для панорамных 
                                     br
                                     |окон
-                            button.calc-btn.calc-btn--right(type='button')
+                            input(type='radio' id="avtomatika" name="blindstype" value="avtomatika")
+                            label.calc-btn.calc-btn--right(for="avtomatika")
                                 span С автоматикой
+
                     .info-top-second
                         .text 
                             p 2. Выберите	ткань:
                         .top-second-btn
                             .second-btn-bar
-                                button(type='button')
+                                input(type='radio' id="svetopronits" name="clothtype" value="svetopronits")
+                                label(for="svetopronits")
                                     img(src="./img/calc2-icon1.png", alt="")
                                 span Светопроницаемая
                             .second-btn-bar
-                                button(type='button')
+                                input(type='radio' id="daynight" name="clothtype" value="daynight")
+                                label(for="daynight")
                                     img(src="./img/calc2-icon2.png", alt="")
                                 span День-ночь
                             .second-btn-bar
-                                button(type='button')
+                                input(type='radio' id="blackout" name="clothtype" value="blackout")
+                                label(for="blackout")
                                     img(src="./img/calc2-icon3.png", alt="")
                                 span Блэкаут
                     .info-top-third
                         .text 
                             p 3. Введите размеры окна:
                         .top-input 
-                            input(type="number", placeholder="Ширина")
-                            input(type="number", placeholder="Высота")
+                            input(type="number", placeholder="Ширина", name="size", value="width")
+                            input(type="number", placeholder="Высота", name="size", value="height")
         .content-bottom 
             .info-bottom-fourth
                 .text 
                     p 4. Выберите	удобный	способ	получения	стоимости:
                 .bottom-btn 
-                    button.calc-btn.calc-btn--left(type='button')
-                        span По	телефону	
-                    button.calc-btn.calc-btn--mid(type='button')
+                    input(type='radio' id="telephone" name="svyaztype" value="telephone")
+                    label.calc-btn.calc-btn--left(for="telephone")
+                        span По	телефону
+                    input(type='radio' id="telegram" name="svyaztype" value="telegram")
+                    label.calc-btn.calc-btn--mid(for="telegram")
                         span Telegram
-                    button.calc-btn.calc-btn--right(type='button')
+                        input(type='radio' id="viber" name="svyaztype" value="viber")
+                    label.calc-btn.calc-btn--right(for="viber")
                         span Viber
 
             .info-bottom-phone 

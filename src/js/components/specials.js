@@ -12,16 +12,25 @@ document.addEventListener("DOMContentLoaded", () => {
         goToSlide(currentSlide+1);
         if (currentSlide == 0) {
             document.getElementById('spec-circle-first').style.fill = "#ABC839";
+            document.getElementById('line-left').style.fill = "#ABC839";
             document.getElementById('spec-circle-second').style.fill = "#CCCCCC";
+            document.getElementById('line-mid').style.fill = "#CCCCCC";
             document.getElementById('spec-circle-third').style.fill = "#CCCCCC";
+            document.getElementById('line-right').style.fill = "#CCCCCC";
         } else if (currentSlide == 1) {
             document.getElementById('spec-circle-first').style.fill = "#CCCCCC";
+            document.getElementById('line-left').style.fill = "#CCCCCC";
             document.getElementById('spec-circle-second').style.fill = "#ABC839";
+            document.getElementById('line-mid').style.fill = "#ABC839";
             document.getElementById('spec-circle-third').style.fill = "#CCCCCC";
+            document.getElementById('line-right').style.fill = "#CCCCCC";
         } else if (currentSlide == 2) {
             document.getElementById('spec-circle-first').style.fill = "#CCCCCC";
+            document.getElementById('line-left').style.fill = "#CCCCCC";
             document.getElementById('spec-circle-second').style.fill = "#CCCCCC";
+            document.getElementById('line-mid').style.fill = "#CCCCCC";
             document.getElementById('spec-circle-third').style.fill = "#ABC839";
+            document.getElementById('line-right').style.fill = "#ABC839";
         }
     }
 
@@ -29,16 +38,25 @@ document.addEventListener("DOMContentLoaded", () => {
         goToSlide(currentSlide-1);
         if (currentSlide == 0) {
             document.getElementById('spec-circle-first').style.fill = "#ABC839";
+            document.getElementById('line-left').style.fill = "#ABC839";
             document.getElementById('spec-circle-second').style.fill = "#CCCCCC";
+            document.getElementById('line-mid').style.fill = "#CCCCCC";
             document.getElementById('spec-circle-third').style.fill = "#CCCCCC";
+            document.getElementById('line-right').style.fill = "#CCCCCC";
         } else if (currentSlide == 1) {
             document.getElementById('spec-circle-first').style.fill = "#CCCCCC";
+            document.getElementById('line-left').style.fill = "#CCCCCC";
             document.getElementById('spec-circle-second').style.fill = "#ABC839";
+            document.getElementById('line-mid').style.fill = "#ABC839";
             document.getElementById('spec-circle-third').style.fill = "#CCCCCC";
+            document.getElementById('line-right').style.fill = "#CCCCCC";
         } else if (currentSlide == 2) {
             document.getElementById('spec-circle-first').style.fill = "#CCCCCC";
+            document.getElementById('line-left').style.fill = "#CCCCCC";
             document.getElementById('spec-circle-second').style.fill = "#CCCCCC";
+            document.getElementById('line-mid').style.fill = "#CCCCCC";
             document.getElementById('spec-circle-third').style.fill = "#ABC839";
+            document.getElementById('line-right').style.fill = "#ABC839";
         }
     }
 
@@ -55,20 +73,29 @@ document.addEventListener("DOMContentLoaded", () => {
     specBtnFirst.onclick = function(){
         goToSlide(0);
         document.getElementById('spec-circle-first').style.fill = "#ABC839";
+        document.getElementById('line-left').style.fill = "#ABC839";
         document.getElementById('spec-circle-second').style.fill = "#CCCCCC";
+        document.getElementById('line-mid').style.fill = "#CCCCCC";
         document.getElementById('spec-circle-third').style.fill = "#CCCCCC";
+        document.getElementById('line-right').style.fill = "#CCCCCC";
     };
     specBtnSecond.onclick = function(){
         goToSlide(1);
         document.getElementById('spec-circle-first').style.fill = "#CCCCCC";
+        document.getElementById('line-left').style.fill = "#CCCCCC";
         document.getElementById('spec-circle-second').style.fill = "#ABC839";
+        document.getElementById('line-mid').style.fill = "#ABC839";
         document.getElementById('spec-circle-third').style.fill = "#CCCCCC";
+        document.getElementById('line-right').style.fill = "#CCCCCC";
     };
     specBtnThird.onclick = function(){
         goToSlide(2);
         document.getElementById('spec-circle-first').style.fill = "#CCCCCC";
+        document.getElementById('line-left').style.fill = "#CCCCCC";
         document.getElementById('spec-circle-second').style.fill = "#CCCCCC";
+        document.getElementById('line-mid').style.fill = "#CCCCCC";
         document.getElementById('spec-circle-third').style.fill = "#ABC839";
+        document.getElementById('line-right').style.fill = "#ABC839";
     };
 
     var next = document.getElementById('next');
