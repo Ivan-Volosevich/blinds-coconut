@@ -2,7 +2,7 @@
     h2 Рассчитайте	точную	стоимость	рольштор
 
 noindex
-    form.calculator
+    form#form.calculator
         .content-top
             .content-top--left
                 .img-wrapper
@@ -13,30 +13,30 @@ noindex
                         .text 
                             p 1. Выберите	тип:
                         .top-btn 
-                            button.calc-btn.calc-btn--left
+                            button.calc-btn.calc-btn--left(type='button')
                                 span Открытые	
-                            button.calc-btn.calc-btn--mid
+                            button.calc-btn.calc-btn--mid(type='button')
                                 span Кассетные
-                            button.calc-btn.calc-btn--mid
+                            button.calc-btn.calc-btn--mid(type='button')
                                 span Для панорамных 
                                     br
                                     |окон
-                            button.calc-btn.calc-btn--right
+                            button.calc-btn.calc-btn--right(type='button')
                                 span С автоматикой
                     .info-top-second
                         .text 
                             p 2. Выберите	ткань:
                         .top-second-btn
                             .second-btn-bar
-                                button 
+                                button(type='button')
                                     img(src="./img/calc2-icon1.png", alt="")
                                 span Светопроницаемая
                             .second-btn-bar
-                                button 
+                                button(type='button')
                                     img(src="./img/calc2-icon2.png", alt="")
                                 span День-ночь
                             .second-btn-bar
-                                button 
+                                button(type='button')
                                     img(src="./img/calc2-icon3.png", alt="")
                                 span Блэкаут
                     .info-top-third
@@ -50,17 +50,17 @@ noindex
                 .text 
                     p 4. Выберите	удобный	способ	получения	стоимости:
                 .bottom-btn 
-                    button.calc-btn.calc-btn--left
+                    button.calc-btn.calc-btn--left(type='button')
                         span По	телефону	
-                    button.calc-btn.calc-btn--mid
+                    button.calc-btn.calc-btn--mid(type='button')
                         span Telegram
-                    button.calc-btn.calc-btn--right
+                    button.calc-btn.calc-btn--right(type='button')
                         span Viber
 
             .info-bottom-phone 
                 p Введите	Ваш	номер	телефона:
-                input(type="tel", placeholder="+375 ** *** ** **", id="tel", value="").phone
+                input(type="tel", placeholder="+375 ** *** ** **", id="tel", value="").phone._req
 
             .content-btn 
-                button.btn-send Рассчитать	стоимость	рольштор
+                button.btn-send(type='submit' action='#') Рассчитать	стоимость	рольштор
                 p Вы	получите	стоимость	по	выбранному	способу	связи	в	течение	15	минут

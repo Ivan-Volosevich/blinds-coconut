@@ -342,7 +342,7 @@
         <h2>Рассчитайте	точную	стоимость	рольштор</h2>
       </div>
       <noindex>
-        <form class="calculator">
+        <form class="calculator" id="form">
           <div class="content-top">
             <div class="content-top--left">
               <div class="img-wrapper"><img class="calc-img" src="./img/calc-img.png" alt=""></div>
@@ -354,10 +354,10 @@
                     <p>1. Выберите	тип:</p>
                   </div>
                   <div class="top-btn"> 
-                    <button class="calc-btn calc-btn--left"><span>Открытые	</span></button>
-                    <button class="calc-btn calc-btn--mid"><span>Кассетные</span></button>
-                    <button class="calc-btn calc-btn--mid"><span>Для панорамных <br>окон</span></button>
-                    <button class="calc-btn calc-btn--right"><span>С автоматикой</span></button>
+                    <button class="calc-btn calc-btn--left" type="button"><span>Открытые	</span></button>
+                    <button class="calc-btn calc-btn--mid" type="button"><span>Кассетные</span></button>
+                    <button class="calc-btn calc-btn--mid" type="button"><span>Для панорамных <br>окон</span></button>
+                    <button class="calc-btn calc-btn--right" type="button"><span>С автоматикой</span></button>
                   </div>
                 </div>
                 <div class="info-top-second">
@@ -366,13 +366,13 @@
                   </div>
                   <div class="top-second-btn">
                     <div class="second-btn-bar">
-                      <button> <img src="./img/calc2-icon1.png" alt=""></button><span>Светопроницаемая</span>
+                      <button type="button"><img src="./img/calc2-icon1.png" alt=""></button><span>Светопроницаемая</span>
                     </div>
                     <div class="second-btn-bar">
-                      <button> <img src="./img/calc2-icon2.png" alt=""></button><span>День-ночь</span>
+                      <button type="button"><img src="./img/calc2-icon2.png" alt=""></button><span>День-ночь</span>
                     </div>
                     <div class="second-btn-bar">
-                      <button> <img src="./img/calc2-icon3.png" alt=""></button><span>Блэкаут</span>
+                      <button type="button"><img src="./img/calc2-icon3.png" alt=""></button><span>Блэкаут</span>
                     </div>
                   </div>
                 </div>
@@ -394,17 +394,17 @@
                 <p>4. Выберите	удобный	способ	получения	стоимости:</p>
               </div>
               <div class="bottom-btn"> 
-                <button class="calc-btn calc-btn--left"><span>По	телефону	</span></button>
-                <button class="calc-btn calc-btn--mid"><span>Telegram</span></button>
-                <button class="calc-btn calc-btn--right"><span>Viber</span></button>
+                <button class="calc-btn calc-btn--left" type="button"><span>По	телефону	</span></button>
+                <button class="calc-btn calc-btn--mid" type="button"><span>Telegram</span></button>
+                <button class="calc-btn calc-btn--right" type="button"><span>Viber</span></button>
               </div>
             </div>
             <div class="info-bottom-phone"> 
               <p>Введите	Ваш	номер	телефона:</p>
-              <input class="phone" type="tel" placeholder="+375 ** *** ** **" id="tel" value="">
+              <input class="phone _req" type="tel" placeholder="+375 ** *** ** **" id="tel" value="">
             </div>
             <div class="content-btn"> 
-              <button class="btn-send">Рассчитать	стоимость	рольштор</button>
+              <button class="btn-send" type="submit" action="#">Рассчитать	стоимость	рольштор</button>
               <p>Вы	получите	стоимость	по	выбранному	способу	связи	в	течение	15	минут</p>
             </div>
           </div>
@@ -717,10 +717,10 @@
                           <p>1. Выберите	тип:</p>
                         </div>
                         <div class="top-btn"> 
-                          <button class="calc-btn calc-btn--left"><span>Открытые	</span></button>
-                          <button class="calc-btn calc-btn--mid"><span>Кассетные</span></button>
-                          <button class="calc-btn calc-btn--mid"><span>Для панорамных<br>окон</span></button>
-                          <button class="calc-btn calc-btn--right"><span>С автоматикой</span></button>
+                          <button class="calc-btn calc-btn--left" type="button"><span>Открытые	</span></button>
+                          <button class="calc-btn calc-btn--mid" type="button"><span>Кассетные</span></button>
+                          <button class="calc-btn calc-btn--mid" type="button"><span>Для панорамных<br>окон</span></button>
+                          <button class="calc-btn calc-btn--right" type="button"><span>С автоматикой</span></button>
                         </div>
                       </div>
                       <div class="info-top-second">
@@ -729,13 +729,13 @@
                         </div>
                         <div class="top-second-btn">
                           <div class="second-btn-bar">
-                            <button> <img src="./img/calc2-icon1.png" alt=""></button><span>Светопроницаемая</span>
+                            <button type="button"> <img src="./img/calc2-icon1.png" alt=""></button><span>Светопроницаемая</span>
                           </div>
                           <div class="second-btn-bar">
-                            <button> <img src="./img/calc2-icon2.png" alt=""></button><span>День-ночь</span>
+                            <button type="button"> <img src="./img/calc2-icon2.png" alt=""></button><span>День-ночь</span>
                           </div>
                           <div class="second-btn-bar">
-                            <button> <img src="./img/calc2-icon3.png" alt=""></button><span>Блэкаут</span>
+                            <button type="button"> <img src="./img/calc2-icon3.png" alt=""></button><span>Блэкаут</span>
                           </div>
                         </div>
                       </div>
@@ -757,9 +757,9 @@
                       <p>4. Выберите	удобный	способ	получения	стоимости:</p>
                     </div>
                     <div class="bottom-btn"> 
-                      <button class="calc-btn calc-btn--left"><span>По	телефону	</span></button>
-                      <button class="calc-btn calc-btn--mid"><span>Telegram</span></button>
-                      <button class="calc-btn calc-btn--right"><span>Viber</span></button>
+                      <button class="calc-btn calc-btn--left" type="button"><span>По	телефону	</span></button>
+                      <button class="calc-btn calc-btn--mid" type="button"><span>Telegram</span></button>
+                      <button class="calc-btn calc-btn--right" type="button"><span>Viber</span></button>
                     </div>
                   </div>
                   <div class="info-bottom-phone"> 
@@ -767,7 +767,7 @@
                     <input class="phone" type="tel" placeholder="+375 ** *** ** **" id="tel-form" value="">
                   </div>
                   <div class="content-btn"> 
-                    <button class="btn-send">Рассчитать	стоимость	рольштор</button>
+                    <button class="btn-send" type="submit">Рассчитать	стоимость	рольштор</button>
                     <p>Вы	получите	стоимость	по	выбранному	способу	связи	в	течение	15	минут</p>
                   </div>
                 </div>
