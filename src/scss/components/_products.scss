@@ -83,6 +83,11 @@
             justify-content: space-between;
             align-items: center;
 
+            &:active, &:hover, &:focus {
+                outline: 0 !important;
+                outline-offset: 0 !important;
+            }
+
             @media (max-width: 1105px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr;

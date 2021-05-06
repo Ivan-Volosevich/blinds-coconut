@@ -184,8 +184,11 @@ button {
     cursor: pointer;
     font-family: "SF Pro Display";
     font-style: normal;
+}
 
-    &:active, &:focus {
-        outline: 0;
+button, label, input, a, select, svg, img {
+    &:active, &:hover, &:focus {
+        outline: 0 !important;
+        outline-offset: 0 !important;
     }
 }

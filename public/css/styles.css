@@ -357,8 +357,10 @@ button {
   cursor: pointer;
   font-family: "SF Pro Display";
   font-style: normal; }
-  button:active, button:focus {
-    outline: 0; }
+
+button:active, button:hover, button:focus, label:active, label:hover, label:focus, input:active, input:hover, input:focus, a:active, a:hover, a:focus, select:active, select:hover, select:focus, svg:active, svg:hover, svg:focus, img:active, img:hover, img:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important; }
 
 @media (max-width: 1105px) {
   .hero {
@@ -663,6 +665,9 @@ button {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      .products .products-container .nav-btn:active, .products .products-container .nav-btn:hover, .products .products-container .nav-btn:focus {
+        outline: 0 !important;
+        outline-offset: 0 !important; }
       @media (max-width: 1105px) {
         .products .products-container .nav-btn {
           display: grid;
@@ -941,7 +946,7 @@ button {
       .price-counter .price-counter-container .calculator .calc-btn--left {
         border-radius: 50px 5px 5px 50px; }
       .price-counter .price-counter-container .calculator .calc-btn--mid {
-        border-radius: 5px; }
+        border-radius: 0; }
       .price-counter .price-counter-container .calculator .calc-btn--right {
         border-radius: 5px 50px 50px 5px; }
       .price-counter .price-counter-container .calculator .content-top {
@@ -1103,7 +1108,8 @@ button {
               .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
                 height: 22px;
                 width: 150px;
-                margin: 2px 6px; } }
+                margin: 2px 6px;
+                font-size: 8px; } }
       .price-counter .price-counter-container .calculator .content-bottom {
         text-align: center; }
         .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .text {
@@ -1154,8 +1160,10 @@ button {
           text-align: center; }
           @media (max-width: 767px) {
             .price-counter .price-counter-container .calculator .content-bottom .info-bottom-phone .phone {
+              font-size: 8px;
               height: 25px;
-              width: 240px; } }
+              width: 240px;
+              letter-spacing: 1px; } }
         .price-counter .price-counter-container .calculator .content-bottom .content-btn button {
           width: 552px;
           height: 78px;
@@ -1353,6 +1361,9 @@ button {
         @media (max-width: 1105px) {
           .about .short .short-container .short-info .short-info-bar {
             margin-bottom: 20px; } }
+        @media (max-width: 667px) {
+          .about .short .short-container .short-info .short-info-bar {
+            max-width: 300px; } }
         @media (max-width: 425px) {
           .about .short .short-container .short-info .short-info-bar .img {
             height: 59px; } }
@@ -1370,6 +1381,7 @@ button {
               font-size: 14px; } }
 
 .catalogs {
+  display: none;
   height: 693px; }
   @media (max-width: 1105px) {
     .catalogs {
@@ -1629,10 +1641,15 @@ button {
           .specials .specials-container .container #slides {
             margin-bottom: 20px;
             height: 300px; } }
+        @media (max-width: 600px) {
+          .specials .specials-container .container #slides {
+            margin: 0 60px;
+            height: 200px; } }
         @media (max-width: 425px) {
           .specials .specials-container .container #slides {
             width: 300px;
-            height: 200px; } }
+            height: 200px;
+            margin: auto; } }
       .specials .specials-container .container .slide {
         display: flex;
         position: absolute;
@@ -1675,7 +1692,7 @@ button {
             @media (max-width: 1105px) {
               .specials .specials-container .container .slide .slider-info h3 {
                 font-size: 28px; } }
-            @media (max-width: 425px) {
+            @media (max-width: 600px) {
               .specials .specials-container .container .slide .slider-info h3 {
                 font-size: 20px; } }
           .specials .specials-container .container .slide .slider-info h4 {
@@ -1687,13 +1704,13 @@ button {
               .specials .specials-container .container .slide .slider-info h4 {
                 font-size: 18px;
                 line-height: 20px; } }
-            @media (max-width: 425px) {
+            @media (max-width: 600px) {
               .specials .specials-container .container .slide .slider-info h4 {
                 font-size: 14px; } }
           .specials .specials-container .container .slide .slider-info .text {
             padding: 25px 30px;
             text-align: center; }
-            @media (max-width: 425px) {
+            @media (max-width: 600px) {
               .specials .specials-container .container .slide .slider-info .text {
                 padding: 5px; } }
             .specials .specials-container .container .slide .slider-info .text p {
@@ -1718,7 +1735,7 @@ button {
               @media (max-width: 782px) {
                 .specials .specials-container .container .slide .slider-info .text-select .select-section p {
                   font-size: 12px; } }
-              @media (max-width: 425px) {
+              @media (max-width: 600px) {
                 .specials .specials-container .container .slide .slider-info .text-select .select-section p {
                   font-size: 8px; } }
           .specials .specials-container .container .slide .slider-info button {
@@ -1737,7 +1754,7 @@ button {
                 width: 150px;
                 height: 42px;
                 font-size: 14px; } }
-            @media (max-width: 425px) {
+            @media (max-width: 600px) {
               .specials .specials-container .container .slide .slider-info button {
                 width: 120px;
                 height: 42px;
@@ -1749,10 +1766,10 @@ button {
         @media (max-width: 1105px) {
           .specials .specials-container .container .controls {
             margin: 127px 10px; } }
-        @media (max-width: 425px) {
+        @media (max-width: 600px) {
           .specials .specials-container .container .controls {
             margin: 0; } }
-        @media (max-width: 425px) {
+        @media (max-width: 600px) {
           .specials .specials-container .container .controls img {
             display: none; } }
       .specials .specials-container .container .controls:hover {

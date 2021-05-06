@@ -233,6 +233,10 @@
                         margin-bottom: 20px;
                     }
 
+                    @media (max-width: 667px) {
+                        max-width: 300px;
+                    }
+
                     .img {
                         @media (max-width: 425px) {
                             height: 59px;

@@ -140,7 +140,7 @@
             }
 
             .calc-btn--mid {
-                border-radius: 5px;
+                border-radius: 0;
             }
 
             .calc-btn--right {
@@ -393,6 +393,7 @@
                                         height: 22px;
                                         width: 150px;
                                         margin: 2px 6px;
+                                        font-size: 8px;
                                     }
                                 }
                             }
@@ -472,8 +473,10 @@
                         text-align: center;
 
                         @media (max-width: 767px) {
+                            font-size: 8px;
                             height: 25px;
                             width: 240px;
+                            letter-spacing: 1px;
                         }
                     }
                 }
