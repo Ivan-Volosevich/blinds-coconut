@@ -1359,6 +1359,9 @@ button {
         padding-bottom: 20px; } }
     .catalogs .catalogs-container .text {
       padding: 71px 0 53px 18px; }
+      @media (max-width: 1105px) {
+        .catalogs .catalogs-container .text {
+          padding: 40px 0 40px 18px; } }
       .catalogs .catalogs-container .text h2 {
         font-size: 45px;
         font-weight: 800;
@@ -1383,12 +1386,15 @@ button {
           @media (max-width: 1105px) {
             .catalogs .catalogs-container .text h2::before {
               height: 50px; } }
+          @media (max-width: 768px) {
+            .catalogs .catalogs-container .text h2::before {
+              height: 46px; } }
           @media (max-width: 425px) {
             .catalogs .catalogs-container .text h2::before {
-              height: 58px; } }
-          @media (max-width: 375px) {
+              height: 32px; } }
+          @media (max-width: 320px) {
             .catalogs .catalogs-container .text h2::before {
-              height: 50px; } }
+              height: 48px; } }
     .catalogs .catalogs-container .nav-class {
       display: flex;
       justify-content: space-between; }
@@ -1428,9 +1434,6 @@ button {
             letter-spacing: 0.5px; }
             @media (max-width: 1105px) {
               .catalogs .catalogs-container .nav-class .nav-class--type .type-text h3 {
-                font-size: 12px; } }
-            @media (max-width: 425px) {
-              .catalogs .catalogs-container .nav-class .nav-class--type .type-text h3 {
                 font-size: 16px; } }
           .catalogs .catalogs-container .nav-class .nav-class--type .type-text p {
             font-size: 16px;
@@ -1438,9 +1441,6 @@ button {
             color: #f36d00;
             letter-spacing: 0.4px; }
             @media (max-width: 1105px) {
-              .catalogs .catalogs-container .nav-class .nav-class--type .type-text p {
-                font-size: 10px; } }
-            @media (max-width: 425px) {
               .catalogs .catalogs-container .nav-class .nav-class--type .type-text p {
                 font-size: 14px; } }
         .catalogs .catalogs-container .nav-class .nav-class--type .btn-count {
@@ -1459,7 +1459,7 @@ button {
           align-items: center; }
           @media (max-width: 1105px) {
             .catalogs .catalogs-container .nav-class .nav-class--type .btn-count {
-              font-size: 12px; } }
+              font-size: 14px; } }
           @media (max-width: 425px) {
             .catalogs .catalogs-container .nav-class .nav-class--type .btn-count {
               margin: auto;
@@ -1469,7 +1469,7 @@ button {
             .catalogs .catalogs-container .nav-class .nav-class--type .btn-count:active svg {
               fill: #f36d00; }
           .catalogs .catalogs-container .nav-class .nav-class--type .btn-count .text-btn {
-            margin: 0 0 6px 17px;
+            margin: 0 0 0 17px;
             letter-spacing: 0.5px; }
           .catalogs .catalogs-container .nav-class .nav-class--type .btn-count svg {
             fill: #fff; }
