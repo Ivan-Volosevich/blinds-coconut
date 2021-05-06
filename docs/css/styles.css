@@ -1738,10 +1738,34 @@ button {
   height: 1071px; }
   @media (max-width: 1105px) {
     .our-works {
-      height: 1010px; } }
+      height: 940px; } }
   @media (max-width: 767px) {
     .our-works {
-      height: 1500px; } }
+      height: 930px; } }
+  @media (max-width: 679px) {
+    .our-works {
+      height: 910px; } }
+  @media (max-width: 600px) {
+    .our-works {
+      height: 840px; } }
+  @media (max-width: 560px) {
+    .our-works {
+      height: 800px; } }
+  @media (max-width: 512px) {
+    .our-works {
+      height: 750px; } }
+  @media (max-width: 480px) {
+    .our-works {
+      height: 700px; } }
+  @media (max-width: 400px) {
+    .our-works {
+      height: 620px; } }
+  @media (max-width: 375px) {
+    .our-works {
+      height: 580px; } }
+  @media (max-width: 320px) {
+    .our-works {
+      height: 520px; } }
   .our-works .our-works-container {
     width: 1079px;
     margin: auto; }
@@ -1754,6 +1778,9 @@ button {
         padding-bottom: 20px; } }
     .our-works .our-works-container .text {
       padding: 67px 0 53px 18px; }
+      @media (max-width: 1105px) {
+        .our-works .our-works-container .text {
+          padding: 40px 0 40px 18px; } }
       .our-works .our-works-container .text h2 {
         font-size: 45px;
         font-weight: 700;
@@ -1790,7 +1817,6 @@ button {
       grid-template-columns: repeat(3, 1fr); }
       @media (max-width: 767px) {
         .our-works .our-works-container .slider-works .slider-show .slider-images {
-          grid-template-columns: repeat(2, 1fr);
           justify-items: center; } }
       .our-works .our-works-container .slider-works .slider-show .slider-images .img {
         margin: 3px;
@@ -1828,15 +1854,36 @@ button {
       display: flex;
       justify-content: center;
       text-align: center; }
+      @media (max-width: 1105px) {
+        .our-works .our-works-container .slider-works .slider-btn {
+          top: 750px; } }
       @media (max-width: 767px) {
         .our-works .our-works-container .slider-works .slider-btn {
-          top: 1300px; } }
+          top: 760px; } }
+      @media (max-width: 679px) {
+        .our-works .our-works-container .slider-works .slider-btn {
+          top: 720px; } }
+      @media (max-width: 600px) {
+        .our-works .our-works-container .slider-works .slider-btn {
+          top: 670px; } }
+      @media (max-width: 560px) {
+        .our-works .our-works-container .slider-works .slider-btn {
+          top: 620px; } }
+      @media (max-width: 512px) {
+        .our-works .our-works-container .slider-works .slider-btn {
+          top: 560px; } }
+      @media (max-width: 480px) {
+        .our-works .our-works-container .slider-works .slider-btn {
+          top: 530px; } }
+      @media (max-width: 400px) {
+        .our-works .our-works-container .slider-works .slider-btn {
+          top: 450px; } }
       @media (max-width: 375px) {
         .our-works .our-works-container .slider-works .slider-btn {
-          top: 385px; } }
+          top: 420px; } }
       @media (max-width: 320px) {
         .our-works .our-works-container .slider-works .slider-btn {
-          top: 325px; } }
+          top: 360px; } }
       .our-works .our-works-container .slider-works .slider-btn button {
         border: none;
         background: none;
@@ -1846,15 +1893,25 @@ button {
 .contacts {
   height: 671px;
   background-color: #41362E; }
-  @media (max-width: 850px) {
+  @media (max-width: 1105px) {
     .contacts {
       height: 100%; } }
   .contacts .contacts-container {
     color: #fff;
     width: 1079px;
     margin: auto; }
+    @media (max-width: 1105px) {
+      .contacts .contacts-container {
+        width: 700px; } }
+    @media (max-width: 767px) {
+      .contacts .contacts-container {
+        width: 98%;
+        padding-bottom: 20px; } }
     .contacts .contacts-container .text {
       padding: 69px 0 61px 18px; }
+      @media (max-width: 1105px) {
+        .contacts .contacts-container .text {
+          padding: 40px 0 40px 18px; } }
       .contacts .contacts-container .text h2 {
         font-size: 45px;
         font-weight: 700;
@@ -1889,38 +1946,35 @@ button {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      @media (max-width: 850px) {
+      @media (max-width: 1105px) {
         .contacts .contacts-container .content {
-          flex-direction: column-reverse;
+          flex-direction: column-reverse; } }
+      @media (max-width: 425px) {
+        .contacts .contacts-container .content {
           align-items: flex-start; } }
       .contacts .contacts-container .content .map {
         width: 591px;
         height: 391px; }
-        @media (max-width: 973px) {
+        @media (max-width: 1105px) {
           .contacts .contacts-container .content .map {
-            width: 350px;
-            height: 300px;
-            margin: auto;
-            margin-bottom: 15px; } }
-        @media (max-width: 850px) {
-          .contacts .contacts-container .content .map {
-            width: 700px;
-            height: 300px; } }
-        @media (max-width: 768px) {
-          .contacts .contacts-container .content .map {
-            width: 400px;
-            height: 300px; } }
-        @media (max-width: 425px) {
+            margin-bottom: 20px; } }
+        @media (max-width: 767px) {
           .contacts .contacts-container .content .map {
             width: 300px;
-            height: 300px; } }
+            height: 300px;
+            margin: auto; } }
       .contacts .contacts-container .content .info .info-content {
         display: flex;
         margin: 45px 36px 45px 0; }
+        @media (max-width: 1105px) {
+          .contacts .contacts-container .content .info .info-content {
+            margin: 20px 0; } }
         .contacts .contacts-container .content .info .info-content .cont-text {
-          padding: 0 18px; }
+          padding: 0 18px;
+          display: flex;
+          flex-direction: column;
+          font-size: 18px; }
           .contacts .contacts-container .content .info .info-content .cont-text p {
-            font-size: 18px;
             font-weight: 600; }
             @media (max-width: 425px) {
               .contacts .contacts-container .content .info .info-content .cont-text p:last-child {
@@ -1928,15 +1982,26 @@ button {
             @media (max-width: 320px) {
               .contacts .contacts-container .content .info .info-content .cont-text p:last-child {
                 font-size: 10px; } }
+          @media (max-width: 425px) {
+            .contacts .contacts-container .content .info .info-content .cont-text span {
+              font-size: 14px; } }
+          @media (max-width: 320px) {
+            .contacts .contacts-container .content .info .info-content .cont-text span {
+              font-size: 12px; } }
           .contacts .contacts-container .content .info .info-content .cont-text .text-phones {
             display: flex;
             align-items: center; }
-            @media (max-width: 425px) {
-              .contacts .contacts-container .content .info .info-content .cont-text .text-phones .num-phones p {
-                font-size: 14px; } }
-            @media (max-width: 320px) {
-              .contacts .contacts-container .content .info .info-content .cont-text .text-phones .num-phones p {
-                font-size: 10px; } }
+            .contacts .contacts-container .content .info .info-content .cont-text .text-phones .num-phones {
+              display: flex;
+              flex-direction: column; }
+              .contacts .contacts-container .content .info .info-content .cont-text .text-phones .num-phones span {
+                font-size: 18px; }
+                @media (max-width: 425px) {
+                  .contacts .contacts-container .content .info .info-content .cont-text .text-phones .num-phones span {
+                    font-size: 14px; } }
+                @media (max-width: 320px) {
+                  .contacts .contacts-container .content .info .info-content .cont-text .text-phones .num-phones span {
+                    font-size: 12px; } }
             .contacts .contacts-container .content .info .info-content .cont-text .text-phones .icons-phones {
               padding-left: 23px; }
 
