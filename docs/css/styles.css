@@ -1478,6 +1478,9 @@ button {
 .specials {
   height: 675px;
   background-image: linear-gradient(to right, rgba(92, 79, 68, 0.8), rgba(92, 79, 68, 0.8)), url(./../img/bg-specials.png); }
+  @media (max-width: 1105px) {
+    .specials {
+      height: 100%; } }
   .specials .specials-container {
     width: 1079px;
     margin: auto;
@@ -1485,9 +1488,19 @@ button {
             essential styles:
             these make the slideshow work
             */ }
+    @media (max-width: 1105px) {
+      .specials .specials-container {
+        width: 700px; } }
+    @media (max-width: 767px) {
+      .specials .specials-container {
+        width: 98%;
+        padding-bottom: 20px; } }
     .specials .specials-container .header-text {
       padding: 61px 0 26px 19px;
       color: #fff; }
+      @media (max-width: 1105px) {
+        .specials .specials-container .header-text {
+          padding: 40px 0 40px 19px; } }
       .specials .specials-container .header-text h2 {
         font-size: 45px;
         font-weight: 700;
@@ -1514,8 +1527,11 @@ button {
               height: 44px; } }
           @media (max-width: 425px) {
             .specials .specials-container .header-text h2::before {
-              height: 58px; } }
+              height: 60px; } }
           @media (max-width: 375px) {
+            .specials .specials-container .header-text h2::before {
+              height: 32px; } }
+          @media (max-width: 368px) {
             .specials .specials-container .header-text h2::before {
               height: 50px; } }
     .specials .specials-container .slider-top .slider-btn-specials {
@@ -1523,6 +1539,10 @@ button {
       display: flex;
       align-items: center;
       justify-content: space-between; }
+      @media (max-width: 1105px) {
+        .specials .specials-container .slider-top .slider-btn-specials {
+          justify-content: space-evenly;
+          margin: 0 0 20px 0; } }
       .specials .specials-container .slider-top .slider-btn-specials button {
         border: none;
         background: none;
@@ -1530,6 +1550,10 @@ button {
         fill: #fff;
         display: flex;
         align-items: center; }
+        @media (max-width: 767px) {
+          .specials .specials-container .slider-top .slider-btn-specials button {
+            height: 40px;
+            width: 40px; } }
         .specials .specials-container .slider-top .slider-btn-specials button .svg-circle {
           position: relative;
           z-index: 2; }
@@ -1558,6 +1582,9 @@ button {
             non-essential styles:
             just for appearance; change whatever you want
             */ }
+      @media (max-width: 767px) {
+        .specials .specials-container .container {
+          justify-content: center; } }
       .specials .specials-container .container #slides {
         position: relative;
         height: 350px;
@@ -1568,6 +1595,10 @@ button {
         border: 10px solid #ABC839;
         box-sizing: border-box;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+        @media (max-width: 1105px) {
+          .specials .specials-container .container #slides {
+            margin-bottom: 20px;
+            height: 300px; } }
         @media (max-width: 425px) {
           .specials .specials-container .container #slides {
             width: 300px;
@@ -1588,8 +1619,6 @@ button {
       .specials .specials-container .container .showing {
         opacity: 1;
         z-index: 2; }
-      .specials .specials-container .container .controls {
-        display: none; }
       .specials .specials-container .container .slide {
         box-sizing: border-box;
         background: #333;
@@ -1643,10 +1672,10 @@ button {
               letter-spacing: 0.5px; }
               @media (max-width: 1105px) {
                 .specials .specials-container .container .slide .slider-info .text p {
-                  font-size: 12px; } }
-              @media (max-width: 425px) {
+                  font-size: 14px; } }
+              @media (max-width: 767px) {
                 .specials .specials-container .container .slide .slider-info .text p {
-                  font-size: 8px; } }
+                  font-size: 10px; } }
           .specials .specials-container .container .slide .slider-info .text-select .select-section {
             display: flex; }
             .specials .specials-container .container .slide .slider-info .text-select .select-section img {
@@ -1687,6 +1716,9 @@ button {
         background: none;
         border: none;
         margin: 156px 48px; }
+        @media (max-width: 1105px) {
+          .specials .specials-container .container .controls {
+            margin: 127px 10px; } }
         @media (max-width: 425px) {
           .specials .specials-container .container .controls {
             margin: 0; } }
@@ -1704,18 +1736,22 @@ button {
 
 .our-works {
   height: 1071px; }
-  @media (max-width: 425px) {
+  @media (max-width: 1105px) {
     .our-works {
-      height: 550px; } }
-  @media (max-width: 375px) {
+      height: 1010px; } }
+  @media (max-width: 767px) {
     .our-works {
-      height: 510px; } }
-  @media (max-width: 320px) {
-    .our-works {
-      height: 450px; } }
+      height: 1500px; } }
   .our-works .our-works-container {
     width: 1079px;
     margin: auto; }
+    @media (max-width: 1105px) {
+      .our-works .our-works-container {
+        width: 700px; } }
+    @media (max-width: 767px) {
+      .our-works .our-works-container {
+        width: 98%;
+        padding-bottom: 20px; } }
     .our-works .our-works-container .text {
       padding: 67px 0 53px 18px; }
       .our-works .our-works-container .text h2 {
@@ -1752,6 +1788,10 @@ button {
       display: grid;
       grid-gap: 1px;
       grid-template-columns: repeat(3, 1fr); }
+      @media (max-width: 767px) {
+        .our-works .our-works-container .slider-works .slider-show .slider-images {
+          grid-template-columns: repeat(2, 1fr);
+          justify-items: center; } }
       .our-works .our-works-container .slider-works .slider-show .slider-images .img {
         margin: 3px;
         background-color: #ccc;
@@ -1766,6 +1806,7 @@ button {
       margin: 0px;
       list-style-type: none; }
       .our-works .our-works-container .slider-works #slider-show .slider-images {
+        display: none;
         position: absolute;
         left: 0px;
         top: 0px;
@@ -1778,6 +1819,7 @@ button {
         -o-transition: opacity 0.5s;
         transition: opacity 0.5s; }
       .our-works .our-works-container .slider-works #slider-show .showing {
+        display: grid;
         opacity: 1;
         z-index: 2; }
     .our-works .our-works-container .slider-works .slider-btn {
@@ -1786,9 +1828,9 @@ button {
       display: flex;
       justify-content: center;
       text-align: center; }
-      @media (max-width: 425px) {
+      @media (max-width: 767px) {
         .our-works .our-works-container .slider-works .slider-btn {
-          top: 425px; } }
+          top: 1300px; } }
       @media (max-width: 375px) {
         .our-works .our-works-container .slider-works .slider-btn {
           top: 385px; } }
