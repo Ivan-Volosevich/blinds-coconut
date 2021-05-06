@@ -1,5 +1,9 @@
 .hero {
 
+  @media (max-width: 1105px) {
+    margin-top: 74px;
+}
+
   .hero-slide {
     height: 819px;
     position: absolute;
@@ -15,19 +19,27 @@
     transition: opacity 1s;
 
     @media (max-width: 1105px) {
+      height: 500px;
+    }
+
+    @media (max-width: 767px) {
       height: 450px;
     }
 
     @media (max-width: 425px) {
-      height: 340px;
+      height: 380px;
     }
 
     @media (max-width: 375px) {
-      height: 320px;
+      height: 360px;
+    }
+
+    @media (max-width: 353px) {
+      height: 380px;
     }
 
     @media (max-width: 320px) {
-      height: 280px;
+      height: 320px;
     }
   }
 
@@ -41,6 +53,14 @@
     width: 1079px;
     margin: auto;
     padding-top: 70px;
+
+    @media (max-width: 1105px) {
+      width: 700px;
+    }
+
+    @media (max-width: 767px) {
+      width: 98%;
+    }
 
     .hero-text{
       width: 842px;
@@ -60,6 +80,7 @@
 
         @media (max-width: 1105px) {
           font-size: 36px;
+
         }
 
         @media (max-width: 542px) {
@@ -119,6 +140,7 @@
 
         @media (max-width: 1105px) {
           font-size: 24px;
+          letter-spacing: 0.5px;
         }
 
         @media (max-width: 542px) {
@@ -157,12 +179,11 @@
         font-size: 18px;
         
         @media (max-width: 1105px) {
-          width: 65%;
+          width: 55%;
           margin-bottom: 10px;
         }
 
         @media (max-width: 425px) {
-          width: 60%;
           font-size: 12px;
         }
 
@@ -250,19 +271,13 @@
           margin: 10px;
         }
 
-        @media (max-width: 542px) {
-          width: 300px;
-          font-size: 20px;
-        }
-
-        @media (max-width: 425px) {
-          width: 260px;
+        @media (max-width: 767px) {
+          width: 70%;
+          font-size: 16px;  
           height: 50px;
-          font-size: 16px;
         }
 
         @media (max-width: 320px) {
-          width: 200px;
           height: 40px;
           font-size: 12px;
         }
@@ -280,6 +295,10 @@
   padding: 0px;
   margin: 0px;
   list-style-type: none;
+
+  @media (max-width: 1105px) {
+    position: initial;
+}
 }
 
 .hero-slide:nth-of-type(1){
