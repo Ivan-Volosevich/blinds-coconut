@@ -57,4 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('circle-second').style.fill = "#CCCCCC";
         document.getElementById('circle-third').style.fill = "#ABC839";
     };
+
+    // import Viewer from 'viewerjs';
+
+    // const gallery = new Viewer(document.getElementById('images'));
 });

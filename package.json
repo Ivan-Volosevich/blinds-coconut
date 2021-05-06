@@ -4,13 +4,15 @@
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "@splidejs/splide": "^2.4.21",
+    "jquery": "^3.6.0",
     "json": "^10.0.0",
     "node-sass": "^5.0.0",
     "normalize.css": "^8.0.1",
     "path": "^0.12.7",
     "pg": "^8.5.1",
     "pug": "^3.0.0",
-    "simpleslider-js": "^1.9.0"
+    "simpleslider-js": "^1.9.0",
+    "viewerjs": "^1.9.0"
   },
   "description": "blinds-coconut",
   "main": "app.js",

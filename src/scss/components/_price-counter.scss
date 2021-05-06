@@ -121,14 +121,8 @@
 
                     @media (max-width: 767px) {
                         font-size: 8px;
-                        line-height: 0;
+                        line-height: 5px;
                         max-height: 8px;
-                    }
-
-                    @media (max-width: 375px) {
-                        br {
-                            display: none;
-                        }
                     }
                 }
 
