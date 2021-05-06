@@ -1011,6 +1011,12 @@ button {
               cursor: pointer; }
               .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input {
                 display: none; }
+                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label .img-sveto {
+                  background: center/contain no-repeat url(./../img/calc2-svet1-2.png); }
+                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label .img-daynight {
+                  background: center/contain no-repeat url(./../img/calc2-daynight2-2.png); }
+                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label .img-blackout {
+                  background: center/contain no-repeat url(./../img/calc2-blackout3-2.png); }
                 .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label + span {
                   font-weight: bold; }
               .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label {
@@ -1018,8 +1024,32 @@ button {
                 background: none;
                 cursor: pointer; }
                 @media (max-width: 767px) {
-                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label img {
+                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img {
                     height: 35px; } }
+                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-sveto {
+                  width: 50px;
+                  height: 50px;
+                  background: center/contain no-repeat url(./../img/calc2-svet1-1.png); }
+                  @media (max-width: 767px) {
+                    .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-sveto {
+                      width: 35px;
+                      height: 35px; } }
+                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-daynight {
+                  width: 50px;
+                  height: 50px;
+                  background: center/contain no-repeat url(./../img/calc2-daynight2-1.png); }
+                  @media (max-width: 767px) {
+                    .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-daynight {
+                      width: 35px;
+                      height: 35px; } }
+                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-blackout {
+                  width: 50px;
+                  height: 50px;
+                  background: center/contain no-repeat url(./../img/calc2-blackout3-1.png); }
+                  @media (max-width: 767px) {
+                    .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-blackout {
+                      width: 35px;
+                      height: 35px; } }
               .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
                 font-family: 'Segoe UI';
                 font-style: normal;
@@ -1037,7 +1067,7 @@ button {
                 position: absolute;
                 background: #FE8C00;
                 height: 3px;
-                width: 80px;
+                width: 100px;
                 margin: 78px; }
                 @media (max-width: 767px) {
                   .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {

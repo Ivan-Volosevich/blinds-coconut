@@ -250,7 +250,19 @@
                                     input {
                                         display: none;
 
-                                        &:checked+label {
+                                        &:checked + label {
+
+                                            .img-sveto {
+                                                background: center / contain no-repeat url(./../img/calc2-svet1-2.png);
+                                            }
+
+                                            .img-daynight {
+                                                background: center / contain no-repeat url(./../img/calc2-daynight2-2.png);
+                                            }
+
+                                            .img-blackout {
+                                                background: center / contain no-repeat url(./../img/calc2-blackout3-2.png);
+                                            }
 
                                             &+span {
                                                 font-weight: bold;
@@ -263,8 +275,41 @@
                                         background: none;
                                         cursor: pointer;
 
-                                        img {
+                                        .img {
                                             @media (max-width: 767px) {
+                                                height: 35px;
+                                            }
+                                        }
+
+                                        .img-sveto {
+                                            width: 50px;
+                                            height: 50px;
+                                            background: center / contain no-repeat url(./../img/calc2-svet1-1.png);
+
+                                            @media (max-width: 767px) {
+                                                width: 35px;
+                                                height: 35px;
+                                            }
+                                        }
+
+                                        .img-daynight {
+                                            width: 50px;
+                                            height: 50px;
+                                            background: center / contain no-repeat url(./../img/calc2-daynight2-1.png);
+
+                                            @media (max-width: 767px) {
+                                                width: 35px;
+                                                height: 35px;
+                                            }
+                                        }
+
+                                        .img-blackout {
+                                            width: 50px;
+                                            height: 50px;
+                                            background: center / contain no-repeat url(./../img/calc2-blackout3-1.png);
+
+                                            @media (max-width: 767px) {
+                                                width: 35px;
                                                 height: 35px;
                                             }
                                         }
@@ -296,7 +341,7 @@
                                             position: absolute;
                                             background: #FE8C00;
                                             height: 3px;
-                                            width: 80px;
+                                            width: 100px;
                                             margin: 78px;
 
                                             @media (max-width: 767px) {
