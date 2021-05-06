@@ -34,6 +34,8 @@
             h2 {
                 font-size: 45px;
                 letter-spacing: 1.1px;
+                color: #fff;
+                font-weight: 700;
 
                 @media (max-width: 1105px) {
                     font-size: 32px;
@@ -303,9 +305,9 @@
                                             width: 80px;
                                             margin: 78px;
 
-                                            @media (max-width: 425px) {
+                                            @media (max-width: 767px) {
                                                 width: 45px;
-                                                margin: 62px;
+                                                margin: 52px;
                                             }
                                         }
                                     }

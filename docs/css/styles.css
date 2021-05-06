@@ -630,7 +630,8 @@ button {
     .products .products-container h2 {
       font-size: 45px;
       padding: 60px 18px 45px;
-      letter-spacing: 1.2px; }
+      letter-spacing: 1.2px;
+      font-weight: 700; }
       @media (max-width: 1105px) {
         .products .products-container h2 {
           font-size: 32px;
@@ -858,7 +859,9 @@ button {
           padding: 40px 0 40px 18px; } }
       .price-counter .price-counter-container .text-header h2 {
         font-size: 45px;
-        letter-spacing: 1.1px; }
+        letter-spacing: 1.1px;
+        color: #fff;
+        font-weight: 700; }
         @media (max-width: 1105px) {
           .price-counter .price-counter-container .text-header h2 {
             font-size: 32px; } }
@@ -1039,10 +1042,10 @@ button {
                 height: 3px;
                 width: 80px;
                 margin: 78px; }
-                @media (max-width: 425px) {
+                @media (max-width: 767px) {
                   .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
                     width: 45px;
-                    margin: 62px; } }
+                    margin: 52px; } }
           .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .text {
             margin: 24px 0 11px;
             font-style: normal;
@@ -1157,14 +1160,23 @@ button {
 .about .offer {
   height: 843px;
   background-image: url(./../img/bg-offer.png); }
-  @media (max-width: 425px) {
+  @media (max-width: 1105px) {
     .about .offer {
-      height: 540px; } }
+      height: 100%; } }
   .about .offer .offer-container {
     width: 1079px;
     margin: auto; }
+    @media (max-width: 1105px) {
+      .about .offer .offer-container {
+        width: 700px; } }
+    @media (max-width: 767px) {
+      .about .offer .offer-container {
+        width: 98%; } }
     .about .offer .offer-container .text {
       padding: 74px 0 62px 18px; }
+      @media (max-width: 1105px) {
+        .about .offer .offer-container .text {
+          padding: 40px 0 40px 18px; } }
       .about .offer .offer-container .text h2 {
         font-size: 45px;
         font-weight: 800;
@@ -1221,17 +1233,25 @@ button {
               display: none; } }
       .about .offer .offer-container .content .info {
         margin: 0 0 0 43px; }
+        @media (max-width: 1105px) {
+          .about .offer .offer-container .content .info {
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-self: center; } }
+        @media (max-width: 767px) {
+          .about .offer .offer-container .content .info {
+            grid-template-columns: 1fr; } }
         @media (max-width: 425px) {
           .about .offer .offer-container .content .info {
-            display: grid;
-            grid-template-columns: 1fr; } }
+            align-self: inherit; } }
         .about .offer .offer-container .content .info .info-content {
           display: flex;
           align-items: center;
           margin-bottom: 39px; }
-          @media (max-width: 425px) {
+          @media (max-width: 1105px) {
             .about .offer .offer-container .content .info .info-content {
-              margin-bottom: 15px; } }
+              margin-bottom: 20px; } }
           .about .offer .offer-container .content .info .info-content p {
             padding-left: 14px;
             font-weight: 400;
@@ -1248,19 +1268,28 @@ button {
 .about .short {
   height: 289px;
   background-color: #41362E; }
-  @media (max-width: 425px) {
+  @media (max-width: 1105px) {
     .about .short {
       height: 100%; } }
   .about .short .short-container {
     width: 1079px;
     margin: auto;
     color: #fff; }
+    @media (max-width: 1105px) {
+      .about .short .short-container {
+        width: 700px; } }
+    @media (max-width: 767px) {
+      .about .short .short-container {
+        width: 98%; } }
     .about .short .short-container .text {
       padding: 69px 0 48px 19px; }
+      @media (max-width: 1105px) {
+        .about .short .short-container .text {
+          padding: 40px 0 40px 19px; } }
       .about .short .short-container .text h2 {
         font-size: 45px;
-        font-weight: 800;
-        letter-spacing: -1px; }
+        font-weight: 700;
+        letter-spacing: 1px; }
         @media (max-width: 1105px) {
           .about .short .short-container .text h2 {
             font-size: 32px; } }
@@ -1283,23 +1312,20 @@ button {
               height: 48px; } }
           @media (max-width: 425px) {
             .about .short .short-container .text h2::before {
-              height: 32px; } }
-          @media (max-width: 320px) {
-            .about .short .short-container .text h2::before {
-              height: 48px; } }
+              height: 30px; } }
     .about .short .short-container .short-info {
       display: flex;
       justify-content: space-between; }
-      @media (max-width: 425px) {
+      @media (max-width: 667px) {
         .about .short .short-container .short-info {
           flex-direction: column; } }
       .about .short .short-container .short-info .short-info-bar {
         display: flex;
         align-items: center;
         max-width: 375px; }
-        @media (max-width: 425px) {
+        @media (max-width: 1105px) {
           .about .short .short-container .short-info .short-info-bar {
-            margin-bottom: 15px; } }
+            margin-bottom: 20px; } }
         @media (max-width: 425px) {
           .about .short .short-container .short-info .short-info-bar .img {
             height: 59px; } }
