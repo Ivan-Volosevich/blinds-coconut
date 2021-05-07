@@ -1,4 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
+    // const observer = new MutationObserver(function(mutations) {
+    //     mutations.forEach(function(mutation) {
+    //         console.log('is it works? ', mutation);
+    //     })
+    // })    
+
+    // // let os = new OnScreen();
+    // console.log('u r at X---- ', window.pageXOffset, 'u r at Y---- ', window.pageYOffset);
+
+    // observer.observe(window.pageYOffset, {attributes: true});
+    // console.log('what is ---Y , ', observer.observe(window.pageYOffset, {attributes: true}))
+
+    
+
+
+    // let mutationObserver = new MutationObserver(function(mutations) {
+    //     mutations.forEach(function(mutation) {
+    //       console.log(mutation);
+    //     });
+    //   });
+
+    // const observer = new MutationObserver(os);
+    // console.log('new at---- ', observer);
+    // observer.observe(targetNode, config);
+
     var controls = document.querySelectorAll('.controls');
     for(var i=0; i<controls.length; i++){
         controls[i].style.display = 'inline-block';
@@ -6,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     var slides = document.querySelectorAll('#slides .slide');
     var currentSlide = 0;
-    var slideInterval = setInterval(nextSlide,30000);
+    var slideInterval = setInterval(nextSlide,5000);
 
     function nextSlide(){
         goToSlide(currentSlide+1);
