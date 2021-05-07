@@ -766,7 +766,7 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
         height: 100%;
         margin: 15px 0;
         background-color: #645346;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+        box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25); }
         @media (max-width: 1105px) {
           .products .products-container .slider .nav-class .nav-class--type {
             width: 280px;
@@ -1191,6 +1191,9 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           @media (max-width: 767px) {
             .price-counter .price-counter-container .calculator .content-bottom .content-btn p {
               font-size: 8px; } }
+
+input .error {
+  box-shadow: 0 0 15px red; }
 
 .about .offer {
   height: 843px;
