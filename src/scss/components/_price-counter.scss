@@ -370,11 +370,15 @@
                                             background: #FE8C00;
                                             height: 3px;
                                             width: 100px;
-                                            margin: 78px;
+                                            margin-top: 78px;
 
                                             @media (max-width: 767px) {
                                                 width: 45px;
-                                                margin: 52px;
+                                                margin-top: 64px;
+                                            }
+
+                                            @media (max-width: 767px) {
+                                                margin-top: 48px;
                                             }
                                         }
                                     }

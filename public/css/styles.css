@@ -461,7 +461,7 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             height: 42px; } }
         @media (max-width: 375px) {
           .hero .hero-slide-container .hero-text h1::before {
-            height: 42px; } }
+            height: 43px; } }
         @media (max-width: 320px) {
           .hero .hero-slide-container .hero-text h1::before {
             height: 33px; } }
@@ -1095,11 +1095,14 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
                 background: #FE8C00;
                 height: 3px;
                 width: 100px;
-                margin: 78px; }
+                margin-top: 78px; }
                 @media (max-width: 767px) {
                   .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
                     width: 45px;
-                    margin: 52px; } }
+                    margin-top: 64px; } }
+                @media (max-width: 767px) {
+                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
+                    margin-top: 48px; } }
           .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .text {
             margin: 24px 0 11px;
             font-style: normal;
