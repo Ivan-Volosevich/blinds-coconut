@@ -894,11 +894,12 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             .price-counter .price-counter-container .text-header h2::before {
               height: 54px; } }
     .price-counter .price-counter-container .calculator {
-      max-width: 1079px;
+      max-width: 800px;
       width: 100%;
       max-height: 784px;
       height: 100%;
-      background-color: #fff; }
+      background-color: #fff;
+      margin: auto; }
       @media (max-width: 1105px) {
         .price-counter .price-counter-container .calculator {
           width: 600px;
@@ -906,9 +907,12 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           margin: auto; } }
       @media (max-width: 767px) {
         .price-counter .price-counter-container .calculator {
+          width: 360px; } }
+      @media (max-width: 374px) {
+        .price-counter .price-counter-container .calculator {
           width: 300px; } }
       .price-counter .price-counter-container .calculator .calc-btn {
-        width: 163px;
+        width: 140px;
         height: 47px;
         background: #EAEAEA;
         border: 2px solid #645346;
@@ -925,6 +929,10 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             width: 145px; } }
         @media (max-width: 767px) {
           .price-counter .price-counter-container .calculator .calc-btn {
+            width: 90px;
+            height: 30px; } }
+        @media (max-width: 374px) {
+          .price-counter .price-counter-container .calculator .calc-btn {
             width: 75px;
             height: 25px; } }
         .price-counter .price-counter-container .calculator .calc-btn span {
@@ -933,6 +941,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           font-size: 16px;
           line-height: 13px; }
           @media (max-width: 767px) {
+            .price-counter .price-counter-container .calculator .calc-btn span {
+              font-size: 9px;
+              line-height: 6px;
+              max-height: 8px; } }
+          @media (max-width: 374px) {
             .price-counter .price-counter-container .calculator .calc-btn span {
               font-size: 8px;
               line-height: 5px;
@@ -984,6 +997,9 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             margin-bottom: 12px; }
             @media (max-width: 767px) {
               .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .text {
+                font-size: 12px; } }
+            @media (max-width: 374px) {
+              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .text {
                 font-size: 10px; } }
           .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .top-btn {
             display: flex; }
@@ -1002,8 +1018,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             margin: 35px 0 17px; }
             @media (max-width: 767px) {
               .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .text {
-                font-size: 10px;
+                font-size: 12px;
                 margin: 10px 0; } }
+            @media (max-width: 374px) {
+              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .text {
+                font-size: 10px; } }
           .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn {
             display: flex;
             justify-content: space-evenly; }
@@ -1028,14 +1047,14 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
                 border: none;
                 background: none;
                 cursor: pointer; }
-                @media (max-width: 767px) {
+                @media (max-width: 374px) {
                   .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img {
                     height: 35px; } }
                 .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-sveto {
                   width: 50px;
                   height: 50px;
                   background: center/contain no-repeat url(./../img/calc2-svet1-1.png); }
-                  @media (max-width: 767px) {
+                  @media (max-width: 374px) {
                     .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-sveto {
                       width: 35px;
                       height: 35px; } }
@@ -1043,7 +1062,7 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
                   width: 50px;
                   height: 50px;
                   background: center/contain no-repeat url(./../img/calc2-daynight2-1.png); }
-                  @media (max-width: 767px) {
+                  @media (max-width: 374px) {
                     .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-daynight {
                       width: 35px;
                       height: 35px; } }
@@ -1051,7 +1070,7 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
                   width: 50px;
                   height: 50px;
                   background: center/contain no-repeat url(./../img/calc2-blackout3-1.png); }
-                  @media (max-width: 767px) {
+                  @media (max-width: 374px) {
                     .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-blackout {
                       width: 35px;
                       height: 35px; } }
@@ -1063,6 +1082,9 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
                 .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span:hover, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span:focus {
                   font-weight: bold; }
                 @media (max-width: 767px) {
+                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
+                    font-size: 10px; } }
+                @media (max-width: 374px) {
                   .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
                     font-size: 8px; } }
               .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover span, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus span {
@@ -1085,8 +1107,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             font-size: 20px; }
             @media (max-width: 767px) {
               .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .text {
-                font-size: 10px;
+                font-size: 12px;
                 margin: 10px 0; } }
+            @media (max-width: 374px) {
+              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .text {
+                font-size: 10px; } }
           .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
             width: 230px;
             height: 51px;
@@ -1106,9 +1131,13 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
                 height: 47px; } }
             @media (max-width: 767px) {
               .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
-                height: 22px;
+                height: 30px;
                 width: 150px;
                 margin: 2px 6px;
+                font-size: 10px; } }
+            @media (max-width: 374px) {
+              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
+                height: 22px;
                 font-size: 8px; } }
       .price-counter .price-counter-container .calculator .content-bottom {
         text-align: center; }
@@ -1118,8 +1147,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           margin-bottom: 13px; }
           @media (max-width: 767px) {
             .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .text {
-              font-size: 10px;
+              font-size: 12px;
               margin-bottom: 10px; } }
+          @media (max-width: 374px) {
+            .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .text {
+              font-size: 10px; } }
         .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn {
           display: flex;
           justify-content: center; }
@@ -1134,6 +1166,10 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
             width: 150px; }
             @media (max-width: 767px) {
+              .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
+                width: 90px;
+                height: 30px; } }
+            @media (max-width: 374px) {
               .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
                 width: 75px;
                 height: 25px; } }
@@ -1160,10 +1196,14 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           text-align: center; }
           @media (max-width: 767px) {
             .price-counter .price-counter-container .calculator .content-bottom .info-bottom-phone .phone {
-              font-size: 8px;
-              height: 25px;
+              font-size: 10px;
+              height: 30px;
               width: 240px;
               letter-spacing: 1px; } }
+          @media (max-width: 374px) {
+            .price-counter .price-counter-container .calculator .content-bottom .info-bottom-phone .phone {
+              height: 25px;
+              font-size: 8px; } }
         .price-counter .price-counter-container .calculator .content-bottom .content-btn button {
           width: 552px;
           height: 78px;
@@ -1180,8 +1220,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             .price-counter .price-counter-container .calculator .content-bottom .content-btn button {
               font-size: 10px;
               width: 200px;
-              height: 30px;
+              height: 35px;
               margin: 10px 0 5px; } }
+          @media (max-width: 374px) {
+            .price-counter .price-counter-container .calculator .content-bottom .content-btn button {
+              height: 30px; } }
         .price-counter .price-counter-container .calculator .content-bottom .content-btn p {
           opacity: 0.4;
           padding-bottom: 45px; }
