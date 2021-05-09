@@ -254,6 +254,10 @@ header {
         @media (max-width: 1105px) {
           header .header-container a h1 {
             margin: 10px; } }
+    @media (max-width: 1105px) {
+      header .header-container nav {
+        width: 0;
+        height: 0; } }
     header .header-container nav label img {
       max-height: 40px;
       max-width: 40px;
@@ -287,7 +291,7 @@ header {
         @media (max-width: 1105px) {
           header .header-container nav .toggle:checked ~ ul {
             transform: translateY(64%);
-            transition: 1s;
+            transition: 0.4s;
             position: absolute;
             top: -90px;
             right: 0;
@@ -893,25 +897,24 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           @media (max-width: 375px) {
             .price-counter .price-counter-container .text-header h2::before {
               height: 54px; } }
-    .price-counter .price-counter-container .calculator {
+    .calculator {
       max-width: 800px;
       width: 100%;
-      max-height: 784px;
       height: 100%;
       background-color: #fff;
       margin: auto; }
       @media (max-width: 1105px) {
-        .price-counter .price-counter-container .calculator {
+        .calculator {
           width: 600px;
           margin-left: 0;
           margin: auto; } }
       @media (max-width: 767px) {
-        .price-counter .price-counter-container .calculator {
+        .calculator {
           width: 360px; } }
       @media (max-width: 374px) {
-        .price-counter .price-counter-container .calculator {
+        .calculator {
           width: 300px; } }
-      .price-counter .price-counter-container .calculator .calc-btn {
+      .calculator .calc-btn {
         width: 140px;
         height: 47px;
         background: #EAEAEA;
@@ -925,171 +928,171 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
         align-items: center;
         cursor: pointer; }
         @media (max-width: 1105px) {
-          .price-counter .price-counter-container .calculator .calc-btn {
+          .calculator .calc-btn {
             width: 145px; } }
         @media (max-width: 767px) {
-          .price-counter .price-counter-container .calculator .calc-btn {
+          .calculator .calc-btn {
             width: 90px;
             height: 30px; } }
         @media (max-width: 374px) {
-          .price-counter .price-counter-container .calculator .calc-btn {
+          .calculator .calc-btn {
             width: 75px;
             height: 25px; } }
-        .price-counter .price-counter-container .calculator .calc-btn span {
+        .calculator .calc-btn span {
           font-family: 'Segoe UI';
           font-weight: 400;
           font-size: 16px;
           line-height: 13px; }
           @media (max-width: 767px) {
-            .price-counter .price-counter-container .calculator .calc-btn span {
+            .calculator .calc-btn span {
               font-size: 9px;
               line-height: 6px;
               max-height: 8px; } }
           @media (max-width: 374px) {
-            .price-counter .price-counter-container .calculator .calc-btn span {
+            .calculator .calc-btn span {
               font-size: 8px;
               line-height: 5px;
               max-height: 8px; } }
-        .price-counter .price-counter-container .calculator .calc-btn:focus, .price-counter .price-counter-container .calculator .calc-btn:hover {
+        .calculator .calc-btn:focus, .calculator .calc-btn:hover {
           background: linear-gradient(180deg, #645346 0%, #000000 100%);
           border: 2px solid #F36D00;
           box-sizing: border-box;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           color: #F36D00; }
-      .price-counter .price-counter-container .calculator .calc-btn--left {
+      .calculator .calc-btn--left {
         border-radius: 50px 5px 5px 50px; }
-      .price-counter .price-counter-container .calculator .calc-btn--mid {
+      .calculator .calc-btn--mid {
         border-radius: 0; }
-      .price-counter .price-counter-container .calculator .calc-btn--right {
+      .calculator .calc-btn--right {
         border-radius: 5px 50px 50px 5px; }
-      .price-counter .price-counter-container .calculator .content-top {
+      .calculator .content-top {
         display: flex;
         padding: 26px 12px 22px 10px; }
         @media (max-width: 1105px) {
-          .price-counter .price-counter-container .calculator .content-top {
+          .calculator .content-top {
             padding: 5px;
             justify-content: center; } }
-        .price-counter .price-counter-container .calculator .content-top .content-top--left .img-wrapper .calc-img {
+        .calculator .content-top .content-top--left .img-wrapper .calc-img {
           max-width: 346px;
           width: 100%; }
           @media (max-width: 1105px) {
-            .price-counter .price-counter-container .calculator .content-top .content-top--left .img-wrapper .calc-img {
+            .calculator .content-top .content-top--left .img-wrapper .calc-img {
               max-width: 0;
               width: 0%;
               height: 0;
               display: none; } }
-        .price-counter .price-counter-container .calculator .content-top .content-top--right {
+        .calculator .content-top .content-top--right {
           text-align: center;
           padding: 18px 0 0 47px; }
           @media (max-width: 1105px) {
-            .price-counter .price-counter-container .calculator .content-top .content-top--right {
+            .calculator .content-top .content-top--right {
               padding: 0; } }
           @media (max-width: 767px) {
-            .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top {
+            .calculator .content-top .content-top--right .info-top {
               display: flex;
               flex-direction: column;
               justify-content: center;
               align-items: center;
               text-align: center; } }
-          .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .text {
+          .calculator .content-top .content-top--right .info-top .info-top-first .text {
             font-size: 20px;
             font-weight: normal;
             margin-bottom: 12px; }
             @media (max-width: 767px) {
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .text {
+              .calculator .content-top .content-top--right .info-top .info-top-first .text {
                 font-size: 12px; } }
             @media (max-width: 374px) {
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .text {
+              .calculator .content-top .content-top--right .info-top .info-top-first .text {
                 font-size: 10px; } }
-          .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .top-btn {
+          .calculator .content-top .content-top--right .info-top .info-top-first .top-btn {
             display: flex; }
-            .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .top-btn input {
+            .calculator .content-top .content-top--right .info-top .info-top-first .top-btn input {
               display: none; }
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-first .top-btn input:checked + label {
+              .calculator .content-top .content-top--right .info-top .info-top-first .top-btn input:checked + label {
                 background: linear-gradient(180deg, #645346 0%, #000000 100%);
                 border: 2px solid #F36D00;
                 box-sizing: border-box;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 color: #F36D00; }
-          .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .text {
+          .calculator .content-top .content-top--right .info-top .info-top-second .text {
             font-style: normal;
             font-weight: normal;
             font-size: 20px;
             margin: 35px 0 17px; }
             @media (max-width: 767px) {
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .text {
+              .calculator .content-top .content-top--right .info-top .info-top-second .text {
                 font-size: 12px;
                 margin: 10px 0; } }
             @media (max-width: 374px) {
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .text {
+              .calculator .content-top .content-top--right .info-top .info-top-second .text {
                 font-size: 10px; } }
-          .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn {
+          .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn {
             display: flex;
             justify-content: space-evenly; }
-            .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar {
+            .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar {
               display: flex;
               flex-direction: column;
               width: 94px;
               align-items: center;
               justify-content: space-between;
               cursor: pointer; }
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input {
+              .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input {
                 display: none; }
-                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label .img-sveto {
+                .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label .img-sveto {
                   background: center/contain no-repeat url(./../img/calc2-svet1-2.png); }
-                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label .img-daynight {
+                .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label .img-daynight {
                   background: center/contain no-repeat url(./../img/calc2-daynight2-2.png); }
-                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label .img-blackout {
+                .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label .img-blackout {
                   background: center/contain no-repeat url(./../img/calc2-blackout3-2.png); }
-                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label + span {
+                .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label + span {
                   font-weight: bold; }
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label {
+              .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label {
                 border: none;
                 background: none;
                 cursor: pointer; }
                 @media (max-width: 374px) {
-                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img {
+                  .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img {
                     height: 35px; } }
-                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-sveto {
+                .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-sveto {
                   width: 50px;
                   height: 50px;
                   background: center/contain no-repeat url(./../img/calc2-svet1-1.png); }
                   @media (max-width: 374px) {
-                    .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-sveto {
+                    .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-sveto {
                       width: 35px;
                       height: 35px; } }
-                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-daynight {
+                .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-daynight {
                   width: 50px;
                   height: 50px;
                   background: center/contain no-repeat url(./../img/calc2-daynight2-1.png); }
                   @media (max-width: 374px) {
-                    .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-daynight {
+                    .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-daynight {
                       width: 35px;
                       height: 35px; } }
-                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-blackout {
+                .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-blackout {
                   width: 50px;
                   height: 50px;
                   background: center/contain no-repeat url(./../img/calc2-blackout3-1.png); }
                   @media (max-width: 374px) {
-                    .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-blackout {
+                    .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar label .img-blackout {
                       width: 35px;
                       height: 35px; } }
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
+              .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
                 font-family: 'Segoe UI';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px; }
-                .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span:hover, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span:focus {
+                .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span:hover, .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span:focus {
                   font-weight: bold; }
                 @media (max-width: 767px) {
-                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
+                  .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
                     font-size: 10px; } }
                 @media (max-width: 374px) {
-                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
+                  .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
                     font-size: 8px; } }
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover span, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus span {
+              .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover span, .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus span {
                 font-weight: bold; }
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
+              .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
                 content: "";
                 position: absolute;
                 background: #FE8C00;
@@ -1097,25 +1100,25 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
                 width: 100px;
                 margin-top: 78px; }
                 @media (max-width: 767px) {
-                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
+                  .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
                     width: 45px;
                     margin-top: 64px; } }
                 @media (max-width: 767px) {
-                  .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
+                  .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
                     margin-top: 48px; } }
-          .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .text {
+          .calculator .content-top .content-top--right .info-top .info-top-third .text {
             margin: 24px 0 11px;
             font-style: normal;
             font-weight: normal;
             font-size: 20px; }
             @media (max-width: 767px) {
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .text {
+              .calculator .content-top .content-top--right .info-top .info-top-third .text {
                 font-size: 12px;
                 margin: 10px 0; } }
             @media (max-width: 374px) {
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .text {
+              .calculator .content-top .content-top--right .info-top .info-top-third .text {
                 font-size: 10px; } }
-          .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
+          .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
             width: 230px;
             height: 51px;
             background: #EAEAEA;
@@ -1130,61 +1133,61 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             font-weight: 400;
             font-size: 16px; }
             @media (max-width: 1105px) {
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
+              .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
                 height: 47px; } }
             @media (max-width: 767px) {
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
+              .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
                 height: 30px;
                 width: 150px;
                 margin: 2px 6px;
                 font-size: 10px; } }
             @media (max-width: 374px) {
-              .price-counter .price-counter-container .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
+              .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
                 height: 22px;
                 font-size: 8px; } }
-      .price-counter .price-counter-container .calculator .content-bottom {
+      .calculator .content-bottom {
         text-align: center; }
-        .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .text {
+        .calculator .content-bottom .info-bottom-fourth .text {
           font-weight: normal;
           font-size: 20px;
           margin-bottom: 13px; }
           @media (max-width: 767px) {
-            .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .text {
+            .calculator .content-bottom .info-bottom-fourth .text {
               font-size: 12px;
               margin-bottom: 10px; } }
           @media (max-width: 374px) {
-            .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .text {
+            .calculator .content-bottom .info-bottom-fourth .text {
               font-size: 10px; } }
-        .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn {
+        .calculator .content-bottom .info-bottom-fourth .bottom-btn {
           display: flex;
           justify-content: center; }
-          .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn input {
+          .calculator .content-bottom .info-bottom-fourth .bottom-btn input {
             display: none; }
-            .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn input:checked + label {
+            .calculator .content-bottom .info-bottom-fourth .bottom-btn input:checked + label {
               background: linear-gradient(180deg, #645346 0%, #000000 100%);
               border: 2px solid #F36D00;
               box-sizing: border-box;
               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
               color: #F36D00; }
-          .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
+          .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
             width: 150px; }
             @media (max-width: 767px) {
-              .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
+              .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
                 width: 90px;
                 height: 30px; } }
             @media (max-width: 374px) {
-              .price-counter .price-counter-container .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
+              .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
                 width: 75px;
                 height: 25px; } }
-        .price-counter .price-counter-container .calculator .content-bottom .info-bottom-phone p {
+        .calculator .content-bottom .info-bottom-phone p {
           font-weight: normal;
           font-size: 20px;
           margin: 28px 0 10px; }
           @media (max-width: 767px) {
-            .price-counter .price-counter-container .calculator .content-bottom .info-bottom-phone p {
+            .calculator .content-bottom .info-bottom-phone p {
               font-size: 12px;
               margin: 10px 0 7px; } }
-        .price-counter .price-counter-container .calculator .content-bottom .info-bottom-phone .phone {
+        .calculator .content-bottom .info-bottom-phone .phone {
           width: 307px;
           height: 51px;
           background: #EAEAEA;
@@ -1198,16 +1201,16 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           font-size: 16px;
           text-align: center; }
           @media (max-width: 767px) {
-            .price-counter .price-counter-container .calculator .content-bottom .info-bottom-phone .phone {
+            .calculator .content-bottom .info-bottom-phone .phone {
               font-size: 10px;
               height: 30px;
               width: 240px;
               letter-spacing: 1px; } }
           @media (max-width: 374px) {
-            .price-counter .price-counter-container .calculator .content-bottom .info-bottom-phone .phone {
+            .calculator .content-bottom .info-bottom-phone .phone {
               height: 25px;
               font-size: 8px; } }
-        .price-counter .price-counter-container .calculator .content-bottom .content-btn button {
+        .calculator .content-bottom .content-btn button {
           width: 552px;
           height: 78px;
           color: #fff;
@@ -1220,26 +1223,35 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           margin: 25px 0 18px;
           letter-spacing: 0.7px; }
           @media (max-width: 767px) {
-            .price-counter .price-counter-container .calculator .content-bottom .content-btn button {
+            .calculator .content-bottom .content-btn button {
               font-size: 10px;
               width: 200px;
               height: 35px;
               margin: 10px 0 5px; } }
           @media (max-width: 374px) {
-            .price-counter .price-counter-container .calculator .content-bottom .content-btn button {
+            .calculator .content-bottom .content-btn button {
               height: 30px; } }
-        .price-counter .price-counter-container .calculator .content-bottom .content-btn p {
+        .calculator .content-bottom .content-btn p {
           opacity: 0.4;
           padding-bottom: 45px; }
           @media (max-width: 1105px) {
-            .price-counter .price-counter-container .calculator .content-bottom .content-btn p {
+            .calculator .content-bottom .content-btn p {
               padding-bottom: 10px; } }
           @media (max-width: 767px) {
-            .price-counter .price-counter-container .calculator .content-bottom .content-btn p {
+            .calculator .content-bottom .content-btn p {
               font-size: 8px; } }
 
-input .error {
-  box-shadow: 0 0 15px red; }
+input.error {
+  box-shadow: 0 0 15px red !important; }
+
+.response-message {
+  color: #fff;
+  padding: 1rem;
+  background: transparent; }
+  .response-message.success {
+    background: #ABC839; }
+  .response-message.error {
+    background: #CA0000; }
 
 .about .offer {
   height: 843px;
@@ -2520,3 +2532,296 @@ input .error {
 @media (max-width: 1199px) {
   .viewer-hide-md-down {
     display: none; } }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 9;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+body.hidden-scroll {
+  overflow: hidden; }
+
+.sl-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #bdbdbd;
+  opacity: 0.75;
+  display: none;
+  z-index: 1035; }
+
+.sl-wrapper {
+  z-index: 1040;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed; }
+
+.sl-wrapper * {
+  box-sizing: border-box; }
+
+.sl-wrapper button {
+  border: 0 none;
+  background: transparent;
+  font-size: 28px;
+  padding: 0;
+  cursor: pointer; }
+
+.sl-wrapper button:hover {
+  opacity: 0.7; }
+
+.sl-wrapper .sl-close {
+  display: none;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 10060;
+  margin-top: -14px;
+  margin-right: -14px;
+  height: 44px;
+  width: 44px;
+  line-height: 44px;
+  font-family: Arial, Baskerville, monospace;
+  color: #000;
+  font-size: 3rem; }
+
+.sl-wrapper .sl-counter {
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 1060;
+  color: #000;
+  font-size: 1rem; }
+
+.sl-wrapper .sl-navigation {
+  width: 100%;
+  display: none; }
+
+.sl-wrapper .sl-navigation button {
+  position: fixed;
+  top: 50%;
+  margin-top: -22px;
+  height: 44px;
+  width: 22px;
+  line-height: 44px;
+  text-align: center;
+  display: block;
+  z-index: 10060;
+  font-family: Arial, Baskerville, monospace;
+  color: #000; }
+
+.sl-wrapper .sl-navigation button.sl-next {
+  right: 5px;
+  font-size: 2rem; }
+
+.sl-wrapper .sl-navigation button.sl-prev {
+  left: 5px;
+  font-size: 2rem; }
+
+@media (min-width: 35.5em) {
+  .sl-wrapper .sl-navigation button {
+    width: 44px; }
+  .sl-wrapper .sl-navigation button.sl-next {
+    right: 10px;
+    font-size: 3rem; }
+  .sl-wrapper .sl-navigation button.sl-prev {
+    left: 10px;
+    font-size: 3rem; } }
+
+@media (min-width: 50em) {
+  .sl-wrapper .sl-navigation button {
+    width: 44px; }
+  .sl-wrapper .sl-navigation button.sl-next {
+    right: 20px;
+    font-size: 3rem; }
+  .sl-wrapper .sl-navigation button.sl-prev {
+    left: 20px;
+    font-size: 3rem; } }
+
+.sl-wrapper.sl-dir-rtl .sl-navigation {
+  direction: ltr; }
+
+.sl-wrapper .sl-image {
+  position: fixed;
+  -ms-touch-action: none;
+  touch-action: none;
+  z-index: 10000; }
+
+.sl-wrapper .sl-image img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: 0 none;
+  width: 100%;
+  height: auto; }
+
+@media (min-width: 35.5em) {
+  .sl-wrapper .sl-image img {
+    border: 0 none; } }
+
+@media (min-width: 50em) {
+  .sl-wrapper .sl-image img {
+    border: 0 none; } }
+
+.sl-wrapper .sl-image iframe {
+  background: #000;
+  border: 0 none; }
+
+@media (min-width: 35.5em) {
+  .sl-wrapper .sl-image iframe {
+    border: 0 none; } }
+
+@media (min-width: 50em) {
+  .sl-wrapper .sl-image iframe {
+    border: 0 none; } }
+
+.sl-wrapper .sl-image .sl-caption {
+  display: none;
+  padding: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.sl-wrapper .sl-image .sl-caption.pos-top {
+  bottom: auto;
+  top: 0; }
+
+.sl-wrapper .sl-image .sl-caption.pos-outside {
+  bottom: auto; }
+
+.sl-wrapper .sl-image .sl-download {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: #000;
+  z-index: 1060; }
+
+.sl-spinner {
+  display: none;
+  border: 5px solid #333;
+  border-radius: 40px;
+  height: 40px;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  width: 40px;
+  z-index: 1007;
+  -webkit-animation: pulsate 1s ease-out infinite;
+  -moz-animation: pulsate 1s ease-out infinite;
+  -ms-animation: pulsate 1s ease-out infinite;
+  -o-animation: pulsate 1s ease-out infinite;
+  animation: pulsate 1s ease-out infinite; }
+
+.sl-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll; }
+
+.sl-transition {
+  transition: -moz-transform ease 200ms;
+  transition: -ms-transform ease 200ms;
+  transition: -o-transform ease 200ms;
+  transition: -webkit-transform ease 200ms;
+  transition: transform ease 200ms; }
+
+@-webkit-keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.2);
+    opacity: 0; } }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.2);
+    opacity: 0; } }
+
+@-moz-keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.2);
+    opacity: 0; } }
+
+@-o-keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.2);
+    opacity: 0; } }
+
+@-ms-keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.2);
+    opacity: 0; } }
