@@ -2176,7 +2176,8 @@ input.error {
   color: #aaa;
   float: right;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: .5rem; }
 
 .close:hover,
 .close:focus {
@@ -2245,7 +2246,8 @@ input.error {
   color: #aaa;
   float: right;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: .5rem; }
 
 .close-discount:hover,
 .close-discount:focus {
@@ -2356,7 +2358,8 @@ input.error {
   color: #aaa;
   float: right;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: .5rem; }
 
 .close-credit:hover,
 .close-credit:focus {
