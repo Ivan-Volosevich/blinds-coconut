@@ -910,10 +910,7 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           margin: auto; } }
       @media (max-width: 767px) {
         .calculator {
-          width: 360px; } }
-      @media (max-width: 374px) {
-        .calculator {
-          width: 300px; } }
+          width: 97%; } }
       .calculator .calc-btn {
         width: 140px;
         height: 47px;
@@ -1704,13 +1701,15 @@ input.error {
             height: 300px; } }
         @media (max-width: 600px) {
           .specials .specials-container .container #slides {
-            margin: 0 60px;
-            height: 200px; } }
+            margin: auto;
+            width: 99%; } }
         @media (max-width: 425px) {
           .specials .specials-container .container #slides {
-            width: 300px;
-            height: 200px;
+            height: 250px;
             margin: auto; } }
+        @media (max-width: 375px) {
+          .specials .specials-container .container #slides {
+            height: 200px; } }
       .specials .specials-container .container .slide {
         display: flex;
         position: absolute;
