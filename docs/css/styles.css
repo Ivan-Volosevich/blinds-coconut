@@ -1101,11 +1101,7 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
                 margin-top: 78px; }
                 @media (max-width: 767px) {
                   .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
-                    width: 45px;
-                    margin-top: 64px; } }
-                @media (max-width: 767px) {
-                  .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:hover::after, .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar:focus::after {
-                    margin-top: 48px; } }
+                    display: none; } }
           .calculator .content-top .content-top--right .info-top .info-top-third .text {
             margin: 24px 0 11px;
             font-style: normal;
@@ -1233,7 +1229,7 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
               height: 30px; } }
         .calculator .content-bottom .content-btn p {
           opacity: 0.4;
-          padding-bottom: 45px; }
+          padding-bottom: 15px; }
           @media (max-width: 1105px) {
             .calculator .content-bottom .content-btn p {
               padding-bottom: 10px; } }
@@ -1245,6 +1241,7 @@ input.error {
   box-shadow: 0 0 15px red !important; }
 
 .response-message {
+  display: none;
   color: #fff;
   padding: 1rem;
   background: transparent; }
@@ -2149,56 +2146,59 @@ input.error {
   background-color: black;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */ }
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 10% auto 0;
-  /* 15% from the top and centered */
-  border: 1px solid #888;
-  max-width: 850px;
-  width: 100%;
-  /* Could be more or less, depending on screen size */ }
-  @media (max-width: 1105px) {
-    .modal-content {
-      width: 600px; } }
-  @media (max-width: 767px) {
-    .modal-content {
-      width: 360px;
-      margin: 23% auto 0; } }
-  @media (max-width: 374px) {
-    .modal-content {
-      width: 300px; } }
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  padding: .5rem; }
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer; }
-
-.text-header {
-  text-align: center; }
-  .text-header h2 {
-    font-size: 40px;
-    padding: 5px; }
+  /* Black w/ opacity */
+  /* Modal Content/Box */ }
+  .modal .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto 10px;
+    /* 15% from the top and centered */
+    border: 1px solid #888;
+    max-width: 850px;
+    width: 100%;
+    /* Could be more or less, depending on screen size */
+    /* The Close Button */ }
     @media (max-width: 1105px) {
-      .text-header h2 {
-        font-size: 32px; } }
+      .modal .modal-content {
+        width: 600px; } }
     @media (max-width: 767px) {
-      .text-header h2 {
-        font-size: 20px; } }
-    @media (max-width: 375px) {
-      .text-header h2 {
-        font-size: 18px; } }
+      .modal .modal-content {
+        width: 360px;
+        margin: 23% auto 0; } }
+    @media (max-width: 374px) {
+      .modal .modal-content {
+        width: 300px; } }
+    .modal .modal-content .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      padding: .5rem; }
+      .modal .modal-content .close:hover, .modal .modal-content .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer; }
+    .modal .modal-content .content-top {
+      padding: 0 12px 22px 10px; }
+    .modal .modal-content .content-top--right {
+      text-align: center;
+      padding: 0 0 0 47px; }
+      @media (max-width: 1105px) {
+        .modal .modal-content .content-top--right {
+          padding: 0; } }
+    .modal .modal-content .text-header {
+      text-align: center; }
+      .modal .modal-content .text-header h2 {
+        font-size: 36px;
+        padding: 5px; }
+        @media (max-width: 1105px) {
+          .modal .modal-content .text-header h2 {
+            font-size: 26px; } }
+        @media (max-width: 767px) {
+          .modal .modal-content .text-header h2 {
+            font-size: 15px; } }
+        @media (max-width: 373px) {
+          .modal .modal-content .text-header h2 {
+            font-size: 12px; } }
 
 /* The Modal (background) */
 .modal-discount {
@@ -2219,91 +2219,134 @@ input.error {
   background-color: black;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */ }
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 10% auto 0;
-  /* 15% from the top and centered */
-  border: 1px solid #888;
-  max-width: 850px;
-  width: 100%;
-  /* Could be more or less, depending on screen size */ }
-  @media (max-width: 1105px) {
-    .modal-content {
-      width: 600px; } }
-  @media (max-width: 767px) {
-    .modal-content {
-      width: 360px;
-      margin: 23% auto 0; } }
-  @media (max-width: 374px) {
-    .modal-content {
-      width: 300px; } }
-
-/* The Close Button */
-.close-discount {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  padding: .5rem; }
-
-.close-discount:hover,
-.close-discount:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer; }
-
-.text-header {
-  text-align: center; }
-  .text-header h2 {
-    font-size: 40px;
-    padding: 5px; }
+  /* Black w/ opacity */
+  /* Modal Content/Box */ }
+  .modal-discount .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto 10px;
+    /* 15% from the top and centered */
+    border: 1px solid #888;
+    max-width: 850px;
+    width: 100%;
+    /* Could be more or less, depending on screen size */
+    /* The Close Button */ }
     @media (max-width: 1105px) {
-      .text-header h2 {
-        font-size: 32px; } }
+      .modal-discount .modal-content {
+        width: 600px; } }
     @media (max-width: 767px) {
-      .text-header h2 {
-        font-size: 20px; } }
-    @media (max-width: 375px) {
-      .text-header h2 {
-        font-size: 18px; } }
-
-.info-bottom-phone p {
-  font-weight: normal;
-  font-size: 20px;
-  margin: 28px 0 10px; }
-  @media (max-width: 767px) {
-    .info-bottom-phone p {
-      font-size: 12px;
-      margin: 10px 0 7px; } }
-
-.info-bottom-phone .phone {
-  width: 307px;
-  height: 51px;
-  background: #EAEAEA;
-  border: 2px solid #645346;
-  box-sizing: border-box;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
-  font-family: 'Segoe UI';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center; }
-  @media (max-width: 767px) {
-    .info-bottom-phone .phone {
-      font-size: 10px;
-      height: 30px;
-      width: 240px;
-      letter-spacing: 1px; } }
-  @media (max-width: 374px) {
-    .info-bottom-phone .phone {
-      height: 25px;
-      font-size: 8px; } }
+      .modal-discount .modal-content {
+        width: 360px;
+        margin: 23% auto 0; } }
+    @media (max-width: 374px) {
+      .modal-discount .modal-content {
+        width: 300px; } }
+    .modal-discount .modal-content .close-discount {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      padding: .5rem; }
+      .modal-discount .modal-content .close-discount:hover, .modal-discount .modal-content .close-discount:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer; }
+    .modal-discount .modal-content .content-top {
+      justify-content: space-evenly; }
+    .modal-discount .modal-content .content-top--left .img-wrapper .calc-img {
+      max-width: 219px; }
+    .modal-discount .modal-content .content-top--right {
+      text-align: center;
+      padding: 0 0 0 47px; }
+      @media (max-width: 1105px) {
+        .modal-discount .modal-content .content-top--right {
+          padding: 0; } }
+    .modal-discount .modal-content .info-top-name .text-name {
+      margin: 0 0 11px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px; }
+      @media (max-width: 767px) {
+        .modal-discount .modal-content .info-top-name .text-name {
+          font-size: 12px;
+          margin: 10px 0; } }
+      @media (max-width: 374px) {
+        .modal-discount .modal-content .info-top-name .text-name {
+          font-size: 10px; } }
+    .modal-discount .modal-content .info-top-name .top-input input {
+      width: 230px;
+      height: 51px;
+      background: #EAEAEA;
+      border: 2px solid #645346;
+      box-sizing: border-box;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50px;
+      margin: 0 6px;
+      text-align: center;
+      font-family: 'Segoe UI';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px; }
+      @media (max-width: 1105px) {
+        .modal-discount .modal-content .info-top-name .top-input input {
+          height: 47px; } }
+      @media (max-width: 767px) {
+        .modal-discount .modal-content .info-top-name .top-input input {
+          height: 30px;
+          width: 150px;
+          margin: 2px 6px;
+          font-size: 10px; } }
+      @media (max-width: 374px) {
+        .modal-discount .modal-content .info-top-name .top-input input {
+          height: 22px;
+          font-size: 8px; } }
+    .modal-discount .modal-content .text-header {
+      text-align: center; }
+      .modal-discount .modal-content .text-header h2 {
+        font-size: 36px;
+        padding: 5px; }
+        @media (max-width: 1105px) {
+          .modal-discount .modal-content .text-header h2 {
+            font-size: 26px; } }
+        @media (max-width: 767px) {
+          .modal-discount .modal-content .text-header h2 {
+            font-size: 15px; } }
+        @media (max-width: 373px) {
+          .modal-discount .modal-content .text-header h2 {
+            font-size: 12px; } }
+    .modal-discount .modal-content .info-bottom-phone p {
+      font-weight: normal;
+      font-size: 20px;
+      margin: 28px 0 10px; }
+      @media (max-width: 767px) {
+        .modal-discount .modal-content .info-bottom-phone p {
+          font-size: 12px;
+          margin: 10px 0 7px; } }
+    .modal-discount .modal-content .info-bottom-phone .phone {
+      width: 307px;
+      height: 51px;
+      background: #EAEAEA;
+      border: 2px solid #645346;
+      box-sizing: border-box;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50px;
+      font-family: 'Segoe UI';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .modal-discount .modal-content .info-bottom-phone .phone {
+          font-size: 10px;
+          height: 30px;
+          width: 240px;
+          letter-spacing: 1px; } }
+      @media (max-width: 374px) {
+        .modal-discount .modal-content .info-bottom-phone .phone {
+          height: 25px;
+          font-size: 8px; } }
 
 .response-message-discount {
+  display: none;
   color: #fff;
   padding: 1rem;
   background: transparent; }
@@ -2331,59 +2374,72 @@ input.error {
   background-color: black;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */ }
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 10% auto 0;
-  /* 15% from the top and centered */
-  border: 1px solid #888;
-  max-width: 850px;
-  width: 100%;
-  /* Could be more or less, depending on screen size */ }
-  @media (max-width: 1105px) {
-    .modal-content {
-      width: 600px; } }
-  @media (max-width: 767px) {
-    .modal-content {
-      width: 360px;
-      margin: 23% auto 0; } }
-  @media (max-width: 374px) {
-    .modal-content {
-      width: 300px; } }
-
-/* The Close Button */
-.close-credit {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  padding: .5rem; }
-
-.close-credit:hover,
-.close-credit:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer; }
-
-.text-header {
-  text-align: center; }
-  .text-header h2 {
-    font-size: 40px;
-    padding: 5px; }
+  /* Black w/ opacity */
+  /* Modal Content/Box */ }
+  .modal-credit .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto 10px;
+    /* 15% from the top and centered */
+    border: 1px solid #888;
+    max-width: 850px;
+    width: 100%;
+    /* Could be more or less, depending on screen size */
+    /* The Close Button */ }
     @media (max-width: 1105px) {
-      .text-header h2 {
-        font-size: 32px; } }
+      .modal-credit .modal-content {
+        width: 600px; } }
     @media (max-width: 767px) {
-      .text-header h2 {
-        font-size: 20px; } }
-    @media (max-width: 375px) {
-      .text-header h2 {
-        font-size: 18px; } }
+      .modal-credit .modal-content {
+        width: 360px;
+        margin: 23% auto 0; } }
+    @media (max-width: 374px) {
+      .modal-credit .modal-content {
+        width: 300px; } }
+    .modal-credit .modal-content .close-credit {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      padding: .5rem; }
+      .modal-credit .modal-content .close-credit:hover, .modal-credit .modal-content .close-credit:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer; }
+    .modal-credit .modal-content .content-top {
+      padding: 0 12px 22px 10px; }
+    .modal-credit .modal-content .content-top--right {
+      text-align: center;
+      padding: 0 0 0 47px; }
+      @media (max-width: 1105px) {
+        .modal-credit .modal-content .content-top--right {
+          padding: 0; } }
+    .modal-credit .modal-content .text-header {
+      text-align: center; }
+      .modal-credit .modal-content .text-header h2 {
+        font-size: 36px;
+        padding: 5px; }
+        @media (max-width: 1105px) {
+          .modal-credit .modal-content .text-header h2 {
+            font-size: 26px; } }
+        @media (max-width: 767px) {
+          .modal-credit .modal-content .text-header h2 {
+            font-size: 15px; } }
+        @media (max-width: 373px) {
+          .modal-credit .modal-content .text-header h2 {
+            font-size: 12px; } }
 
 .content-top-credit {
   justify-content: center; }
+
+.response-message-credit {
+  display: none;
+  color: #fff;
+  padding: 1rem;
+  background: transparent; }
+  .response-message-credit.success {
+    background: #ABC839; }
+  .response-message-credit.error {
+    background: #CA0000; }
 
 body.hidden-scroll {
   overflow: hidden; }
