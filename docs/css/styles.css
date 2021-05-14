@@ -873,11 +873,17 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           .products .products-container .slider .nav-class .nav-class--type .text h3 {
             font-size: 21px;
             font-weight: 800; }
+            @media (max-width: 767px) {
+              .products .products-container .slider .nav-class .nav-class--type .text h3 {
+                font-size: 16px; } }
           .products .products-container .slider .nav-class .nav-class--type .text p {
             text-transform: lowercase;
             font-size: 16px;
             font-weight: 500;
             letter-spacing: -0.6px; }
+            @media (max-width: 767px) {
+              .products .products-container .slider .nav-class .nav-class--type .text p {
+                font-size: 12px; } }
         .products .products-container .slider .nav-class .nav-class--type .img {
           max-height: 266px; }
           @media (max-width: 1105px) {
@@ -978,13 +984,14 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
       width: 100%;
       height: 100%;
       background-color: #fff;
-      margin: auto; }
+      margin: auto;
+      padding: 15px 0; }
       @media (max-width: 1105px) {
         .calculator {
           width: 600px;
           margin-left: 0;
           margin: auto; } }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .calculator {
           width: 97%; } }
       .calculator .calc-btn {
@@ -1005,8 +1012,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             width: 145px; } }
         @media (max-width: 767px) {
           .calculator .calc-btn {
-            width: 90px;
-            height: 30px; } }
+            width: 24vw;
+            height: 55px; } }
+        @media (max-width: 600px) {
+          .calculator .calc-btn {
+            height: 40px; } }
         @media (max-width: 374px) {
           .calculator .calc-btn {
             width: 75px;
@@ -1018,8 +1028,18 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           line-height: 13px; }
           @media (max-width: 767px) {
             .calculator .calc-btn span {
-              font-size: 9px;
-              line-height: 6px;
+              font-size: 14px;
+              line-height: 10px;
+              max-height: 12px; } }
+          @media (max-width: 600px) {
+            .calculator .calc-btn span {
+              font-size: 12px;
+              line-height: 8px;
+              max-height: 12px; } }
+          @media (max-width: 450px) {
+            .calculator .calc-btn span {
+              font-size: 10px;
+              line-height: 7px;
               max-height: 8px; } }
           @media (max-width: 374px) {
             .calculator .calc-btn span {
@@ -1073,7 +1093,10 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             margin-bottom: 12px; }
             @media (max-width: 767px) {
               .calculator .content-top .content-top--right .info-top .info-top-first .text {
-                font-size: 12px; } }
+                font-size: 18px; } }
+            @media (max-width: 600px) {
+              .calculator .content-top .content-top--right .info-top .info-top-first .text {
+                font-size: 15px; } }
             @media (max-width: 374px) {
               .calculator .content-top .content-top--right .info-top .info-top-first .text {
                 font-size: 10px; } }
@@ -1094,8 +1117,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             margin: 35px 0 17px; }
             @media (max-width: 767px) {
               .calculator .content-top .content-top--right .info-top .info-top-second .text {
-                font-size: 12px;
+                font-size: 18px;
                 margin: 10px 0; } }
+            @media (max-width: 600px) {
+              .calculator .content-top .content-top--right .info-top .info-top-second .text {
+                font-size: 15px; } }
             @media (max-width: 374px) {
               .calculator .content-top .content-top--right .info-top .info-top-second .text {
                 font-size: 10px; } }
@@ -1109,6 +1135,12 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
               align-items: center;
               justify-content: space-between;
               cursor: pointer; }
+              @media (max-width: 767px) {
+                .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar {
+                  width: 150px; } }
+              @media (max-width: 480px) {
+                .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar {
+                  width: 94px; } }
               .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input {
                 display: none; }
                 .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar input:checked + label .img-sveto {
@@ -1159,6 +1191,12 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
                   font-weight: bold; }
                 @media (max-width: 767px) {
                   .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
+                    font-size: 14px; } }
+                @media (max-width: 600px) {
+                  .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
+                    font-size: 12px; } }
+                @media (max-width: 450px) {
+                  .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
                     font-size: 10px; } }
                 @media (max-width: 374px) {
                   .calculator .content-top .content-top--right .info-top .info-top-second .top-second-btn .second-btn-bar span {
@@ -1182,8 +1220,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             font-size: 20px; }
             @media (max-width: 767px) {
               .calculator .content-top .content-top--right .info-top .info-top-third .text {
-                font-size: 12px;
+                font-size: 18px;
                 margin: 10px 0; } }
+            @media (max-width: 600px) {
+              .calculator .content-top .content-top--right .info-top .info-top-third .text {
+                font-size: 15px; } }
             @media (max-width: 374px) {
               .calculator .content-top .content-top--right .info-top .info-top-third .text {
                 font-size: 10px; } }
@@ -1206,9 +1247,16 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
                 height: 47px; } }
             @media (max-width: 767px) {
               .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
-                height: 30px;
-                width: 150px;
+                height: 55px;
+                width: 40vw;
                 margin: 2px 6px;
+                font-size: 14px; } }
+            @media (max-width: 600px) {
+              .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
+                height: 40px;
+                font-size: 12px; } }
+            @media (max-width: 450px) {
+              .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
                 font-size: 10px; } }
             @media (max-width: 374px) {
               .calculator .content-top .content-top--right .info-top .info-top-third .top-input input {
@@ -1222,8 +1270,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           margin-bottom: 13px; }
           @media (max-width: 767px) {
             .calculator .content-bottom .info-bottom-fourth .text {
-              font-size: 12px;
+              font-size: 18px;
               margin-bottom: 10px; } }
+          @media (max-width: 600px) {
+            .calculator .content-bottom .info-bottom-fourth .text {
+              font-size: 15px; } }
           @media (max-width: 374px) {
             .calculator .content-bottom .info-bottom-fourth .text {
               font-size: 10px; } }
@@ -1242,8 +1293,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             width: 150px; }
             @media (max-width: 767px) {
               .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
-                width: 90px;
-                height: 30px; } }
+                width: 24vw;
+                height: 55px; } }
+            @media (max-width: 600px) {
+              .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
+                height: 40px; } }
             @media (max-width: 374px) {
               .calculator .content-bottom .info-bottom-fourth .bottom-btn label {
                 width: 75px;
@@ -1254,8 +1308,11 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           margin: 28px 0 10px; }
           @media (max-width: 767px) {
             .calculator .content-bottom .info-bottom-phone p {
-              font-size: 12px;
+              font-size: 18px;
               margin: 10px 0 7px; } }
+          @media (max-width: 600px) {
+            .calculator .content-bottom .info-bottom-phone p {
+              font-size: 15px; } }
         .calculator .content-bottom .info-bottom-phone .phone {
           width: 307px;
           height: 51px;
@@ -1271,10 +1328,17 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           text-align: center; }
           @media (max-width: 767px) {
             .calculator .content-bottom .info-bottom-phone .phone {
-              font-size: 10px;
-              height: 30px;
-              width: 240px;
+              font-size: 14px;
+              height: 55px;
+              width: 60vw;
               letter-spacing: 1px; } }
+          @media (max-width: 600px) {
+            .calculator .content-bottom .info-bottom-phone .phone {
+              font-size: 12px;
+              height: 40px; } }
+          @media (max-width: 450px) {
+            .calculator .content-bottom .info-bottom-phone .phone {
+              font-size: 10px; } }
           @media (max-width: 374px) {
             .calculator .content-bottom .info-bottom-phone .phone {
               height: 25px;
@@ -1293,13 +1357,18 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
           letter-spacing: 0.7px; }
           @media (max-width: 767px) {
             .calculator .content-bottom .content-btn button {
-              font-size: 10px;
-              width: 200px;
-              height: 35px;
+              font-size: 20px;
+              width: 70vw;
+              height: 60px;
               margin: 10px 0 5px; } }
+          @media (max-width: 600px) {
+            .calculator .content-bottom .content-btn button {
+              font-size: 14px;
+              height: 45px; } }
           @media (max-width: 374px) {
             .calculator .content-bottom .content-btn button {
-              height: 30px; } }
+              height: 30px;
+              font-size: 12px; } }
         .calculator .content-bottom .content-btn p {
           opacity: 0.4;
           padding-bottom: 15px; }
@@ -1307,6 +1376,12 @@ button:active, button:hover, button:focus, label:active, label:hover, label:focu
             .calculator .content-bottom .content-btn p {
               padding-bottom: 10px; } }
           @media (max-width: 767px) {
+            .calculator .content-bottom .content-btn p {
+              font-size: 12px; } }
+          @media (max-width: 600px) {
+            .calculator .content-bottom .content-btn p {
+              font-size: 10px; } }
+          @media (max-width: 450px) {
             .calculator .content-bottom .content-btn p {
               font-size: 8px; } }
 
@@ -1778,11 +1853,8 @@ input.error {
         @media (max-width: 600px) {
           .specials .specials-container .container #slides {
             margin: auto;
-            width: 99%; } }
-        @media (max-width: 425px) {
-          .specials .specials-container .container #slides {
-            height: 250px;
-            margin: auto; } }
+            width: 99%;
+            height: 250px; } }
         @media (max-width: 375px) {
           .specials .specials-container .container #slides {
             height: 200px; } }
@@ -2235,13 +2307,10 @@ input.error {
     @media (max-width: 1105px) {
       .modal .modal-content {
         width: 600px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .modal .modal-content {
-        width: 360px;
+        width: 97%;
         margin: 23% auto 0; } }
-    @media (max-width: 374px) {
-      .modal .modal-content {
-        width: 300px; } }
     .modal .modal-content .close {
       color: #aaa;
       float: right;
@@ -2253,14 +2322,27 @@ input.error {
         text-decoration: none;
         cursor: pointer; }
     .modal .modal-content .content-top {
-      padding: 0 12px 22px 10px;
-      justify-content: initial; }
+      padding: 0 12px 22px 10px; }
+      @media (max-width: 767px) {
+        .modal .modal-content .content-top {
+          justify-content: unset; } }
+      @media (max-width: 374px) {
+        .modal .modal-content .content-top {
+          display: unset; } }
     .modal .modal-content .content-top--right {
       text-align: center;
       padding: 0 0 0 47px; }
       @media (max-width: 1105px) {
         .modal .modal-content .content-top--right {
           padding: 0; } }
+      .modal .modal-content .content-top--right .info-top {
+        align-items: unset; }
+        @media (max-width: 374px) {
+          .modal .modal-content .content-top--right .info-top {
+            display: unset; } }
+        @media (max-width: 374px) {
+          .modal .modal-content .content-top--right .info-top .info-top-first .top-btn {
+            justify-content: center; } }
     .modal .modal-content .text-header {
       text-align: center; }
       .modal .modal-content .text-header h2 {
@@ -2269,7 +2351,10 @@ input.error {
         @media (max-width: 1105px) {
           .modal .modal-content .text-header h2 {
             font-size: 26px; } }
-        @media (max-width: 767px) {
+        @media (max-width: 600px) {
+          .modal .modal-content .text-header h2 {
+            font-size: 20px; } }
+        @media (max-width: 465px) {
           .modal .modal-content .text-header h2 {
             font-size: 15px; } }
         @media (max-width: 373px) {
@@ -2466,7 +2551,7 @@ input.error {
         width: 600px; } }
     @media (max-width: 767px) {
       .modal-credit .modal-content {
-        width: 360px;
+        width: 97%;
         margin: 23% auto 0; } }
     @media (max-width: 374px) {
       .modal-credit .modal-content {
@@ -2482,8 +2567,7 @@ input.error {
         text-decoration: none;
         cursor: pointer; }
     .modal-credit .modal-content .content-top {
-      padding: 0 12px 22px 10px;
-      justify-content: initial; }
+      padding: 0 12px 22px 10px; }
     .modal-credit .modal-content .content-top--right {
       text-align: center;
       padding: 0 0 0 47px; }
