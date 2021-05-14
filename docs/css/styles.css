@@ -258,48 +258,124 @@ header {
       header .header-container nav {
         width: 0;
         height: 0; } }
-    header .header-container nav label img {
-      max-height: 40px;
-      max-width: 40px;
+    header .header-container nav .contacts-menu {
+      display: none; }
+    header .header-container nav label .img {
+      height: 40px;
+      width: 40px;
       cursor: pointer;
       visibility: hidden;
       display: none;
-      margin: 15px;
+      background: url(./../img/menu-icon-1.png) no-repeat;
+      background-size: 100%;
+      background-position: center;
+      margin: 17px;
       position: absolute;
       top: 0;
       right: 0; }
       @media (max-width: 1105px) {
-        header .header-container nav label img {
+        header .header-container nav label .img {
           display: block;
           visibility: visible; } }
     header .header-container nav .toggle {
+      width: 40px;
+      height: 40px;
       visibility: hidden;
       display: none; }
       @media (max-width: 1105px) {
         header .header-container nav .toggle ~ ul {
-          transform: translateY(-400%);
+          transform: translateX(-200%);
           flex-direction: column;
           text-align: end; } }
+      header .header-container nav .toggle:checked ~ label .img {
+        background: url(./../img/menu-icon-close.png) no-repeat;
+        background-size: 100%;
+        background-position: center; }
       header .header-container nav .toggle:checked ~ ul {
         display: block;
         position: relative;
         z-index: 3;
         color: #fff;
-        background-color: #645346;
+        background-color: rgba(100, 83, 70, 0.98);
         font-weight: 800;
         width: 100%; }
         @media (max-width: 1105px) {
           header .header-container nav .toggle:checked ~ ul {
-            transform: translateY(64%);
+            transform: translateX(0);
             transition: 0.4s;
             position: absolute;
-            top: -90px;
+            top: 69px;
             right: 0;
-            text-align: end;
-            flex-direction: column; }
+            text-align: start;
+            flex-direction: column;
+            height: 100vh; }
             header .header-container nav .toggle:checked ~ ul li {
-              font-size: 22px;
-              padding-top: 15px; } }
+              font-size: 40px;
+              padding: 30px 5px 25px; } }
+    @media (max-width: 1105px) and (max-width: 767px) {
+      header .header-container nav .toggle:checked ~ ul li {
+        padding: 16px 5px 15px; } }
+    @media (max-width: 1105px) and (max-width: 374px) {
+      header .header-container nav .toggle:checked ~ ul li {
+        padding: 12px 5px 10px; } }
+        @media (max-width: 1105px) {
+            header .header-container nav .toggle:checked ~ ul .contacts-menu {
+              display: block; }
+              header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content {
+                display: flex;
+                margin: 45px 36px 45px 0; } }
+      @media (max-width: 1105px) and (max-width: 1105px) {
+        header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content {
+          margin: 20px 0; } }
+      @media (max-width: 1105px) and (max-width: 767px) {
+        header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content {
+          margin: 10px 0; } }
+        @media (max-width: 1105px) {
+                header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text {
+                  padding: 0 16px;
+                  display: flex;
+                  flex-direction: column;
+                  font-size: 18px;
+                  justify-content: space-evenly; }
+                  header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text p {
+                    font-weight: 600; } }
+          @media (max-width: 1105px) and (max-width: 425px) {
+            header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text p:last-child {
+              font-size: 14px; } }
+          @media (max-width: 1105px) and (max-width: 320px) {
+            header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text p:last-child {
+              font-size: 10px; } }
+        @media (max-width: 1105px) {
+                  header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text span {
+                    font-weight: 100;
+                    line-height: 17px; } }
+          @media (max-width: 1105px) and (max-width: 425px) {
+            header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text span {
+              font-size: 14px; } }
+          @media (max-width: 1105px) and (max-width: 320px) {
+            header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text span {
+              font-size: 12px; } }
+        @media (max-width: 1105px) {
+                  header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text .text-phones {
+                    display: flex;
+                    align-items: center; }
+                    header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text .text-phones .num-phones {
+                      display: flex;
+                      flex-direction: column; }
+                      header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text .text-phones .num-phones span {
+                        font-size: 18px; } }
+              @media (max-width: 1105px) and (max-width: 425px) {
+                header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text .text-phones .num-phones span {
+                  font-size: 14px; } }
+              @media (max-width: 1105px) and (max-width: 320px) {
+                header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text .text-phones .num-phones span {
+                  font-size: 12px; } }
+        @media (max-width: 1105px) {
+                    header .header-container nav .toggle:checked ~ ul .contacts-menu .info .info-content .cont-text .text-phones .icons-phones {
+                      padding-left: 23px; } }
+        @media (max-width: 374px) {
+          header .header-container nav .toggle:checked ~ ul li {
+            font-size: 28px; } }
         @media (min-width: 1106px) {
           header .header-container nav .toggle:checked ~ ul {
             display: flex; } }
